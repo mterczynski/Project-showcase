@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
 	<script rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
 	<style>
-
-		body{
+		body {
 			padding-top: 50px;
 			background: rgb(51, 40, 112);
 			background: #e4eef7;
-			
+
 		}
 
-		.linkButtons{
+		.linkButtons {
 			display: flex !important;
 			flex-direction: column;
 			height: 100%;
@@ -24,222 +24,223 @@
 			justify-content: space-evenly;
 		}
 
-		.linkButton{
+		.linkButton {
 			width: 94px;
 		}
 
-		.projectLink{
+		.projectLink {
 			display: block;
 			display: flex;
 			justify-content: center;
 		}
 
-		.column{
+		.column {
 			margin-top: 0 !important;
 		}
 
-		.column >*{
+		.column>* {
 			margin-left: auto !important;
 			margin-right: auto !important;
 		}
 
-		.ui.card{
+		.ui.card {
 			box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75);
 		}
 	</style>
 </head>
+
 <body>
-<div class="ui four column doubling stackable grid container">
-	<div class="column">
-		<!-- Campfire -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/campfire.gif" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/campfire">
-						<button class="ui blue button linkButton">GitHub</button>
-					</a>
+	<div class="ui four column doubling stackable grid container">
+		<div class="column">
+			<!-- Campfire -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/campfire.gif" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/campfire">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
 
-					<a class="projectLink" href="http://mter.pl/campfire/">
-						<button class="ui blue button linkButton">Preview</button>
+						<a class="projectLink" href="http://mter.pl/campfire/">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Campfire</a>
+					<div class="meta">
+						Animated campfire class for three.js projects
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						three.js, JS
 					</a>
 				</div>
 			</div>
-			<div class="content">
-				<a class="header">Campfire</a>
-				<div class="meta">
-					Animated campfire class for three.js projects
+			<!-- Paint -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/paint.PNG" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/paint">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+
+						<a class="projectLink" href="http://mter.pl/paint">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Paint</a>
+					<div class="meta">
+						Paint remake in React + Redux
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						React, Redux, JS
+					</a>
 				</div>
 			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					three.js, JS
-				</a>
+			<!-- Dratewka -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/dratewka.PNG" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/Dratewka-the-Shoemaker">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+
+						<a class="projectLink" href="http://www.mter.pl/dratewka/">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Dratewka</a>
+					<div class="meta">
+						Remake of Atari game "Dratewka the Shoemaker"
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						JS
+					</a>
+				</div>
+			</div>
+			<!-- Mine sweeper -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/mine-sweeper.PNG" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/mine-sweeper">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+
+						<a class="projectLink" href="http://www.mter.pl/mine-sweeper">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Mine sweeper</a>
+					<div class="meta">
+						Mine sweeper made with React.js
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						React.js, JS, TS
+					</a>
+				</div>
 			</div>
 		</div>
-		<!-- Paint -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/paint.PNG" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/paint">
-						<button class="ui blue button linkButton">GitHub</button>
-					</a>
 
-					<a class="projectLink" href="http://mter.pl/paint">
-						<button class="ui blue button linkButton">Preview</button>
-					</a>
-				</div>
-			</div>
-			<div class="content">
-				<a class="header">Paint</a>
-				<div class="meta">
-					Paint remake in React + Redux
-				</div>
-			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					React, Redux, JS
-				</a>
-			</div>
-		</div>
-		<!-- Dratewka -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/dratewka.PNG" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/Dratewka-the-Shoemaker">
-						<button class="ui blue button linkButton">GitHub</button>
-					</a>
-					
-					<a class="projectLink" href="http://www.mter.pl/dratewka/">
-						<button class="ui blue button linkButton">Preview</button>
-					</a>
-				</div>
-			</div>
-			<div class="content">
-				<a class="header">Dratewka</a>
-				<div class="meta">
-					Remake of Atari game "Dratewka the Shoemaker"
-				</div>
-			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					JS
-				</a>
-			</div>
-		</div>	
-		<!-- Mine sweeper -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/mine-sweeper.PNG" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/mine-sweeper">
-						<button class="ui blue button linkButton">GitHub</button>
-					</a>
+		<div class="column">
+			<!-- Gravitee -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/gravitee.gif" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/gravitee">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
 
-					<a class="projectLink" href="http://www.mter.pl/mine-sweeper">
-						<button class="ui blue button linkButton">Preview</button>
-					</a>
-				</div>
-			</div>
-			<div class="content">
-				<a class="header">Mine sweeper</a>
-				<div class="meta">
-					Mine sweeper made with React.js
-				</div>
-			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					React.js, JS, TS
-				</a>
-			</div>
-		</div>			
-	</div>
-	
-	<div class="column">
-		<!-- Gravitee -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/gravitee.gif" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/gravitee">
-						<button class="ui blue button linkButton">GitHub</button>
-					</a>
-
-					<!-- <a class="projectLink" href="http://mter.pl/gravitee">
+						<!-- <a class="projectLink" href="http://mter.pl/gravitee">
 						<button class="ui blue button linkButton">Preview</button>
 					</a> -->
+					</div>
 				</div>
-			</div>
-			<div class="content">
-				<a class="header">Gravitee</a>
-				<div class="meta">
-					Gravity planet simulator
+				<div class="content">
+					<a class="header">Gravitee</a>
+					<div class="meta">
+						Gravity planet simulator
+					</div>
 				</div>
-			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					three.js, TS
-				</a>
-			</div>
-		</div>
-		<!-- CMS -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/cms.PNG" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/cms">
-						<button class="ui blue button linkButton">GitHub</button>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						three.js, TS
 					</a>
 				</div>
 			</div>
-			<div class="content">
-				<a class="header">CMS</a>
-				<div class="meta">
-					Simple CRUD CMS made with php + mysql
+			<!-- CMS -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/cms.PNG" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/cms">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					php, mysql
-				</a>
-			</div>
-		</div>
-		<!-- Album manager -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/albumManager.png" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/AlbumManager">
-						<button class="ui blue button linkButton">GitHub</button>
+				<div class="content">
+					<a class="header">CMS</a>
+					<div class="meta">
+						Simple CRUD CMS made with php + mysql
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						php, mysql
 					</a>
 				</div>
 			</div>
-			<div class="content">
-				<a class="header">Album Manager</a>
-				<div class="meta">
-					Android application for making pictures and managing them
+			<!-- Album manager -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/albumManager.png" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/AlbumManager">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Album Manager</a>
+					<div class="meta">
+						Android application for making pictures and managing them
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						Android, Java
+					</a>
 				</div>
 			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					Android, Java
-				</a>
-			</div>
 		</div>
-	</div>
 
-	<div class="column">
-		<!-- Kulki -->
-		<div class="ui card">
+		<div class="column">
+			<!-- Kulki -->
+			<div class="ui card">
 				<div class="ui slide masked reveal image">
 					<img src="assets/kulki.PNG" class="visible content">
 					<div class="hidden content linkButtons">
@@ -264,9 +265,9 @@
 						JS
 					</a>
 				</div>
-		</div>
-		<!-- Builder -->
-		<div class="ui card">
+			</div>
+			<!-- Builder -->
+			<div class="ui card">
 				<div class="ui slide masked reveal image">
 					<img src="assets/builder.PNG" class="visible content">
 					<div class="hidden content linkButtons">
@@ -291,9 +292,9 @@
 						three.js, JS
 					</a>
 				</div>
-		</div>
-		<!-- Sensors -->
-		<div class="ui card">
+			</div>
+			<!-- Sensors -->
+			<div class="ui card">
 				<div class="ui slide masked reveal image">
 					<img src="assets/sensors.gif" class="visible content">
 					<div class="hidden content linkButtons">
@@ -318,11 +319,37 @@
 					</a>
 				</div>
 			</div>
-	</div>
+			<!-- Snake -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/snake.png" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/snake-dom">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+						<a class="projectLink" href="http://www.mter.pl/snake">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Snake</a>
+					<div class="meta">
+						Snake game written in JavaScript
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						JS
+					</a>
+				</div>
+			</div>
+		</div>
 
-	<div class="column">
-		<!-- File uploader -->
-		<div class="ui card">
+		<div class="column">
+			<!-- File uploader -->
+			<div class="ui card">
 				<div class="ui slide masked reveal image">
 					<img src="assets/fileUploader.PNG" class="visible content">
 					<div class="hidden content linkButtons">
@@ -338,7 +365,7 @@
 				<div class="content">
 					<a class="header">File uploader</a>
 					<div class="meta">
-						Application for uploading files<br/>
+						Application for uploading files<br />
 					</div>
 				</div>
 				<div class="extra content">
@@ -347,82 +374,83 @@
 						Angular, Bootstrap, Mongoose, MongoDB, Node.js, Express, JS
 					</a>
 				</div>
+			</div>
+			<!-- cpp DB -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/cppDB.PNG" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/Projekt---baza-danych">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">C++ Database</a>
+					<div class="meta">
+						Serverless database with CLI made in C++
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						C++
+					</a>
+				</div>
+			</div>
+			<!-- Memory -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/memory.PNG" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/AngularJS---Memory">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+						<a class="projectLink" href="http://mter.pl/memory">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Memory</a>
+					<div class="meta">
+						Memory game - 3 time modes
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						AngularJS, JS
+					</a>
+				</div>
+			</div>
+			<!-- Code clicker -->
+			<div class="ui card">
+				<div class="ui slide masked reveal image">
+					<img src="assets/code-clicker.PNG" class="visible content">
+					<div class="hidden content linkButtons">
+						<a class="projectLink" href="https://github.com/mterczynski/code-clicker">
+							<button class="ui blue button linkButton">GitHub</button>
+						</a>
+						<a class="projectLink" href="https://codesandbox.io/s/1r91j86omj">
+							<button class="ui blue button linkButton">Preview</button>
+						</a>
+					</div>
+				</div>
+				<div class="content">
+					<a class="header">Code clicker</a>
+					<div class="meta">
+						Cookie Clicker clone with VS Code theme
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="tag icon"></i>
+						React.js, JS
+					</a>
+				</div>
+			</div>
 		</div>
-		<!-- cpp DB -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/cppDB.PNG" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/Projekt---baza-danych">
-						<button class="ui blue button linkButton">GitHub</button>
-					</a>
-				</div>
-			</div>
-			<div class="content">
-				<a class="header">C++ Database</a>
-				<div class="meta">
-					Serverless database with CLI made in C++
-				</div>
-			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					C++
-				</a>
-			</div>
-		</div>
-		<!-- Memory -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/memory.PNG" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/AngularJS---Memory">
-						<button class="ui blue button linkButton">GitHub</button>
-					</a>
-					<a class="projectLink" href="http://mter.pl/memory">
-						<button class="ui blue button linkButton">Preview</button>
-					</a>
-				</div>
-			</div>
-			<div class="content">
-				<a class="header">Memory</a>
-				<div class="meta">
-					Memory game - 3 time modes
-				</div>
-			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					AngularJS, JS
-				</a>
-			</div>
-		</div>
-		<!-- Code clicker -->
-		<div class="ui card">
-			<div class="ui slide masked reveal image">
-				<img src="assets/code-clicker.PNG" class="visible content">
-				<div class="hidden content linkButtons">
-					<a class="projectLink" href="https://github.com/mterczynski/code-clicker">
-						<button class="ui blue button linkButton">GitHub</button>
-					</a>
-					<a class="projectLink" href="https://codesandbox.io/s/1r91j86omj">
-						<button class="ui blue button linkButton">Preview</button>
-					</a>
-				</div>
-			</div>
-			<div class="content">
-				<a class="header">Code clicker</a>
-				<div class="meta">
-					Cookie Clicker clone with VS Code theme
-				</div>
-			</div>
-			<div class="extra content">
-				<a>
-					<i class="tag icon"></i>
-					React.js, JS
-				</a>
-			</div>
-		</div>
-	</div>
 </body>
+
 </html>
