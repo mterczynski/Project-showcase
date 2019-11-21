@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                shell '''
+                sh '''
                     ssh root@mterczynski.pl << 'ENDSSH'
                     cd /var/www/html
                     ls
