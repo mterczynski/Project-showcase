@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                 sh '''
+                sh '''
                     scp -r assets root@mterczynski.pl:/var/www/html/assets
                     scp -r index.html root@mterczynski.pl:/var/www/html/index.html
                 '''
