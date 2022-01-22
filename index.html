@@ -13,7 +13,7 @@
 	<script rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
 	<style>
 		body {
-			padding-top: 50px;
+			padding-top: 0;
 			background: rgb(51, 40, 112);
 			background: #e4eef7;
 		}
@@ -48,10 +48,43 @@
 		.ui.card {
 			box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75);
 		}
+
+		.navbar {
+			display: flex;
+			justify-content: flex-end;
+			padding: 20px 40px;
+		}
+
+		.navbar-link {
+			margin-right: 20px;
+		}
+
+		.navbar-link-image {
+			width: 50px;
+			height: 50px;
+			filter: grayscale(100%);
+			opacity: 0.2;
+			transition-duration: 0.6s;
+		}
+
+		.navbar-link-image:hover {
+			opacity: 1;
+			filter: none;
+		}
+
 	</style>
 </head>
 
 <body>
+	<nav class="navbar">
+		<a class="navbar-link" href="https://github.com/mterczynski">
+			<img class="navbar-link-image" src="assets/github-icon.png" alt="Github">
+		</a>
+		<a class="navbar-link" href="https://www.linkedin.com/in/mterczynski">
+			<img class="navbar-link-image" src="assets/linkedin-icon.png" alt="LinkedIn">
+		</a>
+	</nav>
+
 	<div class="ui four column doubling stackable grid container">
 		<div class="column">
 			<!-- Paint -->
