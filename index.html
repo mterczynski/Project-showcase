@@ -1,501 +1,851 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Michał Terczyński's portfolio" />
+    <meta
+      name="keywords"
+      content="Michał,Terczyński,Michal,Terczynski,Frontend,Developer,JavaScript,TypeScript"
+    />
+    <meta name="author" content="Michał Terczyński" />
+    <!-- <title>mterczynski.pl</title> -->
+    <!-- <link rel="icon" type="image/x-icon" href="./assets/favicons/favicon-1.png"> -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/social-media/website-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"
+    />
+    <script
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"
+    ></script>
+    <style>
+      body {
+        padding-top: 0;
+        background: rgb(51, 40, 112);
+        background: #e4eef7;
+      }
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Michał Terczyński's portfolio">
-	<meta name="keywords" content="Michał,Terczyński,Michal,Terczynski,Frontend,Developer,JavaScript,TypeScript">
-	<meta name="author" content="Michał Terczyński">
-	<!-- <title>mterczynski.pl</title> -->
-	<!-- <link rel="icon" type="image/x-icon" href="./assets/favicons/favicon-1.png"> -->
-	<link rel="icon" type="image/x-icon" href="./assets/social-media/website-logo.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
-	<script rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
-	<style>
-		body {
-			padding-top: 0;
-			background: rgb(51, 40, 112);
-			background: #e4eef7;
-		}
+      .linkButtons {
+        display: flex !important;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: space-evenly;
+      }
 
-		.linkButtons {
-			display: flex !important;
-			flex-direction: column;
-			height: 100%;
-			width: 100%;
-			justify-content: space-evenly;
-		}
+      .linkButton {
+        width: 94px;
+      }
 
-		.linkButton {
-			width: 94px;
-		}
+      .projectLink {
+        display: block;
+        display: flex;
+        justify-content: center;
+      }
 
-		.projectLink {
-			display: block;
-			display: flex;
-			justify-content: center;
-		}
+      .column {
+        margin-top: 0 !important;
+      }
 
-		.column {
-			margin-top: 0 !important;
-		}
+      .column > * {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
 
-		.column > * {
-			margin-left: auto !important;
-			margin-right: auto !important;
-		}
+      .ui.card {
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75);
+      }
 
-		.ui.card {
-			box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75);
-		}
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        /* justify-content: flex-end; */
+        align-items: center;
+        padding: 20px 40px;
+        gap: 15px;
+      }
 
-		.navbar {
-			display: flex;
-			justify-content: space-around;
-			/* justify-content: flex-end; */
-			align-items: center;;
-			padding: 20px 40px;
-			gap: 15px;
-		}
+      .navbar-link {
+        margin-right: 20px;
+      }
 
-		.navbar-link {
-			margin-right: 20px;
-		}
+      .navbar-link-image {
+        width: 50px;
+        height: 50px;
+        /* filter: grayscale(100%); */
+        /* opacity: 0.2; */
+        /* transition-duration: 0.6s; */
+      }
 
-		.navbar-link-image {
-			width: 50px;
-			height: 50px;
-			/* filter: grayscale(100%); */
-			/* opacity: 0.2; */
-			/* transition-duration: 0.6s; */
-		}
+      .navbar-link-image:hover {
+        opacity: 1;
+        filter: none;
+      }
 
-		.navbar-link-image:hover {
-			opacity: 1;
-			filter: none;
-		}
+      .navbar-website-logo {
+        width: 113px;
+        height: 90px;
+        /* transform: scale(0.25); */
+      }
+    </style>
+  </head>
 
-		.navbar-website-logo {
-			width: 113px;
-			height: 90px;
-			/* transform: scale(0.25); */
-		}
-	</style>
-</head>
-
-<body>
-	<nav class="navbar">
-		<div class="navbar-left">
-			<img class="navbar-website-logo" src="assets/social-media/website-logo.png" alt="Website logo">
-		</div>
-		<div class="navbar-right">
-			<a class="navbar-link" href="https://github.com/mterczynski">
-				<img class="navbar-link-image" src="assets/social-media/github-logo.png" alt="Github">
-			</a>
-			<a class="navbar-link" href="https://www.linkedin.com/in/mterczynski">
-				<img class="navbar-link-image" src="assets/social-media/linkedin-logo.png" alt="LinkedIn">
-			</a>
-			<!-- <a class="navbar-link" href="https://www.linkedin.com/in/mterczynski">
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img
+          class="navbar-website-logo"
+          src="assets/social-media/website-logo.png"
+          alt="Website logo"
+        />
+      </div>
+      <div class="navbar-right">
+        <a class="navbar-link" href="https://github.com/mterczynski">
+          <img
+            class="navbar-link-image"
+            src="assets/social-media/github-logo.png"
+            alt="Github"
+          />
+        </a>
+        <a class="navbar-link" href="https://www.linkedin.com/in/mterczynski">
+          <img
+            class="navbar-link-image"
+            src="assets/social-media/linkedin-logo.png"
+            alt="LinkedIn"
+          />
+        </a>
+        <!-- <a class="navbar-link" href="https://www.linkedin.com/in/mterczynski">
 				<img class="navbar-link-image" src="assets/social-media/cv-icon.png" alt="View CV">
 			</a> -->
-			<a class="navbar-link" href="https://www.mterczynski.pl/cv.pdf">
-				<img class="navbar-link-image" src="assets/social-media/cv.svg" alt="View CV">
-			</a>
-			<a class="navbar-link" href="mailto:mterczynski1@gmail.com">
-				<img class="navbar-link-image" src="assets/social-media/mail-icon.png" alt="Send an email">
-			</a>
-		</div>
-	</nav>
+        <a class="navbar-link" href="https://www.mterczynski.pl/cv.pdf">
+          <img
+            class="navbar-link-image"
+            src="assets/social-media/cv.svg"
+            alt="View CV"
+          />
+        </a>
+        <a class="navbar-link" href="mailto:mterczynski1@gmail.com">
+          <img
+            class="navbar-link-image"
+            src="assets/social-media/mail-icon.png"
+            alt="Send an email"
+          />
+        </a>
+      </div>
+    </nav>
 
-	<div class="ui four column doubling stackable grid container">
-		<div class="column">
-			<!-- Paint -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/paint.PNG" class="visible content" alt="Paint project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/paint">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
+    <div class="projects-commercial ui container">
+      <h2>Commercial projects</h2>
+      <div class="ui four column doubling stackable grid container">
+        <div class="column">
+          <!-- GemOne Onyx -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/commercial-projects/gemone-onyx.png"
+                class="visible content"
+                alt="Paint project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://www.gemone.com/en/products-onyx/"
+                >
+                  <button class="ui blue button linkButton">Website</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">GemOne Onyx</a>
+              <div class="meta">
+                <!-- Onyx is a fleet management solution for mixed industrial fleets
+                which accommodates different types of trackers, whether they’re
+                from GemOne or from other suppliers. -->
 
-						<a class="projectLink" href="http://mterczynski.pl/paint">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Paint</a>
-					<div class="meta">
-						Paint remake in React.js + Redux (work in progress)
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						TS, React.js, Redux, Graphics editors
-					</a>
-				</div>
-			</div>
+                Onyx is a fleet management solution for mixed industrial fleets
+                which accommodates all makes and models of machines and
+                integrates different types of trackers, whether they’re from
+                GemOne or from other suppliers. Onyx monitors your mixed fleet
+                in real time.
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, Angular, Node.js, Jest, Angular Material
+              </a>
+            </div>
+          </div>
+        </div>
 
-			<!-- Kulki -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/kulki.PNG" class="visible content" alt="Kulki project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/kulki">
-							<button class="ui blue button linkButton">Github</button>
-						</a>
+        <div class="column">
+          <!-- Super Striker -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/commercial-projects/super-striker-netent.png"
+                class="visible content"
+                alt="Kulki project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://scatters.com/en/game/netent/super-striker/demo"
+                >
+                  <button class="ui blue button linkButton">Demo</button>
+                </a>
 
-						<a class="projectLink" href="http://mterczynski.pl/kulki">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Kulki</a>
-					<div class="meta">
-						My version of popular game with my own JavaScript implementation of A* algorithm
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						JS, Pathfinding
-					</a>
-				</div>
-			</div>
+                <a
+                  class="projectLink"
+                  href="https://games.netent.com/video-slots/super-striker/"
+                >
+                  <button class="ui blue button linkButton">Website</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Super Striker</a>
+              <div class="meta">
+                Super Striker™ is a 3-reel, 3-row video slot from NetEnt™,
+                featuring multi-level Free Spins, the Golden Multiplier feature
+                and the Bet Slip feature. Striking a Golden Scatter in the main
+                game awards an instant win, while a hat-trick of three Scatter
+                symbols activates 5-level Free Spins with an increasing Level
+                Multiplier.
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, PixiJS, Jest, Spine animations
+              </a>
+            </div>
+          </div>
+        </div>
 
-			<!-- Level editor -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/level-editor.png" class="visible content" alt="Level editor project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/level-editor">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="http://mterczynski.pl/levelEditor">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Level editor</a>
-					<div class="meta">
-						Level Editor for 2D and 3D games
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						JS, jQuery, Code generation
-					</a>
-				</div>
-			</div>
+        <div class="column">
+          <!-- Aloha Christmas -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/commercial-projects/aloha-christmas-netent.png"
+                class="visible content"
+                alt="Aloha Christmas project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://www.bigwinboard.com/aloha-christmas-edition-netent-slot-review/"
+                >
+                  <button class="ui blue button linkButton">Demo</button>
+                </a>
+                <a
+                  class="projectLink"
+                  href="https://games.netent.com/video-slots/aloha-christmas-edition/"
+                >
+                  <button class="ui blue button linkButton">Website</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Aloha! Christmas</a>
+              <div class="meta">
+                Aloha! Christmas™ is a 6-reel, 6-row video slot from NetEnt™
+                with the Cluster Pays™ mechanic, featuring Multiplier Wild
+                symbols, Mystery symbols, the Sticky Win Re-Spins, Tiki Bar Free
+                Spins and Tiki Bar Max Free Spins.
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, PixiJS, Jest, Spine animations
+              </a>
+            </div>
+          </div>
+        </div>
 
-			<!-- Sudoku solver -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/sudoku-solver.jpg" class="visible content" alt="Sudoku solver project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/sudoku-solver">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="https://www.mterczynski.pl/sudoku-solver/">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Sudoku solver</a>
-					<div class="meta">
-						Program for solving sudokus (partly or completely)
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						TS, Snowpack, algorithms, unit tests
-					</a>
-				</div>
-			</div>
-		</div>
+        <div class="column">
+          <!-- Boom Boom Boom -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/commercial-projects/gamecode-boom-boom-boom.webp"
+                class="visible content"
+                alt="Boom boom boom project website"
+              />
+              <div class="hidden content linkButtons">
+                <a class="projectLink" href="https://www.gamecodehq.com/games/">
+                  <button class="ui blue button linkButton">Website</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Boom Boom Boom</a>
+              <div class="meta">
+                Boom Boom Boom™ is an American-themed 5-reel, 3-row video slot
+                featuring Wild Multipliers and the hold and respin feature on
+                multiple reel sets.
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, PixiJS, Jest, Spine animations
+              </a>
+            </div>
+          </div>
 
-		<div class="column">
-			<!-- Mine sweeper -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/mine-sweeper.PNG" class="visible content" alt="Mine Sweeper project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/mine-sweeper">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
+          <!-- HammerCash -->
+          <!-- <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/commercial-projects/hammer-cash.png"
+                class="visible content"
+                alt="Boom boom boom project website"
+              />
+              <div class="hidden content linkButtons">
+                <a class="projectLink" href="https://www.gamecodehq.com/games/">
+                  <button class="ui blue button linkButton">Website</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Hammer Cash™</a>
+              <div class="meta">
+                Hammer Cash™ is a 5-reel, 3-row video slot featuring instant
+                jackpot Hammer Feature, Free Spins, Buy Free Spins, blitz
+                symbols, expanding reels.
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, PixiJS, Jest, Spine animations
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
 
-						<a class="projectLink" href="http://www.mterczynski.pl/mine-sweeper">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Mine sweeper</a>
-					<div class="meta">
-						Mine sweeper made with React.js
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						React.js, TS
-					</a>
-				</div>
-			</div>
-			<!-- Snake -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/snake.png" class="visible content" alt="Snake project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/snake-dom">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="http://www.mterczynski.pl/snake">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Snake</a>
-					<div class="meta">
-						Snake game written in JavaScript
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						JS
-					</a>
-				</div>
-			</div>
-			<!-- Joi schema generator -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/joi-schema-generator.jpg" class="visible content" alt="Joi schema generator project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/joi-schema-generator">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="http://www.mterczynski.pl/joi-schema-generator">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Joi schema generator</a>
-					<div class="meta">
-						Tool that helps developers with creating validation schemas by automatically generating a schema based on example input value
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						TS, Joi, Snowpack, Unit tests, Jest, Code generation
-					</a>
-				</div>
-			</div>
+      <div class="ui message">
+        <div class="header">Access notice</div>
+        <p>
+          Please note that some of the websites linked above might not be
+          accessible in your country. To address this, you may want to use a VPN
+          service.
+        </p>
+      </div>
+    </div>
 
-			<!-- Pattern generators -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/pattern-generators.jpg" class="visible content" alt="Line pattern generator project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/pattern-generators">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="http://www.mterczynski.pl/pattern-generators">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Line art generator</a>
-					<div class="meta">
-						Algorithmic line art generator - no AI used
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						Art generation, TS
-					</a>
-				</div>
-			</div>
-		</div>
+    <br />
+    <div class="projects-personal ui container">
+      <h2>Personal projects</h2>
+      <div class="ui four column doubling stackable grid container">
+        <div class="column">
+          <!-- Paint -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/paint.PNG"
+                class="visible content"
+                alt="Paint project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/paint"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
 
-		<div class="column">
-			<!-- Tetris -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/tetris-dom.png" class="visible content" alt="Tetris project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/tetris-dom">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="http://mterczynski.pl/tetris">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Tetris</a>
-					<div class="meta">
-						Tetris game made in JavaScript, tested with Jest
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						JS, Jest, Unit tests
-					</a>
-				</div>
-			</div>
-			
-			<!-- Sensors -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/sensors.gif" class="visible content" alt="Sensors project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/sensors">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="http://www.mterczynski.pl/sensors">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Sensors</a>
-					<div class="meta">
-						Machine learning project with neural networks (work in progress)
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						TS, Canvas, Neural networks, AI
-					</a>
-				</div>
-			</div>
+                <a class="projectLink" href="http://mterczynski.pl/paint">
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Paint</a>
+              <div class="meta">
+                Paint remake in React.js + Redux (work in progress)
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, React.js, Redux, Graphics editors
+              </a>
+            </div>
+          </div>
 
-			<!-- Space golf 3d -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/space-golf-3d.jpg" class="visible content" alt="Space Golf 3D project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/space-golf-3d">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="http://www.mterczynski.pl/space-golf-3d">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Space Golf 3D</a>
-					<div class="meta">
-						A 3D simulation of a golf ball in space among planets with custom physics
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						TS, Three.js, Jest, 3D, physics
-					</a>
-				</div>
-			</div>
-		</div>
+          <!-- Kulki -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/kulki.PNG"
+                class="visible content"
+                alt="Kulki project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/kulki"
+                >
+                  <button class="ui blue button linkButton">Github</button>
+                </a>
 
-		<div class="column">
-			<!-- Chess -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/chess.jpg" class="visible content" alt="Chess project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/chess">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="http://mterczynski.pl/chess/build/client/">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Chess</a>
-					<div class="meta">
-						Single player chess game
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						JS, TS, React.js, Jest
-					</a>
-				</div>
-			</div>
-			<!-- Code clicker -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/code-clicker.jpg" class="visible content" alt="Code Clicker project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/code-clicker">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
-						<a class="projectLink" href="https://codesandbox.io/s/1r91j86omj">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">Code clicker</a>
-					<div class="meta">
-						Cookie Clicker clone with VS Code theme
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						JS, React.js
-					</a>
-				</div>
-			</div>
-			<!-- File uploader -->
-			<div class="ui card">
-				<div class="ui slide masked reveal image">
-					<img src="assets/fileUploader.jpg" class="visible content" alt="File Uploader project preview">
-					<div class="hidden content linkButtons">
-						<a class="projectLink" href="https://github.com/mterczynski/File-Uploader-client">
-							<button class="ui blue button linkButton">GitHub</button>
-						</a>
+                <a class="projectLink" href="http://mterczynski.pl/kulki">
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Kulki</a>
+              <div class="meta">
+                My version of popular game with my own JavaScript implementation
+                of A* algorithm
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                JS, Pathfinding
+              </a>
+            </div>
+          </div>
 
-						<a class="projectLink" href="http://www.mterczynski.pl:3000/">
-							<button class="ui blue button linkButton">Open</button>
-						</a>
-					</div>
-				</div>
-				<div class="content">
-					<a class="header">File uploader</a>
-					<div class="meta">
-						Application for uploading files<br />
-					</div>
-				</div>
-				<div class="extra content">
-					<a>
-						<i class="tag icon"></i>
-						SCSS, TS, Angular, Bootstrap, Mongoose, MongoDB, Node.js, Express
-					</a>
-				</div>
-			</div>
-			
-		</div>
-</body>
+          <!-- Level editor -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/level-editor.png"
+                class="visible content"
+                alt="Level editor project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/level-editor"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a class="projectLink" href="http://mterczynski.pl/levelEditor">
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Level editor</a>
+              <div class="meta">Level Editor for 2D and 3D games</div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                JS, jQuery, Code generation
+              </a>
+            </div>
+          </div>
 
+          <!-- Sudoku solver -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/sudoku-solver.jpg"
+                class="visible content"
+                alt="Sudoku solver project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/sudoku-solver"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a
+                  class="projectLink"
+                  href="https://www.mterczynski.pl/sudoku-solver/"
+                >
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Sudoku solver</a>
+              <div class="meta">
+                Program for solving sudokus (partly or completely)
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, Snowpack, algorithms, unit tests
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <!-- Mine sweeper -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/mine-sweeper.PNG"
+                class="visible content"
+                alt="Mine Sweeper project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/mine-sweeper"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+
+                <a
+                  class="projectLink"
+                  href="http://www.mterczynski.pl/mine-sweeper"
+                >
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Mine sweeper</a>
+              <div class="meta">Mine sweeper made with React.js</div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                React.js, TS
+              </a>
+            </div>
+          </div>
+          <!-- Snake -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/snake.png"
+                class="visible content"
+                alt="Snake project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/snake-dom"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a class="projectLink" href="http://www.mterczynski.pl/snake">
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Snake</a>
+              <div class="meta">Snake game written in JavaScript</div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                JS
+              </a>
+            </div>
+          </div>
+          <!-- Joi schema generator -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/joi-schema-generator.jpg"
+                class="visible content"
+                alt="Joi schema generator project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/joi-schema-generator"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a
+                  class="projectLink"
+                  href="http://www.mterczynski.pl/joi-schema-generator"
+                >
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Joi schema generator</a>
+              <div class="meta">
+                Tool that helps developers with creating validation schemas by
+                automatically generating a schema based on example input value
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, Joi, Snowpack, Unit tests, Jest, Code generation
+              </a>
+            </div>
+          </div>
+
+          <!-- Pattern generators -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/pattern-generators.jpg"
+                class="visible content"
+                alt="Line pattern generator project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/pattern-generators"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a
+                  class="projectLink"
+                  href="http://www.mterczynski.pl/pattern-generators"
+                >
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Line art generator</a>
+              <div class="meta">
+                Algorithmic line art generator - no AI used
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                Art generation, TS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <!-- Tetris -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/tetris-dom.png"
+                class="visible content"
+                alt="Tetris project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/tetris-dom"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a class="projectLink" href="http://mterczynski.pl/tetris">
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Tetris</a>
+              <div class="meta">
+                Tetris game made in JavaScript, tested with Jest
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                JS, Jest, Unit tests
+              </a>
+            </div>
+          </div>
+
+          <!-- Sensors -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/sensors.gif"
+                class="visible content"
+                alt="Sensors project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/sensors"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a class="projectLink" href="http://www.mterczynski.pl/sensors">
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Sensors</a>
+              <div class="meta">
+                Machine learning project with neural networks (work in progress)
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, Canvas, Neural networks, AI
+              </a>
+            </div>
+          </div>
+
+          <!-- Space golf 3d -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/space-golf-3d.jpg"
+                class="visible content"
+                alt="Space Golf 3D project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/space-golf-3d"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a
+                  class="projectLink"
+                  href="http://www.mterczynski.pl/space-golf-3d"
+                >
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Space Golf 3D</a>
+              <div class="meta">
+                A 3D simulation of a golf ball in space among planets with
+                custom physics
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                TS, Three.js, Jest, 3D, physics
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <!-- Chess -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/chess.jpg"
+                class="visible content"
+                alt="Chess project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/chess"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a
+                  class="projectLink"
+                  href="http://mterczynski.pl/chess/build/client/"
+                >
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Chess</a>
+              <div class="meta">Single player chess game</div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                JS, TS, React.js, Jest
+              </a>
+            </div>
+          </div>
+          <!-- Code clicker -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/code-clicker.jpg"
+                class="visible content"
+                alt="Code Clicker project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/code-clicker"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+                <a
+                  class="projectLink"
+                  href="https://codesandbox.io/s/1r91j86omj"
+                >
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">Code clicker</a>
+              <div class="meta">Cookie Clicker clone with VS Code theme</div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                JS, React.js
+              </a>
+            </div>
+          </div>
+          <!-- File uploader -->
+          <div class="ui card">
+            <div class="ui slide masked reveal image">
+              <img
+                src="assets/fileUploader.jpg"
+                class="visible content"
+                alt="File Uploader project preview"
+              />
+              <div class="hidden content linkButtons">
+                <a
+                  class="projectLink"
+                  href="https://github.com/mterczynski/File-Uploader-client"
+                >
+                  <button class="ui blue button linkButton">GitHub</button>
+                </a>
+
+                <a class="projectLink" href="http://www.mterczynski.pl:3000/">
+                  <button class="ui blue button linkButton">Open</button>
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <a class="header">File uploader</a>
+              <div class="meta">Application for uploading files<br /></div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="tag icon"></i>
+                SCSS, TS, Angular, Bootstrap, Mongoose, MongoDB, Node.js,
+                Express
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
