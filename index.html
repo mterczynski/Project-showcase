@@ -8,8 +8,9 @@
 	<meta name="description" content="Michał Terczyński's portfolio">
 	<meta name="keywords" content="Michał,Terczyński,Michal,Terczynski,Frontend,Developer,JavaScript,TypeScript">
 	<meta name="author" content="Michał Terczyński">
-	<title>mterczynski.pl</title>
-	<link rel="icon" type="image/x-icon" href="./assets/favicons/favicon-1.png">
+	<!-- <title>mterczynski.pl</title> -->
+	<!-- <link rel="icon" type="image/x-icon" href="./assets/favicons/favicon-1.png"> -->
+	<link rel="icon" type="image/x-icon" href="./assets/social-media/website-logo.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
 	<script rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
 	<style>
@@ -52,8 +53,11 @@
 
 		.navbar {
 			display: flex;
-			justify-content: flex-end;
+			justify-content: space-around;
+			/* justify-content: flex-end; */
+			align-items: center;;
 			padding: 20px 40px;
+			gap: 15px;
 		}
 
 		.navbar-link {
@@ -72,17 +76,37 @@
 			opacity: 1;
 			filter: none;
 		}
+
+		.navbar-website-logo {
+			width: 113px;
+			height: 90px;
+			/* transform: scale(0.25); */
+		}
 	</style>
 </head>
 
 <body>
 	<nav class="navbar">
-		<a class="navbar-link" href="https://github.com/mterczynski">
-			<img class="navbar-link-image" src="assets/social-media/github-logo.png" alt="Github">
-		</a>
-		<a class="navbar-link" href="https://www.linkedin.com/in/mterczynski">
-			<img class="navbar-link-image" src="assets/social-media/linkedin-logo.png" alt="LinkedIn">
-		</a>
+		<div class="navbar-left">
+			<img class="navbar-website-logo" src="assets/social-media/website-logo.png" alt="Website logo">
+		</div>
+		<div class="navbar-right">
+			<a class="navbar-link" href="https://github.com/mterczynski">
+				<img class="navbar-link-image" src="assets/social-media/github-logo.png" alt="Github">
+			</a>
+			<a class="navbar-link" href="https://www.linkedin.com/in/mterczynski">
+				<img class="navbar-link-image" src="assets/social-media/linkedin-logo.png" alt="LinkedIn">
+			</a>
+			<!-- <a class="navbar-link" href="https://www.linkedin.com/in/mterczynski">
+				<img class="navbar-link-image" src="assets/social-media/cv-icon.png" alt="View CV">
+			</a> -->
+			<a class="navbar-link" href="https://www.mterczynski.pl/cv.pdf">
+				<img class="navbar-link-image" src="assets/social-media/cv.svg" alt="View CV">
+			</a>
+			<a class="navbar-link" href="mailto:mterczynski1@gmail.com">
+				<img class="navbar-link-image" src="assets/social-media/mail-icon.png" alt="Send an email">
+			</a>
+		</div>
 	</nav>
 
 	<div class="ui four column doubling stackable grid container">
