@@ -37,6 +37,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"
     ></script>
     <style>
+      @font-face {
+        font-family: "LeagueSpartan";
+        src: URL("./assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
+          format("truetype");
+      }
+
       body {
         padding-top: 0;
         background: rgb(51, 40, 112);
@@ -101,9 +107,27 @@
       }
 
       .navbar-website-logo {
-        width: 113px;
+        width: 135px;
         height: 90px;
-        /* transform: scale(0.75); */
+      }
+
+      .nav-logo-text-container {
+        display: flex;
+      }
+
+      .nav-logo-text-black,
+      .nav-logo-text-blue {
+        font-family: LeagueSpartan, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bolder;
+      }
+
+      .nav-logo-text-black {
+        color: black;
+      }
+
+      .nav-logo-text-blue {
+        color: rgb(23, 145, 200);
       }
 
       .footer {
@@ -124,11 +148,21 @@
           src="assets/social-media/website-logo-text.png"
           alt="Website logo"
         /> -->
-        <img
+        <!-- <img
           class="navbar-website-logo"
           src="assets/social-media/website-logo.png"
           alt="Website logo"
+        /> -->
+        <img
+          class="navbar-website-logo"
+          src="assets/social-media/website-logo-only-initials.png"
+          alt="Website logo"
         />
+        <div class="nav-logo-text-container">
+          <span class="nav-logo-text-black">M</span>
+          <span class="nav-logo-text-blue">TERCZYNSKI</span>
+          <span class="nav-logo-text-black">.PL</span>
+        </div>
       </div>
       <div class="navbar-right">
         <a class="navbar-link" href="mailto:mterczynski1@gmail.com">
