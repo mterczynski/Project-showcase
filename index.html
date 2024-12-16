@@ -136,7 +136,7 @@
       }
       li {
         display: flex;
-        gap: 8px;
+        column-gap: 10px;
         align-items: center;
       }
       .footer {
@@ -162,6 +162,8 @@
       }
       .close {
         cursor: pointer;
+        margin-top: 1rem;
+        margin-right: -1rem;
       }
       @media screen and (max-width: 760px) {
         nav {
@@ -194,7 +196,7 @@
           display: flex;
           margin: 0 20px;
           margin-top: rem;
-          align-items: center;
+
           justify-content: space-between;
         }
         .logo_close img {
@@ -264,9 +266,11 @@
         </div>
         <ul>
           <li>
-            <i class="fa-solid fa-envelope" style="color: #1891c8"></i>
+            <div>
+              <i class="fa-solid fa-envelope" style="color: #1791c8"></i>
+            </div>
             <a class="navbar-link" href="mailto:mterczynski1@gmail.com">
-              <h3 style="display: inline">mterczynski1@gmail.com</h3></a
+              <h3 style="display: inline">Mterczynski1@gmail.com</h3></a
             >
           </li>
           <li>
@@ -276,7 +280,10 @@
             </a>
           </li>
           <li>
-            <i class="fa-solid fa-file" style="color: #1791c8"></i>
+            <div>
+              <i class="fa-solid fa-briefcase" style="color: #1791c8"></i>
+            </div>
+
             <a
               class="navbar-link"
               href="https://www.mter.pl/cv Michal Terczynski.pdf"
@@ -285,7 +292,9 @@
             >
           </li>
           <li>
-            <i class="fa-brands fa-github" style="color: #1791c8"></i>
+            <div>
+              <i class="fa-brands fa-github" style="color: #1791c8"></i>
+            </div>
             <a class="navbar-link" href="https://github.com/mterczynski">
               <h3 style="display: inline">GitHub</h3></a
             >
