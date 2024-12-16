@@ -1,7 +1,9 @@
 # 1. Copy index and assets to ../mterczynski.github.io
 rm -rf ../mterczynski.github.io/assets
 rm -rf ../mterczynski.github.io/index.html
+rm -rf ../mterczynski.github.io/toggle.js
 cp ./index.html ../mterczynski.github.io/
+cp ./toggle.js ../mterczynski.github.io/
 cp -r ./assets ../mterczynski.github.io/
 cd ../mterczynski.github.io
 # 2. Commit in ../mterczynski.github.io
