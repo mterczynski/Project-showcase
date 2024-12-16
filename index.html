@@ -11,17 +11,10 @@
     />
     <meta name="author" content="Michał Terczyński" />
     <title>Michał Terczyński's website</title>
-    <!-- <link rel="icon" type="image/x-icon" href="./assets/favicons/favicon-1.png"> -->
-    <!-- <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/social-media/website-logo.png"
-    /> -->
-    <!-- <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/social-media/website-logo-text-mt.png"
-    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
     <link
       rel="icon"
       type="image/x-icon"
@@ -136,7 +129,17 @@
       .nav-logo-text-blue {
         color: rgb(23, 145, 200);
       }
-
+      ul li {
+        list-style-type: none;
+      }
+      ul {
+        display: flex;
+      }
+      li {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
       .footer {
         z-index: -1;
         position: relative;
@@ -144,67 +147,145 @@
         margin-bottom: -210px;
         opacity: 1;
       }
-
-      /* @media (prefers-color-scheme: dark) {
-        body {
-          background-color: rgb(34, 37, 38);
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 180px;
+        margin-top: 2rem;
+      }
+      .toggle {
+        display: none;
+        margin-top: -4rem;
+      }
+      .logo {
+        display: none;
+      }
+      @media screen and (max-width: 600px) {
+        /* Styles for screens smaller than or equal to 600px */
+        nav {
+          margin: 0 20px;
         }
-
-        .ui.card {
-          background-color: rgb(24, 26, 27);
+        ul {
+          display: block;
         }
+        .navbar-right {
+          position: absolute;
+          right: 0;
+          top: 0rem;
 
-        img {
-          filter: brightness(90%);
+          z-index: 10;
+          transition: transform 0.5s ease-in-out;
+          transform: translateY(-600px);
+          background-color: white;
         }
-      } */
+        .active {
+          transform: translateY(0px);
+        }
+        .toggle {
+          display: block;
+        }
+        .logo {
+          display: flex;
+          margin: 0 20px;
+          margin-top: 1rem;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .logo_close img {
+          width: 20%;
+        }
+        .span {
+          font-size: 10px;
+        }
+        .nav-logo-text-black_1,
+        .nav-logo-text-black_3 {
+          font-size: 10px;
+        }
+        .nav-logo-text-blue_2 {
+          font-size: 10px;
+          color: rgb(23, 145, 200);
+        }
+        ul li a h3 {
+          font-size: 13px;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <nav class="navbar">
-      <div class="navbar-left">
-        <!-- <img
-          class="navbar-website-logo"
-          src="assets/social-media/website-logo-text.png"
-          alt="Website logo"
-        /> -->
-        <!-- <img
-          class="navbar-website-logo"
-          src="assets/social-media/website-logo.png"
-          alt="Website logo"
-        /> -->
+    <nav class="">
+      <div>
         <img
           class="navbar-website-logo"
           src="assets/social-media/website-logo-only-initials.png"
           alt="Website logo"
         />
-        <div class="nav-logo-text-container">
+        <div class="nav-logo-text-container span">
           <span class="nav-logo-text-black">M</span>
           <span class="nav-logo-text-blue">TER</span>
           <span class="nav-logo-text-black">.PL</span>
         </div>
       </div>
       <div class="navbar-right">
-        <a class="navbar-link" href="mailto:mterczynski1@gmail.com">
-          <h3 style="display: inline">mterczynski1@gmail.com</h3></a
-        >
-        <a class="navbar-link" href="https://www.mter.pl/blog">
-          <h3 style="display: inline">Blog</h3>
-        </a>
-        <a
-          class="navbar-link"
-          href="https://www.mter.pl/cv Michal Terczynski.pdf"
-        >
-          <h3 style="display: inline">CV</h3></a
-        >
-
-        <a class="navbar-link" href="https://github.com/mterczynski">
-          <h3 style="display: inline">GitHub</h3></a
-        >
-        <a class="navbar-link" href="https://www.linkedin.com/in/mterczynski">
-          <h3 style="display: inline">LinkedIn</h3></a
-        >
+        <div class="logo">
+          <div class="logo_close">
+            <img
+              src="assets/social-media/website-logo-only-initials.png"
+              alt="Website logo"
+            />
+            <div class="nav-logo-text-container">
+              <span class="nav-logo-text-black_1">M</span>
+              <span class="nav-logo-text-blue_2">TER</span>
+              <span class="nav-logo-text-black_3">.PL</span>
+            </div>
+          </div>
+          <div>
+            <img
+              class="close"
+              src="./assets/close_24dp_1791C8_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="logo"
+            />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <i class="fa-solid fa-envelope" style="color: #1891c8"></i>
+            <a class="navbar-link" href="mailto:mterczynski1@gmail.com">
+              <h3 style="display: inline">mterczynski1@gmail.com</h3></a
+            >
+          </li>
+          <li>
+            <i class="fa-solid fa-blog" style="color: #1791c8"></i>
+            <a class="navbar-link" href="https://www.mter.pl/blog">
+              <h3 style="display: inline">Blog</h3>
+            </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-file" style="color: #1791c8"></i>
+            <a
+              class="navbar-link"
+              href="https://www.mter.pl/cv Michal Terczynski.pdf"
+            >
+              <h3 style="display: inline">CV</h3></a
+            >
+          </li>
+          <li>
+            <i class="fa-brands fa-github" style="color: #1791c8"></i>
+            <a class="navbar-link" href="https://github.com/mterczynski">
+              <h3 style="display: inline">GitHub</h3></a
+            >
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin" style="color: #1791c8"></i>
+            <a
+              class="navbar-link"
+              href="https://www.linkedin.com/in/mterczynski"
+            >
+              <h3 style="display: inline">LinkedIn</h3></a
+            >
+          </li>
+        </ul>
 
         <!-- <a class="navbar-link" href="https://github.com/mterczynski">
           <img
@@ -234,6 +315,13 @@
             alt="Send an email"
           />
         </a> -->
+      </div>
+      <!-- toggle -->
+      <div class="toggle">
+        <img
+          src="./assets/menu_30dp_1791C8_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="menu"
+        />
       </div>
     </nav>
 
@@ -1010,7 +1098,7 @@
         </div>
       </div>
     </div>
-
+    <script src="./toggle.js"></script>
     <!-- <img src="assets/footer copy.png" width="1920" class="footer" alt="" /> -->
   </body>
 </html>
