@@ -98,9 +98,6 @@
       .navbar-link-image {
         width: 50px;
         height: 50px;
-        /* filter: grayscale(100%); */
-        /* opacity: 0.2; */
-        /* transition-duration: 0.6s; */
       }
 
       .navbar-link-image:hover {
@@ -161,7 +158,7 @@
       .logo {
         display: none;
       }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 700px) {
         /* Styles for screens smaller than or equal to 600px */
         nav {
           margin: 0 20px;
@@ -172,25 +169,27 @@
         .navbar-right {
           position: absolute;
           right: 0;
+          left: 0;
           top: 0rem;
-
           z-index: 10;
-          transition: transform 0.5s ease-in-out;
           transform: translateY(-600px);
           background-color: white;
+          transition: transform 0.5s;
         }
-        .active {
-          transform: translateY(0px);
+        .navbar-right.active {
+          transform: translateY(0);
+          opacity: 1;
         }
         .toggle {
           display: block;
+          cursor: pointer;
         }
         .logo {
           display: flex;
           margin: 0 20px;
-          margin-top: 1rem;
+          margin-top: rem;
           align-items: center;
-          justify-content: space-around;
+          justify-content: space-between;
         }
         .logo_close img {
           width: 20%;
@@ -210,12 +209,20 @@
           font-size: 13px;
         }
       }
+      @media screen and (max-width: 1000px) {
+        ul li a h3 {
+          font-size: 10px;
+        }
+        nav {
+          margin: 0 10px;
+        }
+      }
     </style>
   </head>
 
   <body>
     <nav class="">
-      <div>
+      <div class="main_logo">
         <img
           class="navbar-website-logo"
           src="assets/social-media/website-logo-only-initials.png"
@@ -325,7 +332,7 @@
       </div>
     </nav>
 
-    <div class="projects-commercial ui container">
+    <div style="margin-top: 2rem" class="projects-commercial ui container">
       <h2>Commercial projects</h2>
       <div class="ui four column doubling stackable grid container">
         <div class="column">
