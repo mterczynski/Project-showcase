@@ -1,3 +1,10 @@
+# Check if target directory exists
+if [ ! -d "../mterczynski.github.io" ]; then
+    echo "Error: Target directory '../mterczynski.github.io' does not exist"
+    echo "Please clone the repository first"
+    exit 1
+fi
+
 # 1. Copy index and assets to ../mterczynski.github.io
 rm -rf ../mterczynski.github.io/assets
 rm -rf ../mterczynski.github.io/index.html
