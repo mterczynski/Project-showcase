@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Michał Terczyński - Experienced Frontend & Game Developer specializing in TypeScript, React, Angular, and PixiJS. Creator of engaging slot games and interactive web applications." />
+    <meta
+      name="description"
+      content="Michał Terczyński - Experienced Frontend & Game Developer specializing in TypeScript, React, Angular, and PixiJS. Creator of engaging slot games and interactive web applications."
+    />
     <meta
       name="keywords"
       content="Michał Terczyński, Michal Terczynski, mterczynski, Frontend Developer, Game Developer, JavaScript, TypeScript, React, PixiJS"
@@ -29,222 +32,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"
     ></script>
-    <style>
-      @font-face {
-        font-family: "LeagueSpartan";
-        src: URL("./assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
-          format("truetype");
-      }
-
-      body {
-        padding-top: 0;
-        background: rgb(51, 40, 112);
-        background: #e4eef7;
-      }
-
-      .nav-icon-wrapper {
-        min-width: 14px;
-      }
-
-      .linkButtons {
-        display: flex !important;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-      }
-
-      .linkButton {
-        width: 94px;
-      }
-
-      .companiesLogo {
-        display: none; /* Uncomment to show company logos */
-        width: 30px !important;
-        height: 30px !important;
-        position: absolute;
-        right: 0;
-        z-index: 30000;
-      }
-
-      .projectLink {
-        display: block;
-        display: flex;
-        justify-content: center;
-      }
-
-      .column {
-        margin-top: 0 !important;
-      }
-
-      .column > * {
-        margin-left: auto !important;
-        margin-right: auto !important;
-      }
-
-      .ui.card {
-        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75);
-      }
-
-      .navbar {
-        display: flex;
-        justify-content: space-around;
-        /* justify-content: flex-end; */
-        align-items: center;
-        padding: 20px 40px;
-        gap: 15px;
-      }
-
-      .navbar-link {
-        margin-right: 20px;
-      }
-
-      .navbar-link-image {
-        width: 50px;
-        height: 50px;
-      }
-
-      .navbar-link-image:hover {
-        opacity: 1;
-        filter: none;
-      }
-
-      .navbar-website-logo {
-        width: 135px;
-        height: 90px;
-      }
-
-      .nav-logo-text-container {
-        display: flex;
-        font-family: LeagueSpartan, Helvetica, sans-serif;
-        font-size: 20px;
-        position: relative;
-        left: 8px;
-        font-weight: bolder;
-      }
-
-      .nav-logo-text-black {
-        color: black;
-        font-size: 20px;
-      }
-
-      .nav-logo-text-blue {
-        color: rgb(23, 145, 200);
-        font-size: 20px;
-      }
-      ul li {
-        list-style-type: none;
-      }
-      ul {
-        display: flex;
-      }
-      li {
-        display: flex;
-        column-gap: 10px;
-        align-items: center;
-      }
-      .footer {
-        z-index: -1;
-        position: relative;
-        bottom: 200px;
-        margin-bottom: -210px;
-        opacity: 1;
-      }
-      nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 180px;
-        margin-top: 2rem;
-      }
-      .toggle {
-        display: none;
-        margin-top: -4rem;
-      }
-      .logo {
-        display: none;
-      }
-
-      .ui.card .content .meta {
-        color: rgba(0, 0, 0, 0.7);
-      }
-
-      .close {
-        cursor: pointer;
-        margin-top: 1rem;
-        margin-right: -1rem;
-      }
-
-       /*  */
-      h1.h2-sized-header {
-        font-size: 1.71428571rem;
-      }
-      @media screen and (max-width: 760px) {
-        nav {
-          margin: 0 20px;
-        }
-        ul {
-          display: block;
-        }
-        .navbar-right {
-          position: absolute;
-          right: 0;
-          left: 0;
-          top: 0rem;
-          opacity: 0;
-          z-index: 10;
-          transform: translateY(-600px);
-          background-color: white;
-          transition: none;
-        }
-        .navbar-right.active {
-          transform: translateY(0);
-          opacity: 1;
-          transition: transform 0.2s ease-out;
-        }
-        .toggle {
-          display: block;
-          cursor: pointer;
-        }
-       
-        .logo {
-          display: flex;
-          margin: 0 20px;
-          margin-top: rem;
-
-          justify-content: space-between;
-        }
-        .logo_close img {
-          width: 30%;
-          cursor: pointer;
-        }
-        .span {
-          font-size: 10px;
-        }
-        .nav-logo-text-black_1,
-        .nav-logo-text-black_3 {
-          font-size: 20px;
-        }
-        .nav-logo-text-blue_2 {
-          font-size: 20px;
-          color: rgb(23, 145, 200);
-        }
-        ul li a h3 {
-          font-size: 10px;
-        }
-      }
-      @media screen and (max-width: 1000px) {
-        ul li a h3 {
-          font-size: 17px;
-        }
-        nav {
-          margin: 0 10px;
-        }
-      }
-
-       
-    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <style></style> -->
   </head>
 
   <body>
@@ -381,8 +170,20 @@
       <div class="ui segment">
         <!-- h1 used for SEO -->
         <h1 class="h2-sized-header">About Me</h1>
-        <p>Hi, I'm Michał Terczyński, a Frontend Developer with a strong focus on game development and interactive applications. With experience at companies like NetEnt, Yggdrasil Gaming, and Software Mind, I've developed expertise in creating engaging slot games and enterprise applications using TypeScript, React, Angular, and PixiJS.</p>
-        <p>My technical skills include modern JavaScript frameworks, game development with PixiJS, and building scalable web applications. I'm passionate about creating high-quality, performant code and enjoy working on both commercial projects and personal game development endeavors.</p>
+        <p>
+          Hi, I'm Michał Terczyński, a Frontend Developer with a strong focus on
+          game development and interactive applications. With experience at
+          companies like NetEnt, Yggdrasil Gaming, and Software Mind, I've
+          developed expertise in creating engaging slot games and enterprise
+          applications using TypeScript, React, Angular, and PixiJS.
+        </p>
+        <p>
+          My technical skills include modern JavaScript frameworks, game
+          development with PixiJS, and building scalable web applications. I'm
+          passionate about creating high-quality, performant code and enjoy
+          working on both commercial projects and personal game development
+          endeavors.
+        </p>
       </div>
 
       <h2>Commercial projects</h2>
@@ -408,13 +209,18 @@
                 >
                   <button class="ui blue button linkButton">Play</button>
                 </a>
-                <a class="projectLink" href="https://www.gamecodehq.com/games/" aria-label="Play Boom Boom Boom game" title="Play Boom Boom Boom game">
+                <a
+                  class="projectLink"
+                  href="https://www.gamecodehq.com/games/"
+                  aria-label="Play Boom Boom Boom game"
+                  title="Play Boom Boom Boom game"
+                >
                   <button class="ui blue button linkButton">Website</button>
                 </a>
               </div>
             </div>
             <div class="content">
-              <div class="header">Boom Boom Boom </div>
+              <div class="header">Boom Boom Boom</div>
               <div class="meta">
                 Boom Boom Boom™ is an American-themed 5-reel, 3-row video slot
                 featuring Wild Multipliers and the hold and respin feature on
@@ -668,7 +474,12 @@
                   <button class="ui blue button linkButton">GitHub</button>
                 </a>
 
-                <a class="projectLink" href="https://www.mter.pl/paint" aria-label="View Paint project" title="View Paint project">
+                <a
+                  class="projectLink"
+                  href="https://www.mter.pl/paint"
+                  aria-label="View Paint project"
+                  title="View Paint project"
+                >
                   <button class="ui blue button linkButton">Open</button>
                 </a>
               </div>
@@ -701,7 +512,12 @@
                   <button class="ui blue button linkButton">Github</button>
                 </a>
 
-                <a class="projectLink" href="https://www.mter.pl/kulki" aria-label="Play Kulki game" title="Play Kulki game">
+                <a
+                  class="projectLink"
+                  href="https://www.mter.pl/kulki"
+                  aria-label="Play Kulki game"
+                  title="Play Kulki game"
+                >
                   <button class="ui blue button linkButton">Play</button>
                 </a>
               </div>
@@ -734,7 +550,12 @@
                 >
                   <button class="ui blue button linkButton">GitHub</button>
                 </a>
-                <a class="projectLink" href="https://www.mter.pl/level-editor" aria-label="View Level Editor project" title="View Level Editor project">
+                <a
+                  class="projectLink"
+                  href="https://www.mter.pl/level-editor"
+                  aria-label="View Level Editor project"
+                  title="View Level Editor project"
+                >
                   <button class="ui blue button linkButton">Open</button>
                 </a>
               </div>
@@ -803,7 +624,12 @@
                   <button class="ui blue button linkButton">GitHub</button>
                 </a>
 
-                <a class="projectLink" href="https://www.mter.pl/mine-sweeper" aria-label="Play Mine Sweeper game" title="Play Mine Sweeper game">
+                <a
+                  class="projectLink"
+                  href="https://www.mter.pl/mine-sweeper"
+                  aria-label="Play Mine Sweeper game"
+                  title="Play Mine Sweeper game"
+                >
                   <button class="ui blue button linkButton">Play</button>
                 </a>
               </div>
@@ -832,7 +658,12 @@
                 >
                   <button class="ui blue button linkButton">GitHub</button>
                 </a>
-                <a class="projectLink" href="https://www.mter.pl/snake" aria-label="Play Snake game" title="Play Snake game">
+                <a
+                  class="projectLink"
+                  href="https://www.mter.pl/snake"
+                  aria-label="Play Snake game"
+                  title="Play Snake game"
+                >
                   <button class="ui blue button linkButton">Play</button>
                 </a>
               </div>
@@ -901,7 +732,12 @@
                 >
                   <button class="ui blue button linkButton">GitHub</button>
                 </a>
-                <a class="projectLink" href="https://www.mter.pl/tetris" aria-label="Play Tetris game" title="Play Tetris game">
+                <a
+                  class="projectLink"
+                  href="https://www.mter.pl/tetris"
+                  aria-label="Play Tetris game"
+                  title="Play Tetris game"
+                >
                   <button class="ui blue button linkButton">Play</button>
                 </a>
               </div>
@@ -933,7 +769,12 @@
                 >
                   <button class="ui blue button linkButton">GitHub</button>
                 </a>
-                <a class="projectLink" href="https://www.mter.pl/sensors" aria-label="View Sensors project" title="View Sensors project">
+                <a
+                  class="projectLink"
+                  href="https://www.mter.pl/sensors"
+                  aria-label="View Sensors project"
+                  title="View Sensors project"
+                >
                   <button class="ui blue button linkButton">Open</button>
                 </a>
               </div>
@@ -966,7 +807,12 @@
                 >
                   <button class="ui blue button linkButton">GitHub</button>
                 </a>
-                <a class="projectLink" href="https://www.mter.pl/space-golf-3d" aria-label="Play Space Golf 3D game" title="Play Space Golf 3D game">
+                <a
+                  class="projectLink"
+                  href="https://www.mter.pl/space-golf-3d"
+                  aria-label="Play Space Golf 3D game"
+                  title="Play Space Golf 3D game"
+                >
                   <button class="ui blue button linkButton">Open</button>
                 </a>
               </div>
@@ -1086,43 +932,15 @@
               Art generation, TS
             </div>
           </div>
-          <!-- File uploader -->
-          <!-- <div class="ui card">
-            <div class="ui slide masked reveal image">
-              <img
-                src="assets/personal-projects/fileUploader.jpg"
-                class="visible content"
-                alt="File Uploader project preview"
-              />
-              <div class="hidden content linkButtons">
-                <a
-                  class="projectLink"
-                  href="https://github.com/mterczynski/File-Uploader-client"
-                >
-                  <button class="ui blue button linkButton">GitHub</button>
-                </a>
+          <!-- count -->
 
-                <a class="projectLink" href="http://www.mter.pl:3000/">
-                  <button class="ui blue button linkButton">Open</button>
-                </a>
-              </div>
-            </div>
-            <div class="content">
-              <a class="header">File uploader</a>
-              <div class="meta">Application for uploading files<br /></div>
-            </div>
-            <div class="extra content">
-              <a>
-                <i class="hashtag icon"></i>
-                SCSS, TS, Angular, Bootstrap, Mongoose, MongoDB, Node.js,
-                Express
-              </a>
-            </div>
-          </div> -->
+          <div class="view">
+            <i class="fa-solid fa-eye #1791c8"></i>
+            <p class="count"></p>
+          </div>
         </div>
       </div>
     </div>
-    <script src="./toggle.js"></script>
-    <!-- <img src="assets/footer copy.png" width="1920" class="footer" alt="" /> -->
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

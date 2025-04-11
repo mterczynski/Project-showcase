@@ -1,19 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleButton = document.querySelector(".toggle");
-  const navbarRight = document.querySelector(".navbar-right");
-  const closeButton = document.querySelector(".close");
+// navbarToggle.js
+export function initNavbarToggle() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.querySelector(".toggle");
+    const navbarRight = document.querySelector(".navbar-right");
+    const closeButton = document.querySelector(".close");
 
-  console.log(closeButton);
+    const toggleMenu = () => {
+      navbarRight.classList.toggle("active");
+    };
 
-  // Toggle the menu on clicking the toggle button
-  toggleButton.addEventListener("click", () => {
-    navbarRight.classList.toggle("active");
+    if (toggleButton) {
+      toggleButton.addEventListener("click", toggleMenu);
+    }
+
+    if (closeButton) {
+      closeButton.addEventListener("click", toggleMenu);
+    }
   });
-
-  // Toggle the menu on clicking the close button
-  const toggleMenu = () => {
-    navbarRight.classList.toggle("active");
-  };
-
-  closeButton.addEventListener("click", toggleMenu);
-});
+}
