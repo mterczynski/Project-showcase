@@ -12,11 +12,13 @@ rm -rf ../mterczynski.github.io/index.html
 rm -rf ../mterczynski.github.io/toggle.js
 rm -rf ../mterczynski.github.io/main.js
 rm -rf ../mterczynski.github.io/fireBaseConfig.js
+rm -rf ../mterczynski.github.io/counter.js
 cp ./index.html ../mterczynski.github.io/
 cp ./style.css ../mterczynski.github.io/
 cp ./toggle.js ../mterczynski.github.io/
 cp ./main.js ../mterczynski.github.io/
 cp ./fireBaseConfig.js ../mterczynski.github.io/
+cp ./counter.js ../mterczynski.github.io/
 cp -r ./assets ../mterczynski.github.io/
 cd ../mterczynski.github.io
 # 2. Commit in ../mterczynski.github.io
