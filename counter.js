@@ -14,7 +14,6 @@ const db = getFirestore(app);
 
 // Exported function
 export async function updateLandingPageViews() {
-  console.log("Updating views");
   const counterRef = doc(db, "counters", "landingPageViews");
 
   try {
