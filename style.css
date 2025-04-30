@@ -149,6 +149,9 @@ nav {
   margin-top: 1rem;
   margin-right: -1rem;
 }
+footer {
+  margin: 1rem 0.3rem;
+}
 
 /*  */
 h1.h2-sized-header {
