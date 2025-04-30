@@ -7,7 +7,6 @@ import {
   setDoc,
 } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
 
-console.log("hello");
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
