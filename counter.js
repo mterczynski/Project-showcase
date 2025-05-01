@@ -20,7 +20,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Exported function
+// Exported
 export async function updateLandingPageViews() {
   const counterRef = doc(db, "counters", "landingPageViews");
 
