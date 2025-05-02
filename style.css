@@ -149,8 +149,20 @@ nav {
   margin-top: 1rem;
   margin-right: -1rem;
 }
-footer {
-  margin: 1rem 0.3rem;
+.cv_btn_main {
+  button {
+    background-color: #4284c7;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  button:hover {
+    transform: scaleX(0.8);
+  }
 }
 
 /*  */
