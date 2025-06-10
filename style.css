@@ -197,7 +197,7 @@ h1.h2-sized-header {
 }
 @media screen and (max-width: 560px) {
   nav {
-    padding: 0px 10px;
+    padding: 0px 9px;
   }
   ul {
     display: block;
@@ -231,6 +231,9 @@ h1.h2-sized-header {
     margin-top: rem;
 
     justify-content: space-between;
+  }
+  .logo_close {
+    margin-left: -15px;
   }
   .logo_close img {
     width: 135px;
