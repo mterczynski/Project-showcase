@@ -6,6 +6,7 @@ export function initNavbarToggle() {
     const closeButton = document.querySelector(".close");
 
     const toggleMenu = () => {
+      console.log("clciked");
       navbarRight.classList.toggle("active");
     };
 

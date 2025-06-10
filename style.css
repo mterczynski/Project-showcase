@@ -191,14 +191,24 @@ h1.h2-sized-header {
 } */
 .arrow {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 50px;
+  right: 30px;
   cursor: pointer;
   /* opacity: 0; */
   pointer-events: none;
   display: none;
+
   transition: opacity 0.4s ease;
   z-index: 999;
+}
+.arrow {
+  img {
+    position: fixed;
+    right: 5px;
+    border: 1px solid #1791c8;
+    border-radius: 9999px;
+    bottom: 5px;
+  }
 }
 
 .arrow.show {
