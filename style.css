@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 @font-face {
   font-family: "LeagueSpartan";
   src: URL("./assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
@@ -5,7 +9,6 @@
 }
 
 body {
-  padding-top: 0;
   background: rgb(51, 40, 112);
   background: #e4eef7;
 }
@@ -34,7 +37,7 @@ body {
 }
 
 .companiesLogo {
-  display: none; /* Uncomment to show company logos */
+  display: none; /* Remove this line to show companies logos */
   width: 30px !important;
   height: 30px !important;
   position: absolute;
@@ -112,6 +115,8 @@ ul li {
 }
 ul {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 li {
   display: flex;
@@ -125,12 +130,18 @@ li {
   margin-bottom: -210px;
   opacity: 1;
 }
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 180px;
-  margin-top: 2rem;
+  padding: 0px 50px;
+  position: fixed;
+  z-index: 10;
+  background-color: #e4eef7;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .toggle {
   display: none;
@@ -153,21 +164,49 @@ footer {
   margin: 1rem 0.3rem;
 }
 
-/*  */
 h1.h2-sized-header {
   font-size: 1.71428571rem;
 }
-@media screen and (max-width: 760px) {
+
+
+/* Styles for "back to top" arrow
+.arrow {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+  pointer-events: none;
+  display: none;
+
+  transition: opacity 0.4s ease;
+  z-index: 999;
+}
+.arrow {
+  img {
+    position: fixed;
+    right: 5px;
+    border: 1px solid #1791c8;
+    border-radius: 9999px;
+    bottom: 5px;
+  }
+}
+.arrow.show {
+  display: block;
+  pointer-events: auto;
+}*/
+@media screen and (max-width: 560px) {
   nav {
-    margin: 0 20px;
+    padding: 0px 10px;
   }
   ul {
     display: block;
+    padding-left: 10px;
   }
   .navbar-right {
     position: absolute;
     right: 0;
     left: 0;
+
     top: 0rem;
     opacity: 0;
     z-index: 10;
@@ -208,14 +247,6 @@ h1.h2-sized-header {
     color: rgb(23, 145, 200);
   }
   ul li a h3 {
-    font-size: 10px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  ul li a h3 {
-    font-size: 17px;
-  }
-  nav {
-    margin: 0 10px;
+    font-size: 13px;
   }
 }
