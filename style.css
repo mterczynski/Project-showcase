@@ -37,7 +37,7 @@ body {
 }
 
 .companiesLogo {
-  display: none;
+  display: none; /* Remove this line to show companies logos */
   width: 30px !important;
   height: 30px !important;
   position: absolute;
@@ -169,12 +169,12 @@ h1.h2-sized-header {
   font-size: 1.71428571rem;
 }
 
+/* Styles for "back to top" arrow
 .arrow {
   position: fixed;
   bottom: 50px;
   right: 30px;
   cursor: pointer;
-  /* opacity: 0; */
   pointer-events: none;
   display: none;
 
@@ -190,11 +190,10 @@ h1.h2-sized-header {
     bottom: 5px;
   }
 }
-
 .arrow.show {
   display: block;
   pointer-events: auto;
-}
+}*/
 @media screen and (max-width: 560px) {
   nav {
     padding: 0px 9px;
