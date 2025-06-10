@@ -1,4 +1,7 @@
+import { arrow } from "../arrow.js";
 import { updateLandingPageViews } from "./counter.js";
 import { initNavbarToggle } from "./toggle.js";
 updateLandingPageViews();
 initNavbarToggle();
+
+arrow();
