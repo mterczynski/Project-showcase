@@ -118,15 +118,7 @@ ul {
   flex-wrap: wrap;
   gap: 10px;
 }
-/* nav {
 
-  z-index: 10;
-
-  top: 0;
-  right: 0;
-
-  left: 0;
-} */
 li {
   display: flex;
   column-gap: 10px;
@@ -173,22 +165,10 @@ footer {
   margin: 1rem 0.3rem;
 }
 
-/*  */
 h1.h2-sized-header {
   font-size: 1.71428571rem;
 }
-/* */
-/* @media screen and (min-width: 864px) {
-  body {
-    background-color: red;
-  }
-  nav {
-    padding: 0px 0px;
 
-    z-index: 10;
-    background-color: #e4eef7;
-  }
-} */
 .arrow {
   position: fixed;
   bottom: 50px;
@@ -253,7 +233,7 @@ h1.h2-sized-header {
     justify-content: space-between;
   }
   .logo_close img {
-    width: 30%;
+    width: 50%;
     cursor: pointer;
   }
   .span {
@@ -271,8 +251,3 @@ h1.h2-sized-header {
     font-size: 13px;
   }
 }
-/* @media screen and (max-width: 1000px) {
-  ul li a h3 {
-    font-size: 17px;
-  }
-} */
