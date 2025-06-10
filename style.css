@@ -37,7 +37,7 @@ body {
 }
 
 .companiesLogo {
-  display: none;
+  display: none; /* Remove this line to show companies logos */
   width: 30px !important;
   height: 30px !important;
   position: absolute;
@@ -118,15 +118,6 @@ ul {
   flex-wrap: wrap;
   gap: 10px;
 }
-/* nav {
-
-  z-index: 10;
-
-  top: 0;
-  right: 0;
-
-  left: 0;
-} */
 li {
   display: flex;
   column-gap: 10px;
@@ -173,28 +164,17 @@ footer {
   margin: 1rem 0.3rem;
 }
 
-/*  */
 h1.h2-sized-header {
   font-size: 1.71428571rem;
 }
-/* */
-/* @media screen and (min-width: 864px) {
-  body {
-    background-color: red;
-  }
-  nav {
-    padding: 0px 0px;
 
-    z-index: 10;
-    background-color: #e4eef7;
-  }
-} */
+
+/* Styles for "back to top" arrow
 .arrow {
   position: fixed;
   bottom: 50px;
   right: 30px;
   cursor: pointer;
-  /* opacity: 0; */
   pointer-events: none;
   display: none;
 
@@ -210,11 +190,10 @@ h1.h2-sized-header {
     bottom: 5px;
   }
 }
-
 .arrow.show {
   display: block;
   pointer-events: auto;
-}
+}*/
 @media screen and (max-width: 560px) {
   nav {
     padding: 0px 10px;
@@ -271,8 +250,3 @@ h1.h2-sized-header {
     font-size: 13px;
   }
 }
-/* @media screen and (max-width: 1000px) {
-  ul li a h3 {
-    font-size: 17px;
-  }
-} */
