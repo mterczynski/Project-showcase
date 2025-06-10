@@ -118,6 +118,7 @@ ul {
   flex-wrap: wrap;
   gap: 10px;
 }
+
 li {
   display: flex;
   column-gap: 10px;
@@ -168,7 +169,6 @@ h1.h2-sized-header {
   font-size: 1.71428571rem;
 }
 
-
 /* Styles for "back to top" arrow
 .arrow {
   position: fixed;
@@ -196,7 +196,7 @@ h1.h2-sized-header {
 }*/
 @media screen and (max-width: 560px) {
   nav {
-    padding: 0px 10px;
+    padding: 0px 9px;
   }
   ul {
     display: block;
@@ -231,8 +231,12 @@ h1.h2-sized-header {
 
     justify-content: space-between;
   }
+  .logo_close {
+    margin-left: -15px;
+  }
   .logo_close img {
-    width: 30%;
+    width: 135px;
+    height: 90px;
     cursor: pointer;
   }
   .span {
