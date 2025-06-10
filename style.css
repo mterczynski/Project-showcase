@@ -112,6 +112,8 @@ ul li {
 }
 ul {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 li {
   display: flex;
@@ -157,7 +159,7 @@ footer {
 h1.h2-sized-header {
   font-size: 1.71428571rem;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 560px) {
   nav {
     margin: 0 20px;
   }
