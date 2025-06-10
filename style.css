@@ -233,7 +233,8 @@ h1.h2-sized-header {
     justify-content: space-between;
   }
   .logo_close img {
-    width: 50%;
+    width: 135px;
+    height: 90px;
     cursor: pointer;
   }
   .span {
