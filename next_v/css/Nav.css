@@ -1,0 +1,136 @@
+.navDesktopLinks {
+  display: none;
+}
+ul li {
+  p {
+    color: #1791d1;
+  }
+}
+.navIcon {
+  color: #1791d1;
+  font-weight: bold;
+}
+.navSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.4rem 1rem;
+  right: 0;
+  z-index: 40;
+  background: #e4eef7 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.navMobileIcon {
+  display: block;
+}
+.navDesktopLinks {
+  display: hidden;
+}
+.navIconButton {
+  color: #1791d1;
+}
+.mobileNavContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1rem 1rem;
+}
+
+.navText {
+  font-size: 15px;
+  color: #1791d1;
+}
+
+.navMobileIcon {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  display: block;
+}
+.mobileNavWrapper {
+  /* margin-top: rem; */
+  padding: 4px 1rem !important;
+}
+
+.mobileNavHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.mobileNavItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.mobileNavText {
+  font-size: 18px;
+  padding: 2rem, 1rem !important;
+  color: #1791d1;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.3s ease-out forwards;
+}
+.dropdown_menu {
+  display: flex;
+  margin-bottom: 1rem;
+  /* padding: 0.4rem 1rem; */
+  justify-content: space-between;
+}
+.dropdown_menu_icon {
+  color: #1791d1;
+}
+/* desktoptab screen */
+@media (min-width: 768px) {
+  .navSection {
+    align-items: center;
+    padding: 1rem 3rem;
+  }
+  .navMobileIcon {
+    display: none;
+  }
+  .navDesktopLinks {
+    display: flex;
+    align-items: center;
+  }
+  .navLinkWrapper {
+    padding: 0 0.5rem;
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+  }
+  .navLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .mobileNavContainer {
+    display: none;
+  }
+  .navMobileIcon {
+    display: none !important;
+  }
+}
