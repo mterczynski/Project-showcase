@@ -2,7 +2,6 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import "./globals.css";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import "semantic-ui-css/semantic.min.css";
 export const metadata = {
   metadataBase: new URL("https://www.mter.pl/"),
   title: "Michał Terczyński's website",
@@ -61,16 +60,7 @@ export default async function LocaleLayout({
   }
   return (
     <html lang={locale}>
-      <head>
-        {/* <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"
-        />
-        <Script
-          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"
-          strategy="afterInteractive"
-        /> */}
-      </head>
+      <head></head>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>

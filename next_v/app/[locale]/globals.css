@@ -7,3 +7,255 @@ body {
   font-family: "League Spartan", sans-serif;
   background: #e4eef7 !important;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(51, 40, 112);
+  background: #e4eef7;
+}
+
+.nav-icon-wrapper {
+  min-width: 14px;
+}
+
+/* view */
+.view {
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+}
+.linkButtons {
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.linkButton {
+  width: 94px;
+}
+
+.companiesLogo {
+  display: none; /* Remove this line to show companies logos */
+  width: 30px !important;
+  height: 30px !important;
+  position: absolute;
+  right: 0;
+  z-index: 30000;
+}
+
+.projectLink {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  margin-top: 0 !important;
+}
+
+.column > * {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.ui.card {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: flex-end; */
+  align-items: center;
+  padding: 20px 40px;
+  gap: 15px;
+}
+
+.navbar-link {
+  margin-right: 20px;
+}
+
+.navbar-link-image {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-link-image:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.navbar-website-logo {
+  width: 135px;
+  height: 90px;
+}
+
+.nav-logo-text-container {
+  display: flex;
+  font-family: LeagueSpartan, Helvetica, sans-serif;
+  font-size: 20px;
+  position: relative;
+  left: 8px;
+  font-weight: bolder;
+}
+
+.nav-logo-text-black {
+  color: black;
+  font-size: 20px;
+}
+
+.nav-logo-text-blue {
+  color: rgb(23, 145, 200);
+  font-size: 20px;
+}
+ul li {
+  list-style-type: none;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.footer {
+  z-index: -1;
+  position: relative;
+  bottom: 200px;
+  margin-bottom: -210px;
+  opacity: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  position: fixed;
+  z-index: 10;
+  background-color: #e4eef7;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.toggle {
+  display: none;
+  margin-top: -4rem;
+}
+.logo {
+  display: none;
+}
+
+.ui.card .content .meta {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.close {
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-right: -1rem;
+}
+footer {
+  margin: 1rem 0.3rem;
+}
+
+h1.h2-sized-header {
+  font-size: 1.71428571rem;
+}
+
+/* Styles for "back to top" arrow
+.arrow {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+  pointer-events: none;
+  display: none;
+
+  transition: opacity 0.4s ease;
+  z-index: 999;
+}
+.arrow {
+  img {
+    position: fixed;
+    right: 5px;
+    border: 1px solid #1791c8;
+    border-radius: 9999px;
+    bottom: 5px;
+  }
+}
+.arrow.show {
+  display: block;
+  pointer-events: auto;
+}*/
+@media screen and (max-width: 560px) {
+  nav {
+    padding: 0px 9px;
+  }
+  ul {
+    display: block;
+    padding-left: 10px;
+  }
+  .navbar-right {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    top: 0rem;
+    opacity: 0;
+    z-index: 10;
+    transform: translateY(-600px);
+    background-color: white;
+    transition: none;
+  }
+  .navbar-right.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.2s ease-out;
+  }
+  .toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+    display: flex;
+    margin: 0 20px;
+    margin-top: rem;
+
+    justify-content: space-between;
+  }
+  .logo_close {
+    margin-left: -15px;
+  }
+  .logo_close img {
+    width: 135px;
+    height: 90px;
+    cursor: pointer;
+  }
+  .span {
+    font-size: 10px;
+  }
+  .nav-logo-text-black_1,
+  .nav-logo-text-black_3 {
+    font-size: 20px;
+  }
+  .nav-logo-text-blue_2 {
+    font-size: 20px;
+    color: rgb(23, 145, 200);
+  }
+  ul li a h3 {
+    font-size: 13px;
+  }
+}
