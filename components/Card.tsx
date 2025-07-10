@@ -74,13 +74,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <div
           className="meta"
           style={{
-            fontSize: "0.975rem",
-            whiteSpace: "normal",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            display: "-webkit-box",
-            WebkitLineClamp: 3,
-            WebkitBoxOrient: "vertical",
+            fontSize: "1rem",
+            // whiteSpace: "normal",
+            // overflow: "hidden",
+            // textOverflow: "ellipsis",
+            // display: "-webkit-box",
+            // WebkitLineClamp: 3,
+            // WebkitBoxOrient: "vertical",
           }}>
           {description}
         </div>
