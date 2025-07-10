@@ -13,6 +13,7 @@ interface ProjectCardProps {
   links?: ProjectLink[];
 }
 
+//  ProjectCard 1
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   image,
@@ -23,16 +24,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className="ui card "
+      className="ui card"
       style={{
-        height: "500px",
+        minHeight: "420px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
       }}>
       <div
         className="ui slide masked reveal image"
-        style={{ position: "relative", height: "250px", flexShrink: 0 }}>
+        style={{
+          position: "relative",
+          height: "280px",
+          flexShrink: 0,
+        }}>
         <div
           className="visible content"
           style={{ position: "relative", height: "100%" }}>
@@ -42,25 +47,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 33vw"
+            unoptimized={image.endsWith(".gif")}
           />
         </div>
 
-        <div
-          className="hidden content linkButtons"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-            gap: "0.5rem",
-          }}>
+        <div className="hidden content linkButtons">
           {links.map((link, i) => (
             <Link
               key={i}
               href={link.url}
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              className="projectLink">
               <button className="ui blue button linkButton">
                 {link.label}
               </button>
@@ -69,16 +67,21 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
       </div>
 
-      <div
-        className="content"
-        style={{
-          flexGrow: 1,
-          overflow: "hidden",
-        }}>
+      <div className="content" style={{ flexGrow: 1 }}>
         <div className="header" style={{ marginBottom: "0.5rem" }}>
           {title}
         </div>
-        <div className="meta" style={{ fontSize: "0.875rem" }}>
+        <div
+          className="meta"
+          style={{
+            fontSize: "0.975rem",
+            whiteSpace: "normal",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            display: "-webkit-box",
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: "vertical",
+          }}>
           {description}
         </div>
       </div>
@@ -91,6 +94,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   );
 };
 
+// ProjectCard_Two 2
 export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
   title,
   image,
@@ -103,7 +107,7 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
     <div
       className="ui card"
       style={{
-        height: "auto",
+        minHeight: "420px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -152,18 +156,21 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
         </div>
       </div>
 
-      <div
-        className="content"
-        style={{
-          flexGrow: 1,
-          overflow: "visible",
-        }}>
+      <div className="content" style={{ flexGrow: 1 }}>
         <div className="header" style={{ marginBottom: "0.5rem" }}>
           {title}
         </div>
         <div
           className="meta"
-          style={{ fontSize: "0.875rem", whiteSpace: "normal" }}>
+          style={{
+            fontSize: "0.975rem",
+            whiteSpace: "normal",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            display: "-webkit-box",
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: "vertical",
+          }}>
           {description}
         </div>
       </div>

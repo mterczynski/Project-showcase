@@ -1,34 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .commercial_main {
   padding-left: 2rem;
   padding-right: 2rem;
   margin-top: 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+.meta {
+  color: rgba(0, 0, 0, 0.7);
+}
+.ui.card {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75);
 }
 
-/* For medium screens (≥ 768px) */
 @media (min-width: 768px) {
   .commercial_main {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
-@media (min-width: 1024px) {
-  .grid_main {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-    justify-content: center;
-    gap: 1.5rem;
-  }
+.grid_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-bottom: 4rem;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .grid_main {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    justify-content: center;
-    gap: 10px;
-  }
+
+.projectLink {
+  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .linkButtons {
@@ -37,11 +39,15 @@
   height: 100%;
   width: 100%;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 .linkButton {
   width: 94px;
 }
+.ui.card .content .meta {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .commercial_main_h1 {
   font-size: 1.7rem;
   margin-bottom: 1rem;
@@ -53,7 +59,3 @@
   justify-content: center;
   gap: 1rem;
 }
-
-/* .index {
-  z-index: 40;
-} */

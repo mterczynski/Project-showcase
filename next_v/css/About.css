@@ -1,12 +1,12 @@
 .about-main {
-  margin-top: 11rem; /* same as mt-44 in Tailwind */
+  margin-top: 11rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @media (min-width: 768px) {
   .about-main {
-    padding-left: 3rem; /* md:px-12 */
+    padding-left: 3rem;
     padding-right: 3rem;
   }
 }
@@ -21,6 +21,6 @@
 }
 
 .about-heading {
-  font-size: 1.7rem;
+  font-size: 1.71428571rem;
   margin-bottom: 1rem;
 }

@@ -9,16 +9,17 @@ function Commercial_projects() {
         <h1 className="commercial_main_h1">Commercial Projects</h1>
         <div className="grid_main">
           {commercialProjects.map((project: Project, i: number) => (
-            <div className="column" key={i}>
-              <ProjectCard
-                title={project.title}
-                image={project.image}
-                alt={`${project.title} project preview`}
-                description={project.description}
-                tech={project.tech}
-                links={project.links}
-              />
-            </div>
+            // <div className="" key={i}>
+            <ProjectCard
+              key={i}
+              title={project.title}
+              image={project.image}
+              alt={`${project.title} project preview`}
+              description={project.description}
+              tech={project.tech}
+              links={project.links}
+            />
+            // </div>
           ))}
         </div>
       </section>

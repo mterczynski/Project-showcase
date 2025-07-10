@@ -19,15 +19,17 @@
   font-size: 1.7rem;
   margin-bottom: 1rem;
 }
-
+.ui.card .content .meta {
+  color: rgba(0, 0, 0, 0.7);
+}
 .grid_main {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-content: center;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 4rem;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .grid_main {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr) !important;
@@ -38,8 +40,8 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .grid_main {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
     justify-content: center;
     gap: 10px;
   }
-}
+} */

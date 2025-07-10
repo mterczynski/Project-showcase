@@ -8,16 +8,17 @@ const PersonalProjects = () => {
       <h1 className="personal_main_h1">Personal projects</h1>
       <div className="grid_main">
         {personalProject.map((project: Project, idx: number) => (
-          <div className="column" key={idx}>
-            <ProjectCard_Two
-              title={project.title}
-              image={project.image}
-              alt={`${project.title} project preview`}
-              description={project.description}
-              tech={project.tech}
-              links={project.links}
-            />
-          </div>
+          // <div className="column" key={idx}>
+          <ProjectCard_Two
+            key={idx}
+            title={project.title}
+            image={project.image}
+            alt={`${project.title} project preview`}
+            description={project.description}
+            tech={project.tech}
+            links={project.links}
+          />
+          // </div>
         ))}
       </div>
     </div>
