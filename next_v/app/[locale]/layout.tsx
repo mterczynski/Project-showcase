@@ -60,7 +60,17 @@ export default async function LocaleLayout({
   }
   return (
     <html lang={locale}>
-      <head></head>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"
+        />
+        <script
+          rel="stylesheet"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"
+        ></script>
+        <link rel="stylesheet" href="./style.css" />
+      </head>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
