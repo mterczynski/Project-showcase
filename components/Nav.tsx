@@ -2,10 +2,11 @@
 import React, { useState, useEffect } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { FaBlog } from "react-icons/fa";
-import { PiReadCvLogoFill } from "react-icons/pi";
+// import { PiReadCvLogoFill } from "react-icons/pi";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { FaBriefcase } from "react-icons/fa";
 import Logo from "./Logo";
 import { useTranslations } from "next-intl";
 import "../css/Nav.css";
@@ -27,7 +28,7 @@ function Nav() {
   const navlink: NavItem[] = [
     { name: t("email"), icon: MdEmail },
     { name: t("blog"), icon: FaBlog },
-    { name: t("cv"), icon: PiReadCvLogoFill },
+    { name: t("cv"), icon: FaBriefcase },
     { name: t("github"), icon: IoLogoGithub },
     { name: t("linkedin"), icon: FaLinkedin },
   ];

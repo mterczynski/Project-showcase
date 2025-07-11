@@ -10,6 +10,9 @@
 .meta {
   color: rgba(0, 0, 0, 0.7);
 }
+.ui.card:first-child {
+  margin-top: 0 !important;
+}
 .ui.card {
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75) !important;
 }

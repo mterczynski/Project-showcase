@@ -75,12 +75,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           className="meta"
           style={{
             fontSize: "1rem",
-            // whiteSpace: "normal",
-            // overflow: "hidden",
-            // textOverflow: "ellipsis",
-            // display: "-webkit-box",
-            // WebkitLineClamp: 3,
-            // WebkitBoxOrient: "vertical",
           }}>
           {description}
         </div>
@@ -107,7 +101,7 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
     <div
       className="ui card"
       style={{
-        minHeight: "420px",
+        // minHeight: "420px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -125,7 +119,8 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
           <Image
             src={image}
             alt={alt}
-            fill
+            width={500}
+            height={500}
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 33vw"
             unoptimized={image.endsWith(".gif")}

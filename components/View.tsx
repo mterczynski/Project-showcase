@@ -19,7 +19,7 @@ export default function ViewPage() {
   return (
     <main className="view-wrapper">
       <section>
-        <h1 className="view-title">Hey Michał Terczyński </h1>
+        {/* <h1 className="view-title">Hey Michał Terczyński </h1> */}
         <p className="view-text">
           {views === null ? "Loading views..." : `  We have ${views} viewer`}
         </p>
