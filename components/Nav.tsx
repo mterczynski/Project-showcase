@@ -14,6 +14,7 @@ import "../css/Nav.css";
 interface NavItem {
   name: string;
   icon: React.ComponentType<{ className?: string }>;
+  Link: string;
 }
 
 interface MobileNavProps {
@@ -26,11 +27,23 @@ function Nav() {
   const [toggle, setToggle] = useState(false);
 
   const navlink: NavItem[] = [
-    { name: t("email"), icon: MdEmail },
-    { name: t("blog"), icon: FaBlog },
-    { name: t("cv"), icon: TbFileCv },
-    { name: t("github"), icon: IoLogoGithub },
-    { name: t("linkedin"), icon: FaLinkedin },
+    { name: t("email"), icon: MdEmail, Link: "Mterczynski1@gmail.com" },
+    { name: t("blog"), icon: FaBlog, Link: "https://www.mter.pl/blog" },
+    {
+      name: t("cv"),
+      icon: TbFileCv,
+      Link: "https://www.mter.pl/cv_Michal_Terczynski.pdf",
+    },
+    {
+      name: t("github"),
+      icon: IoLogoGithub,
+      Link: "https://github.com/mterczynski",
+    },
+    {
+      name: t("linkedin"),
+      icon: FaLinkedin,
+      Link: "https://www.linkedin.com/in/mterczynski",
+    },
   ];
 
   const Toggleme = () => setToggle((prev) => !prev);
@@ -57,8 +70,18 @@ function Nav() {
             return (
               <div key={index} className="navLinkWrapper">
                 <li className="navLink">
-                  <Icon className="navIcon" />
-                  <p className="navTex">{items.name}</p>
+                  <a
+                    href={
+                      items.Link.includes("@")
+                        ? `mailto:${items.Link}`
+                        : items.Link
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="navLinkAnchor">
+                    <Icon className="navIcon" />
+                    <p className="navTex">{items.name}</p>
+                  </a>
                 </li>
               </div>
             );
@@ -93,12 +116,20 @@ function MobileNav({ navlink, setToggle }: MobileNavProps) {
           {navlink.map((items, index) => {
             const Icon = items.icon;
             return (
-              <li
-                key={index}
-                onClick={() => setToggle(false)}
-                className="mobileNavItem">
-                <Icon className="navIcon" />
-                <p className="mobileNavText">{items.name}</p>
+              <li key={index} className="mobileNavItem">
+                <a
+                  href={
+                    items.Link.includes("@")
+                      ? `mailto:${items.Link}`
+                      : items.Link
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mobileNavAnchor"
+                  onClick={() => setToggle(false)}>
+                  <Icon className="navIcon" />
+                  <p className="mobileNavText">{items.name}</p>
+                </a>
               </li>
             );
           })}

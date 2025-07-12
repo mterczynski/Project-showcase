@@ -134,3 +134,30 @@ ul li {
     display: none !important;
   }
 }
+
+.mobileNavAnchor {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.3s ease;
+}
+
+.mobileNavAnchor:hover {
+  background-color: #f0f0f0;
+}
+
+.navLinkAnchor {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.navLinkAnchor:hover {
+  color: #0070f3;
+}

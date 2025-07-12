@@ -101,18 +101,12 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
     <div
       className="ui card"
       style={{
-        // minHeight: "420px",
+        minHeight: "420px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
       }}>
-      <div
-        className="ui slide masked reveal image"
-        style={{
-          position: "relative",
-          height: "280px",
-          flexShrink: 0,
-        }}>
+      <div className="ui slide masked reveal image">
         <div
           className="visible content"
           style={{ position: "relative", height: "100%" }}>
