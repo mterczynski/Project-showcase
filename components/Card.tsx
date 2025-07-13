@@ -30,6 +30,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
+        margin: "0 !important",
       }}>
       <div
         className="ui slide masked reveal image"
@@ -105,6 +106,7 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
+        margin: "0 !important",
       }}>
       <div className="ui slide masked reveal image">
         <div

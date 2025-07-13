@@ -6,6 +6,7 @@ export type ProjectLink = {
 export type Project = {
   title: string;
   image: string;
+  alt?: string;
   description: string;
   tech: string;
   links: ProjectLink[];

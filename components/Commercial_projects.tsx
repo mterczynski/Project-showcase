@@ -1,14 +1,113 @@
 import "../css/commercial.css";
 import { ProjectCard } from "./Card";
-import commercialProjects from "@/data/commercialProjects.json";
+
 import type { Project } from "@/types/types";
+
+const commercialproject: Project[] = [
+  {
+    title: "Boom Boom Boom",
+    image: "/assets/commercial-projects/gamecode-boom-boom-boom.webp",
+    description:
+      "Boom Boom Boom™ is an American-themed 5-reel, 3-row video slot featuring Wild Multipliers and the hold and respin feature on multiple reel sets.",
+    tech: "TS, PixiJS, Jest, Spine animations",
+    links: [
+      {
+        label: "Play",
+        url: "https://slotslaunch.com/gamecode/boom-boom-boom",
+      },
+      {
+        label: "Website",
+        url: "https://www.gamecodehq.com/games/",
+      },
+    ],
+  },
+  {
+    title: "Aloha! Christmas",
+    image: "/assets/commercial-projects/aloha-christmas-netent.png",
+    description:
+      "Aloha! Christmas™ is a 6-reel, 6-row video slot from NetEnt™ with the Cluster Pays™ mechanic, featuring Multiplier Wild symbols, Mystery symbols, the Sticky Win Re-Spins, Tiki Bar Free Spins and Tiki Bar Max Free Spins.",
+    tech: "TS, PixiJS, Jest, Spine animations",
+    links: [
+      {
+        label: "Play",
+        url: "https://www.bigwinboard.com/aloha-christmas-edition-netent-slot-review/",
+      },
+      {
+        label: "Website",
+        url: "https://games.netent.com/video-slots/aloha-christmas-edition/",
+      },
+    ],
+  },
+  {
+    title: "Super Striker",
+    image: "/assets/commercial-projects/super-striker-netent.png",
+    description:
+      "Super Striker™ is a 3-reel, 3-row video slot from NetEnt™, featuring multi-level Free Spins, the Golden Multiplier feature and the Bet Slip feature. Striking a Golden Scatter in the main game awards an instant win, while a hat-trick of three Scatter symbols activates 5-level Free Spins with an increasing Level Multiplier.",
+    tech: "TS, PixiJS, Jest, Spine animations",
+    links: [
+      {
+        label: "Play",
+        url: "https://scatters.com/en/game/netent/super-striker/demo",
+      },
+      {
+        label: "Website",
+        url: "https://games.netent.com/video-slots/super-striker/",
+      },
+    ],
+  },
+  {
+    title: "Hammer Cash™",
+    image:
+      "/assets/commercial-projects/hammer-cash-game_LE_upscale_balanced_x2.jpg",
+    description:
+      "Hammer Cash™ is a 5-reel, 3-row video slot featuring instant jackpot Hammer Feature, Free Spins, Buy Free Spins, blitz symbols, expanding reels.",
+    tech: "TS, PixiJS, Jest, Spine animations",
+    links: [
+      {
+        label: "Website",
+        url: "https://www.gamecodehq.com/games/",
+      },
+    ],
+  },
+  {
+    title: "GemOne Onyx",
+    image: "/assets/commercial-projects/gemone-onyx.png",
+    description:
+      "Onyx is a fleet management solution for mixed industrial fleets which accommodates all makes and models of machines and integrates different types of trackers, integrating different types of trackers from both GemOne and other suppliers. Onyx monitors mixed fleets in real time.",
+    tech: "TS, Angular, Node.js, Jest, Angular Material",
+    links: [
+      {
+        label: "Website",
+        url: "https://www.gemone.com/en/products-onyx/",
+      },
+    ],
+  },
+  {
+    title: "Trickstar Spins",
+    image: "/assets/commercial-projects/trickstar-spins.png",
+    description:
+      "Players who fill all three reels with the same symbol can reap up to a 10x multiplier. Respins with sticky symbols are possible. Players who land a Jackpot Symbol may get a chance at spooking up to an x500 bet in the Jackpot Bonus Game.",
+    tech: "TS, PixiJS, Jest, Spine animations",
+    links: [
+      {
+        label: "Play",
+        url: "https://yggdrasilgaming.com/games/trickstar-spins#tryit",
+      },
+      {
+        label: "Website",
+        url: "https://yggdrasilgaming.com/games/trickstar-spins",
+      },
+    ],
+  },
+];
+
 function Commercial_projects() {
   return (
     <main className="commercial_main index">
       <section>
         <h1 className="commercial_main_h1">Commercial Projects</h1>
         <div className="grid_main">
-          {commercialProjects.map((project: Project, i: number) => (
+          {commercialproject.map((project: Project, i: number) => (
             // <div className="" key={i}>
             <ProjectCard
               key={i}
