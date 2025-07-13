@@ -13,7 +13,7 @@ function Logo() {
           width={100}
           height={100}
         />
-        <div className="nav-logo-text-container span">
+        <div className="nav-logo-text-container lato  span">
           <span className="nav-logo-text-black">M</span>
           <span className="nav-logo-text-blue">TER</span>
           <span className="nav-logo-text-black">.PL</span>

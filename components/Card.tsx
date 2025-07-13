@@ -102,10 +102,9 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
     <div
       className="ui card"
       style={{
-        minHeight: "420px",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
+        gap: "0.75rem",
         margin: "0 !important",
       }}>
       <div className="ui slide masked reveal image">
@@ -161,6 +160,7 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
             display: "-webkit-box",
             WebkitLineClamp: 3,
             WebkitBoxOrient: "vertical",
+            minHeight: "3.5em",
           }}>
           {description}
         </div>
