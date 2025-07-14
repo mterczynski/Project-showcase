@@ -146,7 +146,7 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
         </div>
       </div>
 
-      <div className="content" style={{ flexGrow: 1 }}>
+      <div className="content" style={{ flexGrow: 1, border: 0 }}>
         <div className="header" style={{ marginBottom: "0.5rem" }}>
           {title}
         </div>
@@ -154,19 +154,19 @@ export const ProjectCard_Two: React.FC<ProjectCardProps> = ({
           className="meta"
           style={{
             fontSize: "0.975rem",
-            whiteSpace: "normal",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            display: "-webkit-box",
-            WebkitLineClamp: 3,
-            WebkitBoxOrient: "vertical",
-            minHeight: "3.5em",
+            // whiteSpace: "normal",
+            // overflow: "hidden",
+            // textOverflow: "ellipsis",
+            // display: "-webkit-box",
+            // WebkitLineClamp: 3,
+            // WebkitBoxOrient: "vertical",
+            // minHeight: "3.5em",
           }}>
           {description}
         </div>
       </div>
 
-      <div className="extra content" style={{ flexShrink: 0 }}>
+      <div className="extra content">
         <i className="hashtag icon"></i>
         {tech}
       </div>
