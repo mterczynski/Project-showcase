@@ -16,7 +16,13 @@
 .ui.card {
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.75) !important;
 }
-
+@media (max-width: 580px) {
+  .commercial_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (min-width: 768px) {
   .commercial_main {
     padding-left: 3rem;
