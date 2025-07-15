@@ -3,6 +3,7 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
   output: "export", // for static export
+  trailingSlash: true,
 };
 
 const withNextIntl = createNextIntlPlugin();
