@@ -253,4 +253,17 @@ export const commercialproject: Project[] = [
       },
     ],
   },
+  {
+    title: "Hacker's Haven",
+    image: "/assets/commercial-projects/hackers-haven.png",
+    description:
+      "Hacker's Haven — a high-voltage slot experience where a geeky cyber-criminal dials into the dark web to deliver electrifying wins",
+    tech: "TS, PixiJS, Jest, Spine animations",
+    links: [
+      {
+        label: "Website",
+        url: "https://yggdrasilgaming.com/games/hackers-haven",
+      },
+    ],
+  },
 ];
