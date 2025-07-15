@@ -1,4 +1,4 @@
-import { ProjectCard_Two } from "@/components/Card";
+import { PersonalProjectCard } from "@/components/Card";
 
 import "../css/personal_pro.css";
 import type { Project } from "@/types/types";
@@ -11,7 +11,7 @@ const PersonalProjects = () => {
       <div className="grid_main">
         {personalproject.map((project: Project, idx: number) => (
           // <div className="column" key={idx}>
-          <ProjectCard_Two
+          <PersonalProjectCard
             key={idx}
             title={project.title}
             image={project.image}

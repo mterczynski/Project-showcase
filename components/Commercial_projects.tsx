@@ -1,6 +1,6 @@
 import { commercialproject } from "@/data";
 import "../css/commercial.css";
-import { ProjectCard } from "./Card";
+import { CommercialProjectCard } from "./Card";
 import type { Project } from "@/types/types";
 function Commercial_projects() {
   return (
@@ -10,7 +10,7 @@ function Commercial_projects() {
         <div className="grid_main">
           {commercialproject.map((project: Project, i: number) => (
             // <div className="" key={i}>
-            <ProjectCard
+            <CommercialProjectCard
               key={i}
               title={project.title}
               image={project.image}
