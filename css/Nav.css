@@ -45,7 +45,7 @@ ul li {
 
 .navText {
   font-size: 25px;
-  color: #1791d1;
+  color: rgb(65, 131, 196);
 }
 
 .navMobileIcon {
@@ -76,7 +76,7 @@ ul li {
 .mobileNavText {
   font-size: 18px;
   padding: 2rem, 1rem !important;
-  color: #1791d1;
+  color: rgb(65, 131, 196);
 }
 
 @keyframes slideDown {
@@ -100,7 +100,7 @@ ul li {
   justify-content: space-between;
 }
 .dropdown_menu_icon {
-  color: #1791d1;
+  color: rgb(65, 131, 196);
 }
 /* desktoptab screen */
 @media (min-width: 768px) {
@@ -108,7 +108,11 @@ ul li {
     align-items: center;
     padding: 1rem 3rem;
   }
+  /* .navText {
+    font-size: 54px;
+  } */
   .navMobileIcon {
+    font-size: 54px;
     display: none;
   }
   .navDesktopLinks {
@@ -146,7 +150,7 @@ ul li {
 }
 
 .mobileNavAnchor:hover {
-  background-color: #f0f0f0;
+  background-color: rgb(65, 131, 196);
 }
 
 .navLinkAnchor {
@@ -155,9 +159,10 @@ ul li {
   gap: 0.2rem;
   text-decoration: none;
   color: inherit;
+  font-size: 19px;
   transition: color 0.3s ease;
 }
 
 .navLinkAnchor:hover {
-  color: #0070f3;
+  color: rgb(65, 131, 196);
 }
