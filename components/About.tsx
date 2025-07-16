@@ -1,17 +1,10 @@
-"use client";
-import { useTranslations } from "next-intl";
-import "../css/About.css";
+import About_cli from "./client_components/About_cli";
 
 function About() {
-  const t = useTranslations("about");
   return (
-    <main className="about-main">
-      <section className="about-section">
-        <h1 className="about-heading">{t("title")}</h1>
-        <p>{t("intro")}</p>
-        <p>{t("details")}</p>
-      </section>
-    </main>
+    <>
+      <About_cli />
+    </>
   );
 }
 

@@ -72,7 +72,6 @@ export default async function LocaleLayout({
           strategy="beforeInteractive"
         />
 
-        {/* ✅ Load Semantic UI JS after jQuery */}
         <Script
           src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
           strategy="afterInteractive"

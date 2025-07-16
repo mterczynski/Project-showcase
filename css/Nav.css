@@ -54,7 +54,6 @@ ul li {
   display: block;
 }
 .mobileNavWrapper {
-  /* margin-top: rem; */
   padding: 4px 1rem !important;
 }
 
@@ -96,7 +95,7 @@ ul li {
 .dropdown_menu {
   display: flex;
   margin-bottom: 1rem;
-  /* padding: 0.4rem 1rem; */
+
   justify-content: space-between;
 }
 .dropdown_menu_icon {
@@ -108,9 +107,7 @@ ul li {
     align-items: center;
     padding: 1rem 3rem;
   }
-  /* .navText {
-    font-size: 54px;
-  } */
+
   .navMobileIcon {
     font-size: 54px;
     display: none;

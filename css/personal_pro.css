@@ -35,20 +35,3 @@
   gap: 16px;
   margin-bottom: 4rem;
 }
-
-/* @media (min-width: 1024px) {
-  .grid_main {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .grid_main {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    justify-content: center;
-    gap: 10px;
-  }
-} */

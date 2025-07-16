@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { updateLandingPageViews } from "@/lib/updateview";
-import "../css/view.css";
+import "../../css/view.css";
 
 export default function WebsiteViewLogger() {
   useEffect(() => {

@@ -10,5 +10,8 @@
     "cv": "CV",
     "github": "GitHub",
     "linkedin": "LinkedIn"
+  },
+  "message": {
+    "msg": "Niektóre z powyższych stron internetowych mogą być niedostępne w Twoim kraju. W razie potrzeby rozważ skorzystanie z usługi VPN"
   }
 }

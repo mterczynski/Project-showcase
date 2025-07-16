@@ -30,20 +30,17 @@ export const CommercialProjectCard: React.FC<ProjectCardProps> = ({
         flexDirection: "column",
         justifyContent: "space-between",
         margin: "0 !important",
-      }}
-    >
+      }}>
       <div
         className="ui slide masked reveal image"
         style={{
           position: "relative",
           height: "280px",
           flexShrink: 0,
-        }}
-      >
+        }}>
         <div
           className="visible content"
-          style={{ position: "relative", height: "100%" }}
-        >
+          style={{ position: "relative", height: "100%" }}>
           <Image
             src={image}
             alt={alt}
@@ -61,8 +58,7 @@ export const CommercialProjectCard: React.FC<ProjectCardProps> = ({
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="projectLink"
-            >
+              className="projectLink">
               <button className="ui blue button linkButton">
                 {link.label}
               </button>
@@ -79,8 +75,7 @@ export const CommercialProjectCard: React.FC<ProjectCardProps> = ({
           className="meta"
           style={{
             fontSize: "1rem",
-          }}
-        >
+          }}>
           {description}
         </div>
       </div>
@@ -109,13 +104,11 @@ export const PersonalProjectCard: React.FC<ProjectCardProps> = ({
         flexDirection: "column",
         gap: "0.75rem",
         margin: "0 !important",
-      }}
-    >
+      }}>
       <div className="ui slide masked reveal image">
         <div
           className="visible content"
-          style={{ position: "relative", height: "100%" }}
-        >
+          style={{ position: "relative", height: "100%" }}>
           <Image
             src={image}
             alt={alt}
@@ -136,15 +129,13 @@ export const PersonalProjectCard: React.FC<ProjectCardProps> = ({
             justifyContent: "center",
             height: "100%",
             gap: "0.5rem",
-          }}
-        >
+          }}>
           {links.map((link, i) => (
             <Link
               key={i}
               href={link.url}
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               <button className="ui blue button linkButton">
                 {link.label}
               </button>
@@ -161,15 +152,7 @@ export const PersonalProjectCard: React.FC<ProjectCardProps> = ({
           className="meta"
           style={{
             fontSize: "0.975rem",
-            // whiteSpace: "normal",
-            // overflow: "hidden",
-            // textOverflow: "ellipsis",
-            // display: "-webkit-box",
-            // WebkitLineClamp: 3,
-            // WebkitBoxOrient: "vertical",
-            // minHeight: "3.5em",
-          }}
-        >
+          }}>
           {description}
         </div>
       </div>

@@ -10,5 +10,8 @@
     "cv": "CV",
     "github": "GitHub",
     "linkedin": "LinkedIn"
+  },
+  "message": {
+    "msg": " Please note that some of the websites linked above may not be accessible in your country. If necessary, consider using a VPN service."
   }
 }

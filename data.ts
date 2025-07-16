@@ -1,5 +1,5 @@
 import type { Project } from "@/types/types";
-export const personalproject: Project[] = [
+export const personalProjects: Project[] = [
   {
     title: "Paint",
     image: "/assets/personal-projects/paint.PNG",
@@ -157,7 +157,7 @@ export const personalproject: Project[] = [
   },
 ];
 
-export const commercialproject: Project[] = [
+export const commercialProjects: Project[] = [
   {
     title: "Boom Boom Boom",
     image: "/assets/commercial-projects/gamecode-boom-boom-boom.webp",

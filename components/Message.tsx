@@ -1,14 +1,13 @@
 import "../css/message.css";
+
+import { useTranslations } from "next-intl";
 function Message() {
+  const t = useTranslations("message");
   return (
     <main className="message-main">
       <div className="ui message">
         <div className="header">Access notice</div>
-        <p>
-          Please note that some of the websites linked above may not be
-          accessible in your country. If necessary, consider using a VPN
-          service.
-        </p>
+        <p>{t("msg")}</p>
       </div>
     </main>
   );

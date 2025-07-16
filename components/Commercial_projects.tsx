@@ -1,4 +1,4 @@
-import { commercialproject } from "@/data";
+import { commercialProjects } from "@/data";
 import "../css/commercial.css";
 import { CommercialProjectCard } from "./Card";
 import type { Project } from "@/types/types";
@@ -8,8 +8,7 @@ function Commercial_projects() {
       <section>
         <h1 className="commercial_main_h1">Commercial Projects</h1>
         <div className="grid_main">
-          {commercialproject.map((project: Project, i: number) => (
-            // <div className="" key={i}>
+          {commercialProjects.map((project: Project, i: number) => (
             <CommercialProjectCard
               key={i}
               title={project.title}
@@ -19,7 +18,6 @@ function Commercial_projects() {
               tech={project.tech}
               links={project.links}
             />
-            // </div>
           ))}
         </div>
       </section>
