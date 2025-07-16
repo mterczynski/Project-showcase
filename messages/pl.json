@@ -1,0 +1,17 @@
+{
+  "about": {
+    "title": "O mnie",
+    "intro": "Cześć, nazywam się Michał Terczyński, jestem programistą frontendowym skupiającym się na tworzeniu gier i aplikacji internetowych. Nabrałem doświadczenia doświadczenia w firmach takich jak NetEnt, Yggdrasil Gaming czy Software Mind, w których zdobyłem wiedzę w tworzeniu angażujących gier slotowych oraz aplikacji biznesowych z użyciem TypeScript, React, Angular i PixiJS.",
+    "details": "Moje umiejętności techniczne obejmują nowoczesne frameworki JavaScript, tworzenie gier za pomocą PixiJS i budowanie skalowalnych aplikacji internetowych. Pasjonuję się tworzeniem wysokiej jakości, wydajnego kodu i chętnie pracuję nad projektami komercyjnymi oraz własnymi grami."
+  },
+  "nav": {
+    "email": "mterczynski1@gmail.com",
+    "blog": "blog",
+    "cv": "CV",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "message": {
+    "msg": "Niektóre z powyższych stron internetowych mogą być niedostępne w Twoim kraju. W razie potrzeby rozważ skorzystanie z usługi VPN"
+  }
+}
