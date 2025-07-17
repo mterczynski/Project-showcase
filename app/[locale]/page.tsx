@@ -4,6 +4,14 @@ import Message from "@/components/Message";
 import Nav from "@/components/Nav";
 import PersonalProjects from "@/components/PersonalProjects";
 
+export function generateStaticParams() {
+  return [
+    { locale: "pl" },
+    { locale: "en" },
+    // Add more locales as needed
+  ];
+}
+
 export default async function Home() {
   return (
     <>
