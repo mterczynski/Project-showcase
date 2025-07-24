@@ -2,7 +2,7 @@ import type { Project } from "@/types/types";
 export const personalProjects: Project[] = [
   {
     title: "Paint",
-    image: "/assets/personal-projects/paint.PNG",
+    image: "./assets/personal-projects/paint.PNG",
     alt: "Paint project preview",
     description:
       "A Paint remake built using React.js and Redux (work in progress)",
@@ -14,7 +14,7 @@ export const personalProjects: Project[] = [
   },
   {
     title: "Kulki",
-    image: "/assets/personal-projects/kulki.PNG",
+    image: "./assets/personal-projects/kulki.PNG",
     alt: "Kulki project preview",
     description:
       "A custom version of the Color Lines game, featuring a custom JavaScript implementation of the A* algorithm",
@@ -26,7 +26,7 @@ export const personalProjects: Project[] = [
   },
   {
     title: "Level editor",
-    image: "/assets/personal-projects/level-editor.png",
+    image: "./assets/personal-projects/level-editor.png",
     alt: "Level editor project preview",
     description: "Level Editor for 2D and 3D games",
     tech: "JS, jQuery, Code generation",
@@ -49,7 +49,7 @@ export const personalProjects: Project[] = [
   },
   {
     title: "Mine sweeper",
-    image: "/assets/personal-projects/mine-sweeper.PNG",
+    image: "./assets/personal-projects/mine-sweeper.PNG",
     alt: "Mine Sweeper project preview",
     description: "Mine sweeper made with React.js",
     tech: "React.js, TS",
@@ -60,7 +60,7 @@ export const personalProjects: Project[] = [
   },
   {
     title: "Snake",
-    image: "/assets/personal-projects/snake.png",
+    image: "./assets/personal-projects/snake.png",
     alt: "Snake project preview",
     description: "Snake game written with JavaScript",
     tech: "JS",
@@ -86,7 +86,7 @@ export const personalProjects: Project[] = [
   },
   {
     title: "Tetris",
-    image: "/assets/personal-projects/tetris-dom.png",
+    image: "./assets/personal-projects/tetris-dom.png",
     alt: "Tetris project preview",
     description: "Tetris game made with JavaScript, tested with Jest",
     tech: "JS, Jest, Unit tests",
@@ -97,7 +97,7 @@ export const personalProjects: Project[] = [
   },
   {
     title: "Sensors",
-    image: "/assets/personal-projects/sensors.gif",
+    image: "./assets/personal-projects/sensors.gif",
     alt: "Sensors project preview",
     description:
       "A project utilizing custom machine learning solution (work in progress)",
@@ -109,7 +109,7 @@ export const personalProjects: Project[] = [
   },
   {
     title: "Space Golf 3D",
-    image: "/assets/personal-projects/space-golf-3d.jpg",
+    image: "./assets/personal-projects/space-golf-3d.jpg",
     alt: "Space Golf 3D project preview",
     description:
       "A 3D simulation of a golf ball moving through space among planets, featuring custom physics",
@@ -143,7 +143,7 @@ export const personalProjects: Project[] = [
   },
   {
     title: "Line art generator",
-    image: "/assets/personal-projects/pattern-generators.jpg",
+    image: "./assets/personal-projects/pattern-generators.jpg",
     alt: "Line pattern generator project preview",
     description: "Algorithmic line art generator - no AI used",
     tech: "Art generation, TS",
@@ -160,7 +160,7 @@ export const personalProjects: Project[] = [
 export const commercialProjects: Project[] = [
   {
     title: "Boom Boom Boom",
-    image: "/assets/commercial-projects/gamecode-boom-boom-boom.webp",
+    image: "./assets/commercial-projects/gamecode-boom-boom-boom.webp",
     description:
       "Boom Boom Boom™ is an American-themed 5-reel, 3-row video slot featuring Wild Multipliers and the hold and respin feature on multiple reel sets.",
     tech: "TS, PixiJS, Jest, Spine animations",
@@ -194,7 +194,7 @@ export const commercialProjects: Project[] = [
   },
   {
     title: "Super Striker",
-    image: "/assets/commercial-projects/super-striker-netent.png",
+    image: "./assets/commercial-projects/super-striker-netent.png",
     description:
       "Super Striker™ is a 3-reel, 3-row video slot from NetEnt™, featuring multi-level Free Spins, the Golden Multiplier feature and the Bet Slip feature. Striking a Golden Scatter in the main game awards an instant win, while a hat-trick of three Scatter symbols activates 5-level Free Spins with an increasing Level Multiplier.",
     tech: "TS, PixiJS, Jest, Spine animations",
@@ -212,7 +212,7 @@ export const commercialProjects: Project[] = [
   {
     title: "Hammer Cash™",
     image:
-      "/assets/commercial-projects/hammer-cash-game_LE_upscale_balanced_x2.jpg",
+      "./assets/commercial-projects/hammer-cash-game_LE_upscale_balanced_x2.jpg",
     description:
       "Hammer Cash™ is a 5-reel, 3-row video slot featuring instant jackpot Hammer Feature, Free Spins, Buy Free Spins, blitz symbols, expanding reels.",
     tech: "TS, PixiJS, Jest, Spine animations",
@@ -225,7 +225,7 @@ export const commercialProjects: Project[] = [
   },
   {
     title: "GemOne Onyx",
-    image: "/assets/commercial-projects/gemone-onyx.png",
+    image: "./assets/commercial-projects/gemone-onyx.png",
     description:
       "Onyx is a fleet management solution for mixed industrial fleets which accommodates all makes and models of machines and integrates different types of trackers, integrating different types of trackers from both GemOne and other suppliers. Onyx monitors mixed fleets in real time.",
     tech: "TS, Angular, Node.js, Jest, Angular Material",
@@ -238,7 +238,7 @@ export const commercialProjects: Project[] = [
   },
   {
     title: "Trickstar Spins",
-    image: "/assets/commercial-projects/trickstar-spins.png",
+    image: "./assets/commercial-projects/trickstar-spins.png",
     description:
       "Players who fill all three reels with the same symbol can reap up to a 10x multiplier. Respins with sticky symbols are possible. Players who land a Jackpot Symbol may get a chance at spooking up to an x500 bet in the Jackpot Bonus Game.",
     tech: "TS, PixiJS, Jest, Spine animations",
@@ -255,7 +255,7 @@ export const commercialProjects: Project[] = [
   },
   {
     title: "Hacker's Haven",
-    image: "/assets/commercial-projects/hackers-haven.png",
+    image: "./assets/commercial-projects/hackers-haven.png",
     description:
       "Hacker's Haven — a high-voltage slot experience where a geeky cyber-criminal dials into the dark web to deliver electrifying wins",
     tech: "TS, PixiJS, Jest, Spine animations",

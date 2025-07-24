@@ -8,7 +8,7 @@ function Logo() {
       <div className="main_logo">
         <Image
           className="navbar-website-logo object-cover"
-          src="/assets/social-media/website-logo-only-initials.png"
+          src="./assets/social-media/website-logo-only-initials.png"
           alt="Website logo"
           width={100}
           height={100}
