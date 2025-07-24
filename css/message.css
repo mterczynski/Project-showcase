@@ -1,0 +1,12 @@
+.message-main {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .message-main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
