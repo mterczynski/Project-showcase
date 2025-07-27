@@ -169,31 +169,67 @@ h1.h2-sized-header {
   font-size: 1.71428571rem;
 }
 
-/* Styles for "back to top" arrow
-.arrow {
-  position: fixed;
-  bottom: 50px;
-  right: 30px;
-  cursor: pointer;
-  pointer-events: none;
-  display: none;
-
-  transition: opacity 0.4s ease;
-  z-index: 999;
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 4px;
 }
-.arrow {
-  img {
-    position: fixed;
-    right: 5px;
-    border: 1px solid #1791c8;
-    border-radius: 9999px;
-    bottom: 5px;
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Keyboard navigation focus styles */
+.keyboard-navigation *:focus {
+  outline: 2px solid #1791c8;
+  outline-offset: 2px;
+}
+
+/* Lazy loading placeholder */
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img.lazy.loaded {
+  opacity: 1;
+}
+
+/* Improve semantic elements styling */
+main {
+  min-height: 100vh;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Better responsive design */
+@media (max-width: 768px) {
+  .ui.container {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
   }
 }
-.arrow.show {
-  display: block;
-  pointer-events: auto;
-}*/
+
+/* Print styles for better accessibility */
+@media print {
+  nav, .toggle, .hidden.content {
+    display: none !important;
+  }
+  
+  .ui.card {
+    break-inside: avoid;
+  }
+}
+
 @media screen and (max-width: 560px) {
   nav {
     padding: 0px 9px;
