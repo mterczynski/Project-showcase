@@ -4,16 +4,16 @@ class ProjectCard extends HTMLElement {
   }
 
   connectedCallback() {
-    const title = this.getAttribute('title');
-    const image = this.getAttribute('image');
-    const description = this.getAttribute('description');
-    const technologies = this.getAttribute('technologies');
-    const playUrl = this.getAttribute('play-url');
-    const websiteUrl = this.getAttribute('website-url');
-    const githubUrl = this.getAttribute('github-url');
+    const title = this.getAttribute("title");
+    const image = this.getAttribute("image");
+    const description = this.getAttribute("description");
+    const technologies = this.getAttribute("technologies");
+    const playUrl = this.getAttribute("play-url");
+    const websiteUrl = this.getAttribute("website-url");
+    const githubUrl = this.getAttribute("github-url");
 
     this.innerHTML = `
-      <div class="column">
+      <div class="kk">
         <article class="ui card">
           <div class="ui slide masked reveal image">
             <img
@@ -22,21 +22,33 @@ class ProjectCard extends HTMLElement {
               alt="${title} project preview"
               loading="lazy" />
             <div class="hidden content linkButtons">
-              ${playUrl ? `
+              ${
+                playUrl
+                  ? `
                 <a class="projectLink" href="${playUrl}" aria-label="Play ${title}">
                   <button class="ui blue button linkButton">Play</button>
                 </a>
-              ` : ''}
-              ${githubUrl ? `
+              `
+                  : ""
+              }
+              ${
+                githubUrl
+                  ? `
                 <a class="projectLink" href="${githubUrl}" aria-label="View ${title} on GitHub">
                   <button class="ui blue button linkButton">GitHub</button>
                 </a>
-              ` : ''}
-              ${websiteUrl ? `
+              `
+                  : ""
+              }
+              ${
+                websiteUrl
+                  ? `
                 <a class="projectLink" href="${websiteUrl}" aria-label="Visit ${title} website">
                   <button class="ui blue button linkButton">Website</button>
                 </a>
-              ` : ''}
+              `
+                  : ""
+              }
             </div>
           </div>
           <div class="content">
@@ -53,4 +65,4 @@ class ProjectCard extends HTMLElement {
   }
 }
 
-customElements.define('project-card', ProjectCard);
+customElements.define("project-card", ProjectCard);
