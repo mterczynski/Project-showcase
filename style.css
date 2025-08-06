@@ -108,7 +108,7 @@ body {
 }
 
 .nav-logo-text-blue {
-  color: rgb(23, 145, 200);
+  color: rgb(0, 142, 248);
   font-size: 20px;
 }
 ul li {
@@ -250,7 +250,7 @@ h1.h2-sized-header {
   }
   .nav-logo-text-blue_2 {
     font-size: 20px;
-    color: rgb(23, 145, 200);
+    color: rgb(0, 142, 248);
   }
   ul li a h3 {
     font-size: 13px;
