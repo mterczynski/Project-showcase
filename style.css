@@ -88,8 +88,9 @@ body {
 }
 
 .navbar-website-logo {
-  width: 135px;
-  height: 90px;
+  width: 120px;
+  height: 80px;
+  margin-top: 10px;
 }
 
 .nav-logo-text-container {
@@ -107,7 +108,7 @@ body {
 }
 
 .nav-logo-text-blue {
-  color: rgb(23, 145, 200);
+  color: rgb(0, 142, 248);
   font-size: 20px;
 }
 ul li {
@@ -233,10 +234,11 @@ h1.h2-sized-header {
   }
   .logo_close {
     margin-left: -15px;
+    margin-top: 10px;
   }
   .logo_close img {
-    width: 135px;
-    height: 90px;
+    width: 120px;
+    height: 80px;
     cursor: pointer;
   }
   .span {
@@ -248,7 +250,7 @@ h1.h2-sized-header {
   }
   .nav-logo-text-blue_2 {
     font-size: 20px;
-    color: rgb(23, 145, 200);
+    color: rgb(0, 142, 248);
   }
   ul li a h3 {
     font-size: 13px;
