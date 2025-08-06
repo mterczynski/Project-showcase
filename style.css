@@ -88,7 +88,7 @@ body {
 }
 
 .navbar-website-logo {
-  width: 130px;
+  width: 120px;
   height: 80px;
   margin-top: 10px;
 }
@@ -237,8 +237,8 @@ h1.h2-sized-header {
     margin-top: 10px;
   }
   .logo_close img {
-    width: 135px;
-    height: 90px;
+    width: 120px;
+    height: 80px;
     cursor: pointer;
   }
   .span {
