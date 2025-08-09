@@ -13,7 +13,14 @@ const translations = {
       details:
         "Moje umiejętności techniczne obejmują nowoczesne frameworki JavaScript, tworzenie gier w PixiJS oraz budowanie skalowalnych aplikacji internetowych. Pasjonuję się tworzeniem wysokiej jakości, wydajnego kodu i chętnie podejmuję się zarówno projektów komercyjnych, jak i autorskich.",
     },
-    
+    projects: {
+      commercial: "Projekty komercyjne",
+      personal: "Projekty osobiste",
+    },
+    accessNotice: {
+      title: "Access notice",
+      description: "Please note that some of the websites linked above may not be accessible in your country. If necessary, consider using a VPN service."
+    }
   },
   en: {
     about: {
@@ -27,6 +34,10 @@ const translations = {
     projects: {
       commercial: "Commercial Projects",
       personal: "Personal Projects",
+    },
+    accessNotice: {
+      title: "Informacja o dostępności",
+      description: "Proszę mieć na uwadze, że niektóre z powyższych stron internetowych mogą być niedostępne w Państwa kraju. W razie potrzeby sugerujemy skorzystanie z usługi VPN."
     }
   },
 };
