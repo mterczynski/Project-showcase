@@ -9,9 +9,9 @@ const translations = {
     about: {
       title: "O mnie",
       intro:
-        " „Cześć, jestem Michał Terczyński, Frontend Developerem ze specjalizacją w tworzeniu gier i aplikacji interaktywnych. Zdobyłem doświadczenie w takich firmach jak NetEnt, Yggdrasil Gaming i Software Mind, gdzie zdobyłem wiedzę w zakresie tworzenia angażujących gier slotowych oraz aplikacji biznesowych z wykorzystaniem TypeScript, React, Angular i PixiJS.”",
+        "Cześć, jestem Michał Terczyński, Frontend Developerem ze specjalizacją w tworzeniu gier i aplikacji interaktywnych. Zdobyłem doświadczenie w takich firmach jak NetEnt, Yggdrasil Gaming i Software Mind, gdzie zdobyłem wiedzę w zakresie tworzenia angażujących gier slotowych oraz aplikacji biznesowych z wykorzystaniem TypeScript, React, Angular i PixiJS.",
       details:
-        "„Moje umiejętności techniczne obejmują nowoczesne frameworki JavaScript, tworzenie gier w PixiJS oraz budowanie skalowalnych aplikacji internetowych. Pasjonuję się tworzeniem wysokiej jakości, wydajnego kodu i chętnie podejmuję się zarówno projektów komercyjnych, jak i autorskich.”",
+        "Moje umiejętności techniczne obejmują nowoczesne frameworki JavaScript, tworzenie gier w PixiJS oraz budowanie skalowalnych aplikacji internetowych. Pasjonuję się tworzeniem wysokiej jakości, wydajnego kodu i chętnie podejmuję się zarówno projektów komercyjnych, jak i autorskich.",
     },
   },
   en: {
