@@ -33,6 +33,7 @@ const translations = {
 
 // Detect browser language
 const userLang = navigator.language || navigator.userLanguage;
+console.log(userLang.slice(0, 2));
 const shortLang = userLang.slice(0, 2);
 const selectedLang = shortLang === "pl" ? "pl" : "en";
 
