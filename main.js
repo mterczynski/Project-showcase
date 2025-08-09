@@ -6,6 +6,7 @@ initNavbarToggle();
 
 const translations = {
   pl: {
+    title: "Mter.pl - aplikacje internetowe",
     about: {
       title: "O mnie",
       intro:
@@ -23,6 +24,7 @@ const translations = {
     }
   },
   en: {
+    title: "Mter.pl - web apps",
     about: {
       title: "About Me",
       intro:
@@ -50,6 +52,9 @@ const selectedLang = shortLang === "pl" ? "pl" : "en";
 
 // Apply translation
 const t = translations[selectedLang];
+
+document.title = t.title;
+
 document.getElementById("aboutTitle").innerText = t.about.title;
 document.getElementById("aboutIntro").innerText = t.about.intro;
 document.getElementById("aboutDetails").innerText = t.about.details;
@@ -59,5 +64,3 @@ document.getElementById("personal-projects-title").innerText = t.projects.person
 
 document.getElementById("access-notice-title").innerText = t.accessNotice.title;
 document.getElementById("access-notice-description").innerText = t.accessNotice.description;
-
-
