@@ -1,11 +1,5 @@
 import { updateLandingPageViews } from "./counter.js";
 import { initNavbarToggle } from "./toggle.js";
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loader");
-  if (loader) {
-    loader.style.display = "none";
-  }
-});
 
 updateLandingPageViews();
 initNavbarToggle();
