@@ -13,10 +13,7 @@ const translations = {
       details:
         "Moje umiejętności techniczne obejmują nowoczesne frameworki JavaScript, tworzenie gier w PixiJS oraz budowanie skalowalnych aplikacji internetowych. Pasjonuję się tworzeniem wysokiej jakości, wydajnego kodu i chętnie podejmuję się zarówno projektów komercyjnych, jak i autorskich.",
     },
-    projects: {
-      commercial: "Projekty komercyjne",
-      personal: "Projekty osobiste",
-    }
+    
   },
   en: {
     about: {
@@ -25,9 +22,12 @@ const translations = {
         "Hi, I'm Michał Terczyński, a Frontend Developer with a strong focus on game development and interactive applications. With experience at companies like NetEnt, Yggdrasil Gaming, and Software Mind, I've developed expertise in creating engaging games and robust enterprise applications using TypeScript, React, Angular, and PixiJS.",
       details:
         "My technical skills include modern JavaScript frameworks, game development with PixiJS, and building scalable web applications. I'm passionate about creating high-quality, performant code and enjoy working on both commercial projects and personal game development endeavors.",
+     
+    },
+    projects: {
       commercial: "Commercial Projects",
       personal: "Personal Projects",
-    },
+    }
   },
 };
 
