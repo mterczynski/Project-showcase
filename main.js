@@ -18,8 +18,8 @@ const translations = {
       personal: "Projekty osobiste",
     },
     accessNotice: {
-      title: "Access notice",
-      description: "Please note that some of the websites linked above may not be accessible in your country. If necessary, consider using a VPN service."
+      title: "Informacja o dostępności",
+      description: "Proszę mieć na uwadze, że niektóre z powyższych stron internetowych mogą być niedostępne w Państwa kraju. W razie potrzeby sugerujemy skorzystanie z usługi VPN."
     }
   },
   en: {
@@ -36,8 +36,8 @@ const translations = {
       personal: "Personal Projects",
     },
     accessNotice: {
-      title: "Informacja o dostępności",
-      description: "Proszę mieć na uwadze, że niektóre z powyższych stron internetowych mogą być niedostępne w Państwa kraju. W razie potrzeby sugerujemy skorzystanie z usługi VPN."
+      title: "Access notice",
+      description: "Please note that some of the websites linked above may not be accessible in your country. If necessary, consider using a VPN service."
     }
   },
 };
@@ -56,3 +56,8 @@ document.getElementById("aboutDetails").innerText = t.about.details;
 
 document.getElementById("commercial-projects-title").innerText = t.projects.commercial;
 document.getElementById("personal-projects-title").innerText = t.projects.personal;
+
+document.getElementById("access-notice-title").innerText = t.accessNotice.title;
+document.getElementById("access-notice-description").innerText = t.accessNotice.description;
+
+
