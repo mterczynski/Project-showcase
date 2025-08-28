@@ -36,8 +36,8 @@ const translations = {
         "paint": "Remake programu Paint stworzony w React.js i Redux (w trakcie prac).",
         "kulki": "Autorska wersja gry Color Lines z własną implementacją algorytmu A* w JavaScripcie.",
         "level-editor": "Edytor poziomów dla gier 2D i 3D.",
-        "sudoku-solver": "Aplikacja do rozwiązywania łamigłówek Sudoku – częściowych lub pełnych.",
-        "mine-sweeper": "Saper zbudowany w React.js.",
+        "sudoku-solver": "Aplikacja do rozwiązywania łamigłówek Sudoku – częściowo lub w pełni.",
+        "mine-sweeper": "Gra Saper zbudowana w React.js.",
         "snake": "Gra Snake napisana w JavaScripcie.",
         "joi-schema-generator": "Narzędzie generujące schematy walidacji Joi na podstawie przykładowych danych wejściowych.",
         "tetris": "Gra Tetris napisana w JavaScripcie i testowana z wykorzystaniem Jest.",
@@ -57,7 +57,6 @@ const translations = {
         "Hi, I'm Michał Terczyński, a Frontend Developer with a strong focus on game development and interactive applications. With experience at companies like NetEnt, Yggdrasil Gaming, and Software Mind, I've developed expertise in creating engaging games and robust enterprise applications using TypeScript, React, Angular, and PixiJS.",
       details:
         "My technical skills include modern JavaScript frameworks, game development with PixiJS, and building scalable web applications. I'm passionate about creating high-quality, performant code and enjoy working on both commercial projects and personal game development endeavors.",
-     
     },
     projects: {
       commercial: "Commercial Projects",
