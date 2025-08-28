@@ -24,30 +24,30 @@ const translations = {
     },
     projectDescriptions: {
       commercial: {
-        "boom-boom-boom": "Boom Boom Boom™ to amerykański 5-bębnowy, 3-rzędowy automat do gier wideo z dzikimi mnożnikami i funkcją wstrzymania i ponownego obrotu na wielu zestawach bębnów.",
-        "gemone-onyx": "Onyx to rozwiązanie do zarządzania flotą dla mieszanych flot przemysłowych, które obsługuje wszystkie marki i modele maszyn oraz integruje różne typy trackerów, zarówno od GemOne, jak i od innych dostawców. Onyx monitoruje mieszane floty w czasie rzeczywistym.",
-        "aloha-christmas": "Aloha! Christmas™ to 6-bębnowy, 6-rzędowy automat wideo od NetEnt™ z mechaniką Cluster Pays™, zawierający symbole dzikich mnożników, symbole tajemnicze, ponowne obroty Sticky Win, darmowe obroty Tiki Bar i darmowe obroty Tiki Bar Max.",
-        "trickstar-spins": "Gracze, którzy wypełnią wszystkie trzy bębny tym samym symbolem, mogą uzyskać mnożnik do 10x. Możliwe są ponowne obroty z lepkimi symbolami. Gracze, którzy trafią symbol jackpota, mogą mieć szansę na wygranie do x500 zakładu w grze bonusowej jackpota.",
-        "super-striker": "Super Striker™ to 3-bębnowy, 3-rzędowy automat wideo od NetEnt™, zawierający wielopoziomowe darmowe obroty, funkcję złotego mnożnika i funkcję kuponu zakładów. Trafienie złotego rozrzutka w grze głównej nagradza natychmiastową wygraną, podczas gdy hat-trick trzech symboli rozrzutka aktywuje 5-poziomowe darmowe obroty z rosnącym mnożnikiem poziomu.",
-        "hackers-haven": "Wysokonapięciowe doświadczenie z automatem, gdzie geekowski cyberprzestępca łączy się z dark webem, aby dostarczyć elektryzujące wygrane.",
-        "hammer-cash": "Hammer Cash™ to 5-bębnowy, 3-rzędowy automat wideo z natychmiastową funkcją jackpota Hammer, darmowymi obrotami, kupowaniem darmowych obrotów, symbolami błyskawicznymi i rozszerzającymi się bębnami."
+        "boom-boom-boom": "Boom Boom Boom™ to amerykański automat wideo 5x3 z dzikimi mnożnikami i respinami.",
+        "gemone-onyx": "Onyx to system zarządzania flotą dla zróżnicowanych flot przemysłowych, obsługujący wszystkie marki i modele maszyn. Umożliwia integrację różnych typów trackerów – zarówno od GemOne, jak i innych dostawców – i monitoruje flotę w czasie rzeczywistym.",
+        "aloha-christmas": "Aloha! Christmas™ to 6x6 automat wideo od NetEnt™ z mechaniką Cluster Pays™. Zawiera symbole dzikich mnożników, symbole tajemnicze, respiny Sticky Win, darmowe spiny Tiki Bar oraz Tiki Bar Max.",
+        "trickstar-spins": "Zapełnienie wszystkich trzech rolek tym samym symbolem daje mnożnik do x10. Dostępne są respiny z lepkimi symbolami, a trafienie symbolu jackpota odblokowuje grę bonusową z nagrodą do x500 stawki.",
+        "super-striker": "Super Striker™ to automat wideo 3x3 od NetEnt™, oferujący wielopoziomowe darmowe spiny, funkcję Złotego Mnożnika i kupony zakładów. Złoty scatter w grze głównej daje natychmiastową wygraną, a trzy scattery aktywują 5-poziomowe darmowe spiny z rosnącym mnożnikiem.",
+        "hackers-haven": "Wysokonapięciowy slot, w którym cyberprzestępca z dark webu dostarcza elektryzujące wygrane.",
+        "hammer-cash": "Hammer Cash™ to automat wideo 5x3 z funkcją Hammer Jackpot, darmowymi spinami, opcją zakupu bonusu, symbolami błyskawicy i rozszerzającymi się rolkami."
       },
       personal: {
-        "paint": "Remake programu Paint zbudowany przy użyciu React.js i Redux (w trakcie tworzenia)",
-        "kulki": "Niestandardowa wersja gry Color Lines, zawierająca niestandardową implementację algorytmu A* w języku JavaScript",
-        "level-editor": "Edytor poziomów dla gier 2D i 3D",
-        "sudoku-solver": "Program do rozwiązywania łamigłówek Sudoku, częściowo lub całkowicie",
-        "mine-sweeper": "Saper wykonany w React.js",
-        "snake": "Gra Snake napisana w JavaScript",
-        "joi-schema-generator": "Narzędzie pomagające programistom w tworzeniu schematów walidacji poprzez automatyczne generowanie ich na podstawie przykładowych wartości wejściowych",
-        "tetris": "Gra Tetris wykonana w JavaScript, testowana z Jest",
-        "sensors": "Projekt wykorzystujący niestandardowe rozwiązanie uczenia maszynowego (w trakcie tworzenia)",
-        "space-golf-3d": "Symulacja 3D piłki golfowej poruszającej się przez kosmos wśród planet, z niestandardową fizyką",
-        "chess": "Gra w szachy dla jednego i wielu graczy",
-        "code-clicker": "Klon Cookie Clicker z motywem VS Code",
-        "line-art-generator": "Algorytmiczny generator grafiki liniowej - bez użycia AI"
+        "paint": "Remake programu Paint stworzony w React.js i Redux (w trakcie prac).",
+        "kulki": "Autorska wersja gry Color Lines z własną implementacją algorytmu A* w JavaScripcie.",
+        "level-editor": "Edytor poziomów dla gier 2D i 3D.",
+        "sudoku-solver": "Aplikacja do rozwiązywania łamigłówek Sudoku – częściowych lub pełnych.",
+        "mine-sweeper": "Saper zbudowany w React.js.",
+        "snake": "Gra Snake napisana w JavaScripcie.",
+        "joi-schema-generator": "Narzędzie generujące schematy walidacji Joi na podstawie przykładowych danych wejściowych.",
+        "tetris": "Gra Tetris napisana w JavaScripcie i testowana z wykorzystaniem Jest.",
+        "sensors": "Projekt wykorzystujący autorskie rozwiązania uczenia maszynowego (w trakcie prac).",
+        "space-golf-3d": "Symulator 3D lotu piłeczki golfowej przez kosmos z własnym silnikiem fizycznym.",
+        "chess": "Gra w szachy dla jednego i wielu graczy.",
+        "code-clicker": "Klon Cookie Clicker w klimacie Visual Studio Code.",
+        "line-art-generator": "Generator grafiki liniowej oparty na algorytmach – bez użycia AI."
       }
-    }
+    },
   },
   en: {
     title: "Mter.pl - web apps",
