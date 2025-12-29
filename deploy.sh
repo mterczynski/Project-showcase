@@ -23,7 +23,7 @@ cp -r ./assets ../mterczynski.github.io/
 cd ../mterczynski.github.io
 # 2. Commit in ../mterczynski.github.io
 git add .
-git commit -a -m "Update project-showcase code and assets: $(git log -1 --pretty=format:"%s")"
+git commit -a -m "Update project-showcase"
 git status
 # 3. Push in ../mterczynski.github.io
 git push
