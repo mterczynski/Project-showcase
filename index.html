@@ -135,16 +135,37 @@
       </div>
     </nav>
 
-    <div style="margin-top: 10rem" class="ui container">
-      <div class="ui segment">
-        <!-- resolved -->
-        <h1 class="h2-sized-header" id="aboutTitle"></h1>
-        <p id="aboutIntro"></p>
-        <p id="aboutDetails"></p>
-      </div>
+    <div style="margin-top: 10rem" class="main-content-wrapper">
+      <!-- Certificates Section -->
+      <aside class="certificates-section">
+        <h2 id="certificates-title">Certificates</h2>
+        <div class="certificates-container">
+          <div class="certificate-item">
+            <img src="assets/certificates/certificate-1.svg" alt="Web Development Certificate" />
+          </div>
+          <div class="certificate-item">
+            <img src="assets/certificates/certificate-2.svg" alt="JavaScript Advanced Certificate" />
+          </div>
+          <div class="certificate-item">
+            <img src="assets/certificates/certificate-3.svg" alt="React & Redux Certificate" />
+          </div>
+        </div>
+      </aside>
 
-      <h2 id="commercial-projects-title">Commercial projects</h2>
-      <div class="ui four column doubling stackable grid container">
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="ui container">
+          <div class="ui segment">
+            <!-- resolved -->
+            <h1 class="h2-sized-header" id="aboutTitle"></h1>
+            <p id="aboutIntro"></p>
+            <p id="aboutDetails"></p>
+          </div>
+        </div>
+
+        <div class="ui container">
+          <h2 id="commercial-projects-title">Commercial projects</h2>
+          <div class="ui four column doubling stackable grid container">
         <div class="column">
           <!-- Boom Boom Boom -->
           <div class="ui card">
@@ -439,16 +460,16 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="ui message">
-        <div class="header" id="access-notice-title"></div>
-        <p id="access-notice-description"></p>
-      </div>
+        <div class="ui message">
+          <div class="header" id="access-notice-title"></div>
+          <p id="access-notice-description"></p>
+        </div>
+        </div>
     </div>
 
-    <br />
-    <div class="projects-personal ui container">
+        <br />
+        <div class="projects-personal ui container">
       <h2 id="personal-projects-title">Personal projects</h2>
       <div class="ui four column doubling stackable grid container">
         <div class="column">
@@ -933,6 +954,8 @@
               Art generation, TS
             </div>
           </div>
+        </div>
+      </div>
         </div>
       </div>
     </div>

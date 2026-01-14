@@ -18,6 +18,9 @@ const translations = {
       commercial: "Projekty komercyjne",
       personal: "Projekty osobiste",
     },
+    certificates: {
+      title: "Certyfikaty",
+    },
     accessNotice: {
       title: "Informacja o dostępności",
       description: "Proszę mieć na uwadze, że niektóre z powyższych stron internetowych mogą być niedostępne w Państwa kraju. W razie potrzeby sugerujemy skorzystanie z usługi VPN."
@@ -61,6 +64,9 @@ const translations = {
     projects: {
       commercial: "Commercial Projects",
       personal: "Personal Projects",
+    },
+    certificates: {
+      title: "Certificates",
     },
     accessNotice: {
       title: "Access notice",
@@ -112,6 +118,7 @@ document.getElementById("aboutDetails").innerText = t.about.details;
 
 document.getElementById("commercial-projects-title").innerText = t.projects.commercial;
 document.getElementById("personal-projects-title").innerText = t.projects.personal;
+document.getElementById("certificates-title").innerText = t.certificates.title;
 
 document.getElementById("access-notice-title").innerText = t.accessNotice.title;
 document.getElementById("access-notice-description").innerText = t.accessNotice.description;
