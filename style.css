@@ -67,7 +67,6 @@ body {
 }
 
 .projectLink {
-  display: block;
   display: flex;
   justify-content: center;
 }
