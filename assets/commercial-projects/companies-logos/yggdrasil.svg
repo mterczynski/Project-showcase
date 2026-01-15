@@ -5,9 +5,9 @@
   <!-- Stylized Y letter -->
   <g fill="#ffffff" stroke="none">
     <!-- Left branch of Y -->
-    <path d="M 50 40 L 70 40 L 100 80 L 100 80 Z"/>
+    <path d="M 50 40 L 70 40 L 100 80 Z"/>
     <!-- Right branch of Y -->
-    <path d="M 130 40 L 150 40 L 100 80 L 100 80 Z"/>
+    <path d="M 130 40 L 150 40 L 100 80 Z"/>
     <!-- Stem of Y -->
     <rect x="90" y="80" width="20" height="80" rx="2"/>
     

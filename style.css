@@ -7,6 +7,8 @@
   --logo-ribbon-size: 80px;
   --logo-size: 40px;
   --logo-offset: 8px;
+  --z-logo-ribbon: 1;
+  --z-logo: 2;
 }
 
 @font-face {
@@ -49,7 +51,7 @@ body {
   border-style: solid;
   border-width: var(--logo-ribbon-size) var(--logo-ribbon-size) 0 0;
   border-color: #1791c8 transparent transparent transparent;
-  z-index: 1000;
+  z-index: var(--z-logo-ribbon);
 }
 
 .companiesLogo {
@@ -58,7 +60,7 @@ body {
   position: absolute;
   top: var(--logo-offset);
   left: var(--logo-offset);
-  z-index: 1001;
+  z-index: var(--z-logo);
   /* Black and white filter */
   filter: brightness(0) invert(1);
   object-fit: contain;
