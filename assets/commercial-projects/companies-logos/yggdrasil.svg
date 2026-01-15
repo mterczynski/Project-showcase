@@ -1,0 +1,19 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle background -->
+  <circle cx="100" cy="100" r="95" fill="#1a1a1a"/>
+  
+  <!-- Stylized Y letter -->
+  <g fill="#ffffff" stroke="none">
+    <!-- Left branch of Y -->
+    <path d="M 50 40 L 70 40 L 100 80 L 100 80 Z"/>
+    <!-- Right branch of Y -->
+    <path d="M 130 40 L 150 40 L 100 80 L 100 80 Z"/>
+    <!-- Stem of Y -->
+    <rect x="90" y="80" width="20" height="80" rx="2"/>
+    
+    <!-- Tree/gaming symbol accents -->
+    <circle cx="100" cy="90" r="8" fill="#00ff88"/>
+    <circle cx="85" cy="110" r="5" fill="#00ff88"/>
+    <circle cx="115" cy="110" r="5" fill="#00ff88"/>
+  </g>
+</svg>
