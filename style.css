@@ -203,14 +203,16 @@ h1.h2-sized-header {
   top: -2rem;
 }
 .certificate_img {
-  width: 90px;
+  position: relative;
+  width: 110px;
   object-fit: cover;
-  height: 90px;
+  height: 110px;
 }
 
 .certificate_main {
   position: relative;
 }
+
 @media screen and (max-width: 560px) {
   nav {
     padding: 0px 9px;
@@ -239,11 +241,6 @@ h1.h2-sized-header {
   .toggle {
     display: block;
     cursor: pointer;
-  }
-  .certificate_img {
-    width: 60px;
-    object-fit: cover;
-    height: 60px;
   }
   .logo {
     display: flex;
