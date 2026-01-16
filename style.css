@@ -202,13 +202,13 @@ h1.h2-sized-header {
   right: 3rem;
   top: -2rem;
 }
-.certificate_Sec img {
+.certificate_img {
   width: 90px;
   object-fit: cover;
   height: 90px;
 }
 
-.take_3 {
+.certificate_main {
   position: relative;
 }
 @media screen and (max-width: 560px) {
@@ -240,7 +240,7 @@ h1.h2-sized-header {
     display: block;
     cursor: pointer;
   }
-  .certificate_Sec img {
+  .certificate_img {
     width: 60px;
     object-fit: cover;
     height: 60px;
