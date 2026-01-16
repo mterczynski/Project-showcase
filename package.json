@@ -1,0 +1,15 @@
+{
+  "name": "project-showcase",
+  "version": "1.0.0",
+  "description": "Website with my projects, published to https://github.com/mterczynski/mterczynski.github.io",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.8.0"
+  }
+}
