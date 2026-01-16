@@ -191,6 +191,26 @@ h1.h2-sized-header {
   display: block;
   pointer-events: auto;
 }*/
+
+/* certificate */
+.certificate_Sec {
+  position: absolute;
+  gap: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 3rem;
+  top: -2rem;
+}
+.certificate_Sec img {
+  width: 90px;
+  object-fit: cover;
+  height: 90px;
+}
+
+.take_3 {
+  position: relative;
+}
 @media screen and (max-width: 560px) {
   nav {
     padding: 0px 9px;
@@ -220,7 +240,11 @@ h1.h2-sized-header {
     display: block;
     cursor: pointer;
   }
-
+  .certificate_Sec img {
+    width: 60px;
+    object-fit: cover;
+    height: 60px;
+  }
   .logo {
     display: flex;
     margin: 0 20px;
