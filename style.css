@@ -2,6 +2,15 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --logo-ribbon-size: 80px;
+  --logo-size: 40px;
+  --logo-offset: 8px;
+  --z-logo-ribbon: 1;
+  --z-logo: 2;
+}
+
 @font-face {
   font-family: "LeagueSpartan";
   src: URL("./assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
@@ -32,17 +41,32 @@ body {
   width: 94px;
 }
 
-.companiesLogo {
-  display: none; /* Remove this line to show companies logos */
-  width: 30px !important;
-  height: 30px !important;
+/* Blue triangle ribbon container for company logos */
+.logo-ribbon {
   position: absolute;
-  right: 0;
-  z-index: 30000;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: var(--logo-ribbon-size) var(--logo-ribbon-size) 0 0;
+  border-color: #1791c8 transparent transparent transparent;
+  z-index: var(--z-logo-ribbon);
+}
+
+.companiesLogo {
+  width: var(--logo-size) !important;
+  height: var(--logo-size) !important;
+  position: absolute;
+  top: var(--logo-offset);
+  left: var(--logo-offset);
+  z-index: var(--z-logo);
+  /* Black and white filter */
+  filter: brightness(0) invert(1);
+  object-fit: contain;
 }
 
 .projectLink {
-  display: block;
   display: flex;
   justify-content: center;
 }
