@@ -33,12 +33,20 @@ body {
 }
 
 .companiesLogo {
-  display: none; /* Remove this line to show companies logos */
-  width: 30px !important;
-  height: 30px !important;
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
   position: absolute;
-  right: 0;
-  z-index: 30000;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  filter: grayscale(100%) brightness(0) invert(1);
+  padding: 8px;
+  background-image: url('./assets/commercial-projects/companies-logos/blue-triangle.svg');
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  object-fit: contain;
 }
 
 .projectLink {
