@@ -10,7 +10,7 @@ const translations = {
     about: {
       title: "O mnie",
       intro:
-        "Witam, nazywam się Michał Terczyński, jestem Frontend Developerem ze specjalizacją w tworzeniu gier i aplikacji internetowych. Zdobyłem doświadczenie w renomowanych firmach takich jak NetEnt, Yggdrasil Gaming i Software Mind, gdzie poszerzyłem wiedzę w zakresie tworzenia angażujących gier oraz wielomodułowych aplikacji biznesowych z wykorzystaniem TypeScript, React, Angular i PixiJS. Posiadam certyfikaty AWS Certified Cloud Practitioner i AWS Certified AI Practitioner.",
+        "Witam, nazywam się Michał Terczyński, jestem Frontend Developerem ze specjalizacją w tworzeniu gier i aplikacji internetowych. Zdobyłem doświadczenie w renomowanych firmach takich jak NetEnt, Yggdrasil Gaming i Software Mind, gdzie poszerzyłem wiedzę w zakresie tworzenia angażujących gier oraz wielomodułowych aplikacji biznesowych z wykorzystaniem TypeScript, React, Angular i PixiJS. Posiadam certyfikaty AWS Certified Cloud Practitioner oraz AWS Certified AI Practitioner.",
       details:
         "Moje umiejętności techniczne obejmują nowoczesne frameworki JavaScript, tworzenie gier w PixiJS oraz budowanie skalowalnych aplikacji internetowych. Pasjonuję się tworzeniem wysokiej jakości, wydajnego kodu i chętnie podejmuję się zarówno projektów komercyjnych, jak i autorskich.",
     },
