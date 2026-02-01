@@ -199,7 +199,7 @@ h1.h2-sized-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 3rem;
+  right: 0rem;
   top: -2rem;
 }
 .certificate_img {
