@@ -214,6 +214,21 @@ h1.h2-sized-header {
 }
 
 @media screen and (max-width: 560px) {
+  .ui.container {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .certificate_Sec {
+    top: -1.2rem;
+    gap: 2px;
+  }
+  .certificate_img {
+    width: 70px;
+    height: 70px;
+  }
   nav {
     padding: 0px 9px;
   }
