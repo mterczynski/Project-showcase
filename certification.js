@@ -2,12 +2,12 @@ const certificationJson = [
   {
     title: "Cloud Practitioner",
     img: "./assets/certificate/aws_cloud_practicioner.png",
-    meaning: "AWS Certified Cloud Practitioner certificate",
+    meaning: "AWS Certified Cloud Practitioner ",
   },
   {
     title: "AI Practitioner",
     img: "./assets/certificate/aws_ai_practicioner.webp",
-    meaning: "AWS Certified AI Practicioner certificate",
+    meaning: "AWS Certified AI Practicioner ",
   },
   {
     title: "Azure Fundamentals",

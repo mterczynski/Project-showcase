@@ -74,8 +74,8 @@ const translations = {
       title: "About Me",
       intro:
         "Hi, I'm Michał Terczyński, a Frontend Developer with a strong focus on game development and interactive applications. With experience at companies like NetEnt, Yggdrasil Gaming, and Software Mind, I've developed expertise in creating engaging games and robust enterprise applications using TypeScript, React, Angular, and PixiJS.",
-      certifications:
-        "I hold the following certifications: AWS Certified Cloud Practitioner, AWS Certified AI Practitioner, Microsoft Certified: Azure Fundamentals, and Google Cloud Certified: Generative AI Leader.",
+      // certifications:
+      //   "I hold the ollowing certifications: AWS Certified Cloud Practitioner, AWS Certified AI Practitioner, Microsoft Certified: Azure Fundamentals, and Google Cloud Certified: Generative AI Leader.",
       details:
         "My technical skills include modern JavaScript frameworks, game development with PixiJS, and building scalable web applications. I'm passionate about creating high-quality, performant code and enjoy working on both commercial projects and personal game development endeavors.",
     },
