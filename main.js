@@ -143,7 +143,7 @@ document.title = t.title;
 
 document.getElementById("aboutTitle").innerText = t.about.title;
 document.getElementById("aboutIntro").innerText = t.about.intro;
-document.getElementById("aboutCertificates").innerText = t.about.certifications;
+
 document.getElementById("aboutDetails").innerText = t.about.details;
 document.getElementById("certification_title").innerText =
   t.about.certifications;
