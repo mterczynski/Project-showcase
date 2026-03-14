@@ -2,12 +2,12 @@ const certificationJson = [
   {
     title: "Cloud Practitioner",
     img: "./assets/certificate/aws_cloud_practicioner.png",
-    meaning: "AWS Certified Cloud Practitioner ",
+    meaning: "AWS Certified Cloud Practitioner",
   },
   {
     title: "AI Practitioner",
     img: "./assets/certificate/aws_ai_practicioner.webp",
-    meaning: "AWS Certified AI Practicioner ",
+    meaning: "AWS Certified AI Practicioner",
   },
   {
     title: "Azure Fundamentals",
@@ -15,9 +15,9 @@ const certificationJson = [
     meaning: "Microsoft Certified: Azure Fundamentals",
   },
   {
-    title: "Generative AI Leader badge",
+    title: "Generative AI Leader",
     img: "./assets/certificate/gcp-generative-ai-leader.webp",
-    meaning: "Google Cloud Certified: Generative AI Leader badge",
+    meaning: "Google Cloud Certified: Generative AI Leader",
   },
 ];
 
@@ -39,6 +39,4 @@ export const certification = () => {
               </div>`;
     articlediv.appendChild(article);
   });
-
-  //   console.log("cerification");
 };
