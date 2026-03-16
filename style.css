@@ -235,7 +235,7 @@ h1.h2-sized-header {
     width: 70px;
     object-fit: contain;
   }
-  .certification_paper {
+  .certification_section {
     .certification_list {
       display: flex;
       background-color: white;

@@ -1,7 +1,7 @@
-import { certification } from "./certification.js";
+import { initCertifications } from "./certification.js";
 import { updateLandingPageViews } from "./counter.js";
 import { initNavbarToggle } from "./toggle.js";
-certification();
+initCertifications();
 updateLandingPageViews();
 initNavbarToggle();
 
