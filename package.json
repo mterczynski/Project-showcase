@@ -4,7 +4,7 @@
   "description": "Website with my projects, published to https://github.com/mterczynski/mterczynski.github.io",
   "main": "main.js",
   "scripts": {
-    "start": "http-server .",
+    "start": "http-server . -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
