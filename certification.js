@@ -25,7 +25,7 @@ const certificationData = [
     img: "./assets/certificate/gcp-generative-ai-leader.webp",
     subtitle: "Google Cloud Certified: Generative AI Leader",
     link: "https://cloud.google.com/learn/certification/generative-ai-leader",
-    link2: "https://www.credly.com/badges/c5e7e87b-f054-40a4-8b75-7ab135bc5120",
+    confirmationLink: "https://www.credly.com/badges/c5e7e87b-f054-40a4-8b75-7ab135bc5120",
   },
 ];
 
