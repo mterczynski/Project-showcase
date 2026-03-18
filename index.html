@@ -12,6 +12,12 @@
       content="Michał Terczyński, mter, mterpl, mter.pl, Michal Terczynski, mterczynski, Frontend Developer, Game Developer, JavaScript, TypeScript, React, PixiJS" />
     <meta name="author" content="Michał Terczyński" />
     <title>Mter.pl - web apps</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="preload"
+      href="./assets/social-media/logo-v2-initials-only-cropped.webp"
+      as="image" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
@@ -22,9 +28,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" />
-    <script
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
 
@@ -39,8 +42,11 @@
       <div class="main_logo">
         <img
           class="navbar-website-logo"
-          src="assets/social-media/logo-v2-initials-only-cropped.png"
-          alt="Website logo" />
+          src="assets/social-media/logo-v2-initials-only-cropped.webp"
+          alt="Website logo"
+          width="240"
+          height="152"
+          fetchpriority="high" />
         <div class="nav-logo-text-container span">
           <span class="nav-logo-text-black">M</span>
           <span class="nav-logo-text-blue">TER</span>
@@ -51,8 +57,11 @@
         <div class="logo">
           <div class="logo_close">
             <img
-              src="assets/social-media/logo-v2-initials-only-cropped.png"
-              alt="Website logo" />
+              src="assets/social-media/logo-v2-initials-only-cropped.webp"
+              alt="Website logo"
+              width="240"
+              height="152"
+              loading="lazy" />
             <div class="nav-logo-text-container">
               <span class="nav-logo-text-black_1">M</span>
               <span class="nav-logo-text-blue_2">TER</span>
@@ -63,7 +72,10 @@
             <img
               class="close"
               src="./assets/close_24dp_1791C8_FILL0_wght400_GRAD0_opsz24.svg"
-              alt="logo" />
+              alt="logo"
+              width="24"
+              height="24"
+              loading="lazy" />
           </div>
         </div>
         <ul>
@@ -118,7 +130,9 @@
       <div class="toggle">
         <img
           src="./assets/menu_30dp_1791C8_FILL0_wght400_GRAD0_opsz24.svg"
-          alt="menu" />
+          alt="menu"
+          width="30"
+          height="30" />
       </div>
     </nav>
 
@@ -150,7 +164,10 @@
               <img
                 src="assets/commercial-projects/gamecode-boom-boom-boom.webp"
                 class="visible content"
-                alt="Boom boom boom project website" />
+                alt="Boom boom boom project website"
+                width="600"
+                height="338"
+                loading="lazy" />
               <!-- <img
                 class="companiesLogo"
                 src="assets/commercial-projects/companies-logos/gamecode.png"
@@ -189,9 +206,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/commercial-projects/gemone-onyx.png"
+                src="assets/commercial-projects/gemone-onyx.webp"
                 class="visible content"
-                alt="Gem One Onyx project preview" />
+                alt="Gem One Onyx project preview"
+                width="600"
+                height="381"
+                loading="lazy" />
               <!-- <img
                 class="companiesLogo"
                 src="assets/commercial-projects/companies-logos/software-mind.jpg"
@@ -231,9 +251,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/commercial-projects/aloha-christmas-netent.png"
+                src="assets/commercial-projects/aloha-christmas-netent.webp"
                 class="visible content"
-                alt="Aloha Christmas project preview" />
+                alt="Aloha Christmas project preview"
+                width="440"
+                height="249"
+                loading="lazy" />
               <!-- <img
                 class="companiesLogo"
                 src="assets/commercial-projects/companies-logos/netent.png"
@@ -271,9 +294,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/commercial-projects/trickstar-spins.png"
+                src="assets/commercial-projects/trickstar-spins.webp"
                 class="visible content"
-                alt="Trickstar Spins project preview" />
+                alt="Trickstar Spins project preview"
+                width="600"
+                height="334"
+                loading="lazy" />
               <!-- <img
                 class="companiesLogo"
                 src="assets/commercial-projects/companies-logos/yggdrasil.png"
@@ -313,9 +339,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/commercial-projects/super-striker-netent.png"
+                src="assets/commercial-projects/super-striker-netent.webp"
                 class="visible content"
-                alt="Super Striker project preview" />
+                alt="Super Striker project preview"
+                width="350"
+                height="197"
+                loading="lazy" />
               <!-- <img
                 class="companiesLogo"
                 src="assets/commercial-projects/companies-logos/netent.png"
@@ -356,9 +385,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/commercial-projects/hackers-haven.png"
+                src="assets/commercial-projects/hackers-haven.webp"
                 class="visible content"
-                alt="Hacker's Haven project preview" />
+                alt="Hacker's Haven project preview"
+                width="600"
+                height="532"
+                loading="lazy" />
               <!-- <img
                 class="companiesLogo"
                 src="assets/commercial-projects/companies-logos/yggdrasil.png"
@@ -396,9 +428,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/commercial-projects/hammer-cash-game_LE_upscale_balanced_x2.jpg"
+                src="assets/commercial-projects/hammer-cash-game.webp"
                 class="visible content"
-                alt="HammerCash project website" />
+                alt="HammerCash project website"
+                width="600"
+                height="600"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a class="projectLink" href="https://www.gamecodehq.com/games/">
                   <button class="ui blue button linkButton">Website</button>
@@ -436,9 +471,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/paint.PNG"
+                src="assets/personal-projects/paint.webp"
                 class="visible content"
-                alt="Paint project preview" />
+                alt="Paint project preview"
+                width="350"
+                height="170"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -471,9 +509,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/kulki.PNG"
+                src="assets/personal-projects/kulki.webp"
                 class="visible content"
-                alt="Kulki project preview" />
+                alt="Kulki project preview"
+                width="544"
+                height="320"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -507,9 +548,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/level-editor.png"
+                src="assets/personal-projects/level-editor.webp"
                 class="visible content"
-                alt="Level editor project preview" />
+                alt="Level editor project preview"
+                width="769"
+                height="378"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -541,9 +585,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/sudoku-solver.jpg"
+                src="assets/personal-projects/sudoku-solver.webp"
                 class="visible content"
-                alt="Sudoku solver project preview" />
+                alt="Sudoku solver project preview"
+                width="358"
+                height="355"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -578,7 +625,10 @@
               <img
                 src="assets/personal-projects/mine-sweeper.PNG"
                 class="visible content"
-                alt="Mine Sweeper project preview" />
+                alt="Mine Sweeper project preview"
+                width="548"
+                height="510"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -610,9 +660,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/snake.png"
+                src="assets/personal-projects/snake.webp"
                 class="visible content"
-                alt="Snake project preview" />
+                alt="Snake project preview"
+                width="412"
+                height="412"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -643,9 +696,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/joi-schema-generator.jpg"
+                src="assets/personal-projects/joi-schema-generator.webp"
                 class="visible content"
-                alt="Joi schema generator project preview" />
+                alt="Joi schema generator project preview"
+                width="504"
+                height="345"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -680,9 +736,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/tetris-dom.png"
+                src="assets/personal-projects/tetris-dom.webp"
                 class="visible content"
-                alt="Tetris project preview" />
+                alt="Tetris project preview"
+                width="295"
+                height="448"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -714,9 +773,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/sensors.gif"
+                src="assets/personal-projects/sensors.webp"
                 class="visible content"
-                alt="Sensors project preview" />
+                alt="Sensors project preview"
+                width="400"
+                height="400"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -749,9 +811,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/space-golf-3d.jpg"
+                src="assets/personal-projects/space-golf-3d.webp"
                 class="visible content"
-                alt="Space Golf 3D project preview" />
+                alt="Space Golf 3D project preview"
+                width="453"
+                height="344"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -786,9 +851,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/chess.jpg"
+                src="assets/personal-projects/chess.webp"
                 class="visible content"
-                alt="Chess project preview" />
+                alt="Chess project preview"
+                width="434"
+                height="435"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -815,9 +883,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/code-clicker.jpg"
+                src="assets/personal-projects/code-clicker.webp"
                 class="visible content"
-                alt="Code Clicker project preview" />
+                alt="Code Clicker project preview"
+                width="407"
+                height="380"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"
@@ -846,9 +917,12 @@
           <div class="ui card">
             <div class="ui slide masked reveal image">
               <img
-                src="assets/personal-projects/pattern-generators.jpg"
+                src="assets/personal-projects/pattern-generators.webp"
                 class="visible content"
-                alt="Line pattern generator project preview" />
+                alt="Line pattern generator project preview"
+                width="374"
+                height="327"
+                loading="lazy" />
               <div class="hidden content linkButtons">
                 <a
                   class="projectLink"

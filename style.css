@@ -6,6 +6,7 @@
   font-family: "LeagueSpartan";
   src: URL("./assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
     format("truetype");
+  font-display: swap;
 }
 
 body {
