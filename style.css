@@ -272,8 +272,12 @@ h1.h2-sized-header {
   }
 
   .certificate_Sec {
-    top: -1.2rem;
-    gap: 2px;
+    top: 0.5rem;
+    right: 0.5rem;
+    gap: 3px;
+    flex-wrap: wrap;
+    width: 146px; /* 2 × 70px images + 3px gap + 3px buffer → 2 per row */
+    justify-content: flex-end;
   }
   .certificate_img {
     width: 70px;
