@@ -22,9 +22,9 @@
         nav{display:flex;align-items:center;justify-content:space-between;padding:0 50px;position:fixed;z-index:10;background:#e4eef7;top:0;left:0;right:0;contain:layout style paint}
         @media(max-width:767px){nav{padding:0 15px}}
         .navbar-website-logo{width:120px;height:80px;margin-top:10px}
-        .ui.container{display:block;max-width:1127px!important;margin-left:auto!important;margin-right:auto!important}
-        @media(max-width:767px){.ui.container{width:auto!important;margin-left:1em!important;margin-right:1em!important}}
-        .ui.segment{position:relative;background:#fff;box-shadow:0 1px 2px 0 rgba(34,36,38,.15);margin:1rem 0;padding:1em;border-radius:.28571429rem;border:1px solid rgba(34,36,38,.15)}
+        .container{display:block;max-width:1127px!important;margin-left:auto!important;margin-right:auto!important}
+        @media(max-width:767px){.container{width:auto!important;margin-left:1em!important;margin-right:1em!important}}
+        .segment{position:relative;background:#fff;box-shadow:0 1px 2px 0 rgba(34,36,38,.15);margin:1rem 0;padding:1em;border-radius:.28571429rem;border:1px solid rgba(34,36,38,.15)}
         .grid_abt{display:grid;grid-template-columns:repeat(3,1fr);align-items:flex-start}
         @media(max-width:1200px){.grid_abt{grid-template-columns:1fr}}
         .grid_3{grid-column:span 2}
@@ -125,7 +125,7 @@
     </div>
 </nav>
 
-<div style="margin-top:10rem" class="ui container">
+<div style="margin-top:10rem" class="ui container certificate-container">
     <div class="ui segment certificate_main">
         <section class="grid_abt">
             <div class="grid_3">
@@ -178,9 +178,9 @@
     </div>
 
     <h2 id="commercial-projects-title">Commercial projects</h2>
-    <div class="ui four column doubling stackable grid container">
+    <div class="ui four column doubling stackable grid container commercial-project-cards">
         <div class="column">
-            <div class="ui card">
+            <div class="ui card commer">
                 <div class="ui slide masked reveal image">
                     <img src="/assets/commercial-projects/gamecode-boom-boom-boom.webp" class="visible content" alt="Boom boom boom project website" width="400" height="225" loading="lazy" decoding="async" />
                     <img class="companiesLogo" src="/assets/commercial-projects/triangle/gamecode.webp" alt="GameCode logo" width="70" height="70" loading="lazy" decoding="async" />

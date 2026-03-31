@@ -11,7 +11,8 @@ html, body {
 
 @font-face {
     font-family: "LeagueSpartan";
-    src: url("./assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.woff2") format("woff2");
+    src: url("./assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.woff2");
+format("woff2");
     font-display: swap;
 }
 
@@ -19,19 +20,34 @@ body {
     background: #e4eef7;
 }
 
-.ui.container {
+.commercial-project-cards {
+    width: 100%;
+}
+
+.certificate-container {
     display: block;
     max-width: 1127px !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
-.ui.grid.container {
+.personal-project-card {
+    width: 25%;
+}
+
+.container {
+    display: block;
+    max-width: 1127px !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
-.ui.segment {
+.grid.container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.segment {
     position: relative;
     background: #fff;
     box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
@@ -41,7 +57,7 @@ body {
     border: 1px solid rgba(34, 36, 38, .15);
 }
 
-.ui.grid {
+.grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,18 +66,18 @@ body {
     margin: 0 -1rem;
 }
 
-.ui.grid>.column {
+.grid>.column {
     display: block;
     flex: 0 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.ui.four.column.grid>.column {
+.four.column.grid>.column {
     width: 25%;
 }
 
-.ui.card {
+.card {
     display: flex;
     flex-direction: column;
     background: #fff;
@@ -72,7 +88,7 @@ body {
     overflow: hidden;
 }
 
-.ui.card>.image {
+.card>.image {
     position: relative;
     display: block;
     overflow: hidden;
@@ -80,43 +96,43 @@ body {
     flex-shrink: 0;
 }
 
-.ui.card>.image>img {
+.card>.image>img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.ui.card>.content {
+.card>.content {
     flex-grow: 0;
     padding: 1em;
     border-top: 1px solid rgba(34, 36, 38, .1);
 }
 
-.ui.card>.content>.header {
+.card>.content>.header {
     font-weight: 700;
     font-size: 1.28571429rem;
     margin-bottom: .25em;
 }
 
-.ui.card>.content>.meta {
+.card>.content>.meta {
     font-size: .9em;
     color: rgba(0, 0, 0, .7);
 }
 
-.ui.card>.extra.content {
+.card>.extra.content {
     padding: .75em 1em;
     border-top: 1px solid rgba(0, 0, 0, .05);
 }
 
-.ui.slide.masked.reveal {
+.slide.masked.reveal {
     position: relative;
     display: block;
     overflow: hidden;
     width: 100%;
 }
 
-.ui.slide.masked.reveal>.visible.content {
+.slide.masked.reveal>.visible.content {
     position: relative;
     display: block;
     width: 100%;
@@ -124,14 +140,14 @@ body {
     transition: transform .4s ease;
 }
 
-.ui.slide.masked.reveal>.visible.content img {
+.slide.masked.reveal>.visible.content img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.ui.slide.masked.reveal>.hidden.content {
+.slide.masked.reveal>.hidden.content {
     position: absolute;
     top: 0;
     left: 100%;
@@ -147,11 +163,11 @@ body {
     opacity: 0;
 }
 
-.ui.slide.masked.reveal:hover>.visible.content {
+.slide.masked.reveal:hover>.visible.content {
     transform: translateX(-100%);
 }
 
-.ui.slide.masked.reveal:hover>.hidden.content {
+.slide.masked.reveal:hover>.hidden.content {
     left: 0;
     opacity: 1;
 }
@@ -167,7 +183,7 @@ body {
     transition: opacity .3s ease, transform .3s ease;
 }
 
-.ui.slide.masked.reveal:hover .companiesLogo {
+.slide.masked.reveal:hover .companiesLogo {
     opacity: 0;
     transform: translateX(20px);
 }
@@ -198,7 +214,7 @@ body {
     justify-content: center;
 }
 
-.ui.button {
+.button {
     cursor: pointer;
     display: inline-block;
     padding: .78571429em 1.5em;
@@ -210,16 +226,16 @@ body {
     text-align: center;
 }
 
-.ui.blue.button {
+.blue.button {
     background-color: #2185d0;
     color: #fff;
 }
 
-.ui.blue.button:hover {
+.blue.button:hover {
     background-color: #1678c2;
 }
 
-.ui.message {
+.message {
     margin: 1rem 0;
     padding: 1em;
     background: #f8f9fa;
@@ -227,7 +243,7 @@ body {
     border-radius: .28571429rem;
 }
 
-.ui.message>.header {
+.message>.header {
     font-weight: 700;
     margin-bottom: .5em;
 }
@@ -430,12 +446,10 @@ h1.h2-sized-header {
     color: gray;
 }
 
-/* ============================================
-   MOBILE - max 767px
-   ============================================ */
+
 @media only screen and (max-width: 767px) {
 
-    .ui.container {
+    .container {
         width: 100% !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -443,7 +457,7 @@ h1.h2-sized-header {
         padding-right: 12px;
     }
 
-    .ui.four.column.doubling.stackable.grid>.column {
+    .four.column.doubling.stackable.grid>.column {
         width: 100% !important;
     }
 
@@ -470,7 +484,7 @@ h1.h2-sized-header {
         margin-bottom: 10px;
     }
 
-    /* ========== NAPRAWIONE MENU MOBILE ========== */
+
     .navbar-right {
         position: fixed;
         inset: 0;
@@ -495,7 +509,7 @@ h1.h2-sized-header {
         opacity: 1;
         transition: transform 0.2s ease-out;
     }
-    /* ============================================ */
+
 
     .toggle {
         display: block;
@@ -562,24 +576,22 @@ h1.h2-sized-header {
         width: 90px;
     }
 
-    .ui.button {
+    .button {
         padding: .6em 1em;
         font-size: .9rem;
     }
 }
 
-/* Fix dla iOS Safari */
+
 @supports (-webkit-touch-callout: none) {
     .navbar-right {
         height: -webkit-fill-available !important;
     }
 }
 
-/* ============================================
-   TABLET - 768px do 991px
-   ============================================ */
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .ui.four.column.doubling.stackable.grid>.column {
+    .four.column.doubling.stackable.grid>.column {
         width: 50% !important;
     }
 
@@ -590,11 +602,9 @@ h1.h2-sized-header {
     }
 }
 
-/* ============================================
-   DESKTOP SMALL - 992px do 1200px
-   ============================================ */
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .ui.four.column.doubling.stackable.grid>.column {
+    .four.column.doubling.stackable.grid>.column {
         width: 33.333% !important;
     }
 
@@ -608,9 +618,7 @@ h1.h2-sized-header {
     }
 }
 
-/* ============================================
-   GRID FIX - max 1200px
-   ============================================ */
+
 @media screen and (max-width: 1200px) {
     .grid_abt {
         display: grid;
