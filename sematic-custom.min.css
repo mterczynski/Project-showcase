@@ -1,0 +1,24 @@
+.ui.container{display:block;max-width:1127px!important;margin-left:auto!important;margin-right:auto!important}
+.ui.grid.container{margin-left:auto!important;margin-right:auto!important}
+.ui.segment{position:relative;background:#fff;box-shadow:0 1px 2px 0 rgba(34,36,38,.15);margin:1rem 0;padding:1em;border-radius:.28571429rem;border:1px solid rgba(34,36,38,.15)}
+.ui.grid{display:flex;flex-direction:row;flex-wrap:wrap;align-items:stretch;padding:0;margin:0 -1rem}
+.ui.grid>.column{display:block;flex:0 0 auto;padding-left:1rem;padding-right:1rem}
+.ui.four.column.grid>.column{width:25%}
+.ui.card{display:flex;flex-direction:column;background:#fff;border-radius:.28571429rem;box-shadow:0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;padding:0;margin:1rem 0}
+.ui.card>.content{flex-grow:1;padding:1em;border-top:1px solid rgba(34,36,38,.1)}
+.ui.card>.content>.header{font-weight:700;font-size:1.28571429rem;margin-bottom:.25em}
+.ui.card>.content>.meta{font-size:.9em;color:rgba(0,0,0,.4)}
+.ui.card>.extra.content{padding:.75em 1em;border-top:1px solid rgba(0,0,0,.05)}
+.ui.slide.masked.reveal{position:relative;display:block;overflow:hidden;white-space:nowrap}
+.ui.slide.masked.reveal>.visible.content{position:relative;display:block!important;top:0;left:0;z-index:1}
+.ui.slide.masked.reveal>.hidden.content{position:absolute;top:100%;left:0;z-index:2;width:100%;height:100%;transition:all .3s ease}
+.ui.slide.masked.reveal:hover>.hidden.content{top:0}
+.ui.button{cursor:pointer;display:inline-block;padding:.78571429em 1.5em;background:#e0e1e2;border:none;border-radius:.28571429rem;font-weight:700}
+.ui.blue.button{background-color:#2185d0;color:#fff}
+.ui.message{margin:1rem 0;padding:1em;background:#f8f9fa;border:1px solid rgba(34,36,38,.15);border-radius:.28571429rem}
+@media only screen and (max-width:767px){
+    .ui.four.column.doubling.stackable.grid>.column{width:100%!important}
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .ui.four.column.doubling.stackable.grid>.column{width:50%!important}
+}
