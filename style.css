@@ -39,7 +39,7 @@ body {
     width: 90px !important;
     height: 75px !important;
     object-fit: contain;
-    clip-path: polygon(0 0, 100% 0, 0 100%); /* ← przycina do trójkąta */
+    clip-path: polygon(0 0, 100% 0, 0 100%); /* clips to a triangle */
     z-index: 11;
 
     transition: opacity .3s ease, transform .3s ease;
