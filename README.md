@@ -1,3 +1,5 @@
+# Project showcase
+
 Website with my projects, published to https://github.com/mterczynski/mterczynski.github.io
 
 ## Running the app locally
@@ -16,14 +18,16 @@ npm start
 
 Then open http://localhost:8080 in your browser.
 
-Alternative workflow: use `peakchen90.open-html-in-browser` in VS Code.
+Alternative workflow: use `peakchen90.open-html-in-browser` extension for VS Code.
 
 ## Scripts
 
-Deploy script - creates and pushes a commit in mterczynski.github.io
+### Deploy 
+
+Deploy script creates and pushes a commit in mterczynski.github.io. It can be run using the following command:
 
 ```
 sh deploy.sh
 ```
 
-Pipelines can be tracked at https://github.com/mterczynski/mterczynski.github.io/actions
+Deployment pipelines can be tracked [here](https://github.com/mterczynski/mterczynski.github.io/actions)
