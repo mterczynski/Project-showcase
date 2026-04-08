@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
 }
+
+img {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  pointer-events: none; /* prevents drag-saving too */
+}
 @font-face {
   font-family: "LeagueSpartan";
   src: URL("./assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf")
@@ -157,6 +163,7 @@ nav {
   cursor: pointer;
   margin-top: 1rem;
   margin-right: -1rem;
+  pointer-events: auto;
 }
 footer {
   margin: 1rem 0.3rem;
