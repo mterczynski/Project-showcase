@@ -22,11 +22,19 @@ Alternative workflow: use `peakchen90.open-html-in-browser` extension for VS Cod
 
 ## Scripts
 
-### Deploy 
+### Format
+
+Make sure to run format script before submitting a PR
+
+```bash
+npm run format
+```
+
+### Deploy
 
 Deploy script creates and pushes a commit in mterczynski.github.io. It can be run using the following command:
 
-```
+```bash
 sh deploy.sh
 ```
 
