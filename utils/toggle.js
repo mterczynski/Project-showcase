@@ -1,5 +1,5 @@
 // navbarToggle.js
-export function initNavbarToggle() {
+export function initNavbarToggle(root = document) {
   document.addEventListener("DOMContentLoaded", () => {
     const toggleButton = document.querySelector(".toggle");
     const navbarRight = document.querySelector(".navbar-right");
