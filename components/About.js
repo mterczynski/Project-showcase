@@ -1,9 +1,9 @@
-import { translations } from "./TranslatorData.js";
+import { translations } from "../utils/translations.js";
 export class About extends HTMLElement {
   constructor() {
     super();
     this.translations = translations;
-    //certificatedata
+
     this.certificationData = [
       {
         title: "Cloud Practitioner",
@@ -66,7 +66,6 @@ export class About extends HTMLElement {
     this.applyTranslations();
   }
 
-  //certificate
   initCertifications() {
     const certificationSection = this.querySelector(".certification_section");
     certificationSection.innerHTML = "";
@@ -86,15 +85,13 @@ export class About extends HTMLElement {
       certificationSection.appendChild(certification_item);
     });
   }
-  //tranlator
+
   applyTranslations() {
-    // Detect browser language
     const userLang = navigator.language || navigator.userLanguage;
     console.log(userLang.slice(0, 2));
     const shortLang = userLang.slice(0, 2);
     const selectedLang = shortLang === "pl" ? "pl" : "en";
 
-    // Apply translation
     const t = this.translations[selectedLang];
     const get = (id) => this.querySelector(`#${id}`);
     document.title = t.title;
