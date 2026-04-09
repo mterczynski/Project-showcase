@@ -2,7 +2,7 @@ import { chunkArray } from "../utils/Grid-Logic.js";
 import { personalProjects } from "../utils/personalProjectsData.js";
 import { translations } from "../utils/translations.js";
 
-export class Personal extends HTMLElement {
+export class PersonalProject extends HTMLElement {
   constructor() {
     super();
     this.translations = translations;
@@ -89,4 +89,4 @@ export class Personal extends HTMLElement {
   }
 }
 
-customElements.define("app-personal", Personal);
+customElements.define("app-personal", PersonalProject);

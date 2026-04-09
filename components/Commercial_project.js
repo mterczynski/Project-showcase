@@ -1,20 +1,15 @@
 import { commercialProjects } from "../utils/CommercialProjectData.js";
 import { chunkArray } from "../utils/Grid-Logic.js";
 import { translations } from "../utils/translations.js";
-// chunkArray
-export class Commercial extends HTMLElement {
+
+export class CommercialProject extends HTMLElement {
   constructor() {
     super();
     this.translations = translations;
   }
   connectedCallback() {
     const columns = chunkArray(commercialProjects, [2, 2, 2, 1]);
-    // const columns = [
-    //   commercialProjects.slice(0, 2),
-    //   commercialProjects.slice(2, 4),
-    //   commercialProjects.slice(4, 6),
-    //   commercialProjects.slice(6, 7),
-    // ];
+
     this.innerHTML = `   <div style="margin-top: 5rem" class="ui container">  <h2 id="commercial-projects-title">Commercial projects</h2>
       <div class="ui four column doubling stackable grid container">
       
@@ -96,4 +91,4 @@ export class Commercial extends HTMLElement {
   }
 }
 
-customElements.define("app-commercial", Commercial);
+customElements.define("app-commercial", CommercialProject);
