@@ -1,31 +1,32 @@
-# Check if target directory exists
-if [ ! -d "../mterczynski.github.io" ]; then
-    echo "Error: Target directory '../mterczynski.github.io' does not exist"
-    echo "Please clone the repository first"
-    exit 1
+#!/usr/bin/env bash
+set -euo pipefail
+
+SOURCE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+TARGET_DIR="$SOURCE_DIR/../mterczynski.github.io/project-showcase-v2"
+
+mkdir -p "$TARGET_DIR"
+
+echo "Cleaning previous deployed app files..."
+rm -rf "$TARGET_DIR/assets" "$TARGET_DIR/components" "$TARGET_DIR/utils"
+rm -f "$TARGET_DIR/index.html" "$TARGET_DIR/style.css" "$TARGET_DIR/main.js"
+
+echo "Copying current app structure..."
+cp "$SOURCE_DIR/index.html" "$TARGET_DIR/"
+cp "$SOURCE_DIR/style.css" "$TARGET_DIR/"
+cp "$SOURCE_DIR/main.js" "$TARGET_DIR/"
+cp -r "$SOURCE_DIR/assets" "$TARGET_DIR/"
+cp -r "$SOURCE_DIR/components" "$TARGET_DIR/"
+cp -r "$SOURCE_DIR/utils" "$TARGET_DIR/"
+
+cd "$TARGET_DIR"
+
+git add .
+
+if git diff --cached --quiet; then
+  echo "No changes to deploy."
+  exit 0
 fi
 
-# 1. Copy index and assets to ../mterczynski.github.io
-rm -rf ../mterczynski.github.io/assets
-rm -rf ../mterczynski.github.io/style.css
-rm -rf ../mterczynski.github.io/index.html
-rm -rf ../mterczynski.github.io/toggle.js
-rm -rf ../mterczynski.github.io/main.js
-rm -rf ../mterczynski.github.io/fireBaseConfig.js
-rm -rf ../mterczynski.github.io/certification.js
-rm -rf ../mterczynski.github.io/counter.js
-cp ./index.html ../mterczynski.github.io/
-cp ./style.css ../mterczynski.github.io/
-cp ./toggle.js ../mterczynski.github.io/
-cp ./main.js ../mterczynski.github.io/
-cp ./fireBaseConfig.js ../mterczynski.github.io/
-cp ./certification.js ../mterczynski.github.io/
-cp ./counter.js ../mterczynski.github.io/
-cp -r ./assets ../mterczynski.github.io/
-cd ../mterczynski.github.io
-# 2. Commit in ../mterczynski.github.io
-git add .
-git commit -a -m "Update project-showcase"
-git status
-# 3. Push in ../mterczynski.github.io
+git commit -m "Update project-showcase"
+git status --short
 git push
