@@ -121,7 +121,7 @@ export const personalProjects = [
     image: "assets/personal-projects/space-golf-3d.jpg",
     alt: "Space Golf 3D project preview",
     description:
-      "A 3D simulation of a golf ball moving through space among planets, featuring custom physics",
+      "A 3D simulation of a golf ball moving through space among planets, featuring custom physics and a dat.gui interface for tweaking the parameters of the simulation",
     links: [
       {
         type: "github",
@@ -129,7 +129,7 @@ export const personalProjects = [
       },
       { type: "open", url: "https://www.mter.pl/space-golf-3d-v2" },
     ],
-    tech: ["TS", "Three.js", "Jest", "3D", "physics"],
+    tech: ["TS", "Three.js", "Jest", "3D", "physics", "dat.gui"],
   },
 
   {
