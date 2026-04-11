@@ -1,9 +1,9 @@
-import { translations } from "../utils/translations.js";
+import { t } from "../utils/language.js";
+
 export class About extends HTMLElement {
   constructor() {
     super();
-    this.translations = translations;
-
+    this.t = t();
     this.certificationData = [
       {
         title: "Cloud Practitioner",
@@ -87,12 +87,8 @@ export class About extends HTMLElement {
   }
 
   applyTranslations() {
-    const userLang = navigator.language || navigator.userLanguage;
-    console.log(userLang.slice(0, 2));
-    const shortLang = userLang.slice(0, 2);
-    const selectedLang = shortLang === "pl" ? "pl" : "en";
+    const t = this.t;
 
-    const t = this.translations[selectedLang];
     const get = (id) => this.querySelector(`#${id}`);
     document.title = t.title;
 

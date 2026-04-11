@@ -1,11 +1,11 @@
 import { chunkArray } from "../utils/Grid-Logic.js";
-import { personalProjects } from "../utils/personalProjectsData.js";
-import { translations } from "../utils/translations.js";
+import { personalProjects } from "../data/personalProjectsData.js";
+import { t } from "../utils/language.js";
 
 export class PersonalProject extends HTMLElement {
   constructor() {
     super();
-    this.translations = translations;
+    this.t = t();
   }
   connectedCallback() {
     const columns = chunkArray(personalProjects, [4, 3, 3, 3]);
@@ -31,9 +31,9 @@ export class PersonalProject extends HTMLElement {
                           <a class="projectLink" href="${link.url}">
                             <button class="ui blue button linkButton">
                               ${
-                                link.type === "github"
+                                link.name === "github"
                                   ? "GitHub"
-                                  : link.type === "play"
+                                  : link.name === "play"
                                     ? "Play"
                                     : "Open"
                               }
@@ -68,11 +68,7 @@ export class PersonalProject extends HTMLElement {
   }
 
   applyTranslations() {
-    const userLang = navigator.language || navigator.userLanguage;
-    console.log(userLang.slice(0, 2));
-    const shortLang = userLang.slice(0, 2);
-    const selectedLang = shortLang === "pl" ? "pl" : "en";
-    const t = this.translations[selectedLang];
+    const t = this.t;
     const get = (id) => this.querySelector(`#${id}`);
     document.title = t.title;
 

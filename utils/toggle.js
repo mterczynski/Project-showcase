@@ -1,4 +1,3 @@
-// navbarToggle.js
 export function initNavbarToggle(root = document) {
   document.addEventListener("DOMContentLoaded", () => {
     const toggleButton = document.querySelector(".toggle");
@@ -18,3 +17,4 @@ export function initNavbarToggle(root = document) {
     }
   });
 }
+

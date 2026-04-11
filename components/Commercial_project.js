@@ -1,11 +1,11 @@
-import { commercialProjects } from "../utils/CommercialProjectData.js";
+import { commercialProjects } from "../data/CommercialProjectData.js";
 import { chunkArray } from "../utils/Grid-Logic.js";
-import { translations } from "../utils/translations.js";
+import { t } from "../utils/language.js";
 
 export class CommercialProject extends HTMLElement {
   constructor() {
     super();
-    this.translations = translations;
+    this.t = t();
   }
   connectedCallback() {
     const columns = chunkArray(commercialProjects, [2, 2, 2, 1]);
@@ -31,7 +31,7 @@ export class CommercialProject extends HTMLElement {
                             (link) => `
                           <a class="projectLink" href="${link.url}">
                             <button class="ui blue button linkButton">
-                              ${link.type === "play" ? "Play" : "Website"}
+                              ${link.name === "play" ? "Play" : "Website"}
                             </button>
                           </a>
                         `,
@@ -60,25 +60,15 @@ export class CommercialProject extends HTMLElement {
                .join("")}
         </div>
         
-      <div class="ui message">
-        <div class="header" id="access-notice-title"></div>
-        <p id="access-notice-description"></p>
-      </div>
+ 
     </div>`;
     this.applyTranslations();
   }
 
   applyTranslations() {
-    const userLang = navigator.language || navigator.userLanguage;
-    console.log(userLang.slice(0, 2));
-    const shortLang = userLang.slice(0, 2);
-    const selectedLang = shortLang === "pl" ? "pl" : "en";
-    const t = this.translations[selectedLang];
+    const t = this.t;
     const get = (id) => this.querySelector(`#${id}`);
     document.title = t.title;
-    get("access-notice-title").innerText = t.accessNotice.title;
-    get("access-notice-description").innerText = t.accessNotice.description;
-    get("commercial-projects-title").innerText = t.projects.commercial;
 
     if (t.projectDescriptions && t.projectDescriptions.commercial) {
       Object.keys(t.projectDescriptions.commercial).forEach((projectId) => {
