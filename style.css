@@ -49,6 +49,8 @@ img {
   clip-path: polygon(0 0, 100% 0, 0 100%);
   z-index: 8;
   transition: opacity 0.3s ease;
+  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5));
+  pointer-events: auto;
 }
 
 .animation:hover .triangle {
