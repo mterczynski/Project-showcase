@@ -1,3 +1,4 @@
+
 TARGET_DIR="../mterczynski.github.io"
 
 # Check if target directory exists
@@ -30,4 +31,3 @@ git add .
 git commit -a -m "Update project-showcase"
 git status
 # 3. Push in $TARGET_DIR
-git push
