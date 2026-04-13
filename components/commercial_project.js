@@ -26,8 +26,8 @@ export class CommercialProject extends HTMLElement {
                       <img
                 class="card-triangle"
                 src="${project.companylogo}"
-                alt="Gamecode"
-                title="Gamecode"
+                alt="${project.companyName}"
+                title="${project.companyName}"
                 loading="lazy"
                 decoding="async"
                 width="80"
