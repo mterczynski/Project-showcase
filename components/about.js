@@ -42,12 +42,12 @@ export class About extends HTMLElement {
       const certification_item = document.createElement("div");
       certification_item.className = "certification_list";
       certification_item.innerHTML = `
-        <a href="${item.link}" target="_blank">
+        <a href="${item.link}" target="_blank" rel="noopener noreferrer">
           <img src="${item.img}" alt="${item.subtitle}" title="${item.title}" aria-label="${item.subtitle}" />
         </a>
         <div>
           <h2>${item.title}</h2>
-          <p><a href="${item.confirmationLink}" target="_blank">${item.subtitle}</a></p>
+          <p><a href="${item.confirmationLink}" target="_blank" rel="noopener noreferrer">${item.subtitle}</a></p>
         </div>
       `;
       certificationSection.appendChild(certification_item);

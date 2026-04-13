@@ -39,7 +39,7 @@ export class CommercialProject extends HTMLElement {
                         ${project.links
                           .map(
                             (link) => `
-                          <a class="projectLink" href="${link.url}">
+                          <a class="projectLink" href="${link.url}" target="_blank" rel="noopener noreferrer">
                             <button class="ui blue button linkButton">
                               ${link.name === "play" ? "Play" : "Website"}
                             </button>
