@@ -2,7 +2,7 @@
 set -eu
 
 SOURCE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TARGET_DIR="$SOURCE_DIR/../mterczynski.github.io/project-showcase-webcomp"
+TARGET_DIR="$SOURCE_DIR/../mterczynski.github.io"
 
 mkdir -p "$TARGET_DIR"
 
