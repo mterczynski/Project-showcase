@@ -1,5 +1,5 @@
 import { commercialProjects } from "../data/commercialProjectData.js";
-import { chunkArray } from "../utils/grid-Logic.js";
+import { chunkArray } from "../utils/grid-logic.js";
 import { t } from "../utils/language.js";
 
 export class CommercialProject extends HTMLElement {
