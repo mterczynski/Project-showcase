@@ -1,4 +1,4 @@
-import { chunkArray } from "../utils/grid-logic.js";
+import { chunkArray } from "../utils/grid.js";
 import { personalProjects } from "../data/personalProjectsData.js";
 import { t } from "../utils/language.js";
 
