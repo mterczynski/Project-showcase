@@ -9,18 +9,19 @@ export class About extends HTMLElement {
   }
 
   connectedCallback() {
+    document.title = this.t.title;
     this.innerHTML = `
       <div style="margin-top: 10rem" class="ui container">
          <div class="ui segment certificate_main">
         <section class="grid_abt">
           <div class="grid_3">
-            <h1 class="h2-sized-header" id="aboutTitle"></h1>
-            <p id="aboutIntro"></p>
+            <h1 class="h2-sized-header">${this.t.about.title}</h1>
+            <p>${this.t.about.intro}</p>
 
-            <p id="aboutDetails"></p>
+            <p>${this.t.about.details}</p>
           </div>
           <main class="certification">
-            <h1 id="certification_title"></h1>
+            <h1>${this.t.about.certifications}</h1>
 
             <section class="certification_section">
               <div class="certification_list"></div>
@@ -31,7 +32,6 @@ export class About extends HTMLElement {
       </div>
     `;
     this.initCertifications();
-    this.applyTranslations();
   }
 
   initCertifications() {
@@ -52,19 +52,6 @@ export class About extends HTMLElement {
       `;
       certificationSection.appendChild(certification_item);
     });
-  }
-
-  applyTranslations() {
-    const t = this.t;
-
-    const get = (id) => this.querySelector(`#${id}`);
-    document.title = t.title;
-
-    get("aboutTitle").innerText = t.about.title;
-    get("aboutIntro").innerText = t.about.intro;
-
-    get("aboutDetails").innerText = t.about.details;
-    get("certification_title").innerText = t.about.certifications;
   }
 }
 

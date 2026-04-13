@@ -1,5 +1,8 @@
+import { COMMERCIAL_PROJECT_IDS } from "./projectIds.js";
+
 export const commercialProjects = [
   {
+    id: COMMERCIAL_PROJECT_IDS.BOOM_BOOM_BOOM,
     title: "Boom Boom Boom",
     image: "assets/commercial-projects/gamecode-boom-boom-boom.webp",
     alt: "Boom boom boom project website",
@@ -21,6 +24,7 @@ export const commercialProjects = [
   },
 
   {
+    id: COMMERCIAL_PROJECT_IDS.GEMONE_ONYX,
     title: "GemOne Onyx",
     image: "assets/commercial-projects/gemone-onyx.webp",
     alt: "Gem One Onyx project preview",
@@ -38,6 +42,7 @@ export const commercialProjects = [
   },
 
   {
+    id: COMMERCIAL_PROJECT_IDS.ALOHA_CHRISTMAS,
     title: "Aloha! Christmas",
     image: "assets/commercial-projects/aloha-christmas-netent.webp",
     alt: "Aloha Christmas project preview",
@@ -59,6 +64,7 @@ export const commercialProjects = [
   },
 
   {
+    id: COMMERCIAL_PROJECT_IDS.TRICKSTAR_SPINS,
     title: "Trickstar Spins",
     image: "assets/commercial-projects/trickstar-spins.webp",
     alt: "Trickstar Spins project preview",
@@ -80,6 +86,7 @@ export const commercialProjects = [
   },
 
   {
+    id: COMMERCIAL_PROJECT_IDS.SUPER_STRIKER,
     title: "Super Striker",
     image: "assets/commercial-projects/super-striker-netent.webp",
     alt: "Super Striker project preview",
@@ -101,6 +108,7 @@ export const commercialProjects = [
   },
 
   {
+    id: COMMERCIAL_PROJECT_IDS.HACKERS_HAVEN,
     title: "Hacker's Haven",
     image: "assets/commercial-projects/hackers-haven.webp",
     alt: "Hacker's Haven project preview",
@@ -122,6 +130,7 @@ export const commercialProjects = [
   },
 
   {
+    id: COMMERCIAL_PROJECT_IDS.HAMMER_CASH,
     title: "Hammer Cash™",
     image: "assets/commercial-projects/hammer-cash.webp",
     alt: "HammerCash project website",

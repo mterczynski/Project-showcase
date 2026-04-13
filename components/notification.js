@@ -7,28 +7,19 @@ export class Notification extends HTMLElement {
   }
 
   connectedCallback() {
+    document.title = this.t.title;
     this.render();
-    this.applyTranslations();
   }
 
   render() {
     this.innerHTML = `
      <div style="margin-top: 5rem" class="ui container"> 
 <div class="ui message">
-        <div class="header" id="access-notice-title"></div>
-        <p id="access-notice-description"></p>
+        <div class="header">${this.t.accessNotice.title}</div>
+        <p>${this.t.accessNotice.description}</p>
       </div>
         </div>
     `;
-  }
-
-  applyTranslations() {
-    const t = this.t;
-    const get = (id) => this.querySelector(`#${id}`);
-
-    document.title = t.title;
-    get("access-notice-title").innerText = t.accessNotice.title;
-    get("access-notice-description").innerText = t.accessNotice.description;
   }
 }
 

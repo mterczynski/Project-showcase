@@ -7,10 +7,12 @@ export class PersonalProject extends HTMLElement {
     super();
     this.t = t();
   }
+
   connectedCallback() {
+    document.title = this.t.title;
     const columns = chunkArray(personalProjects, [4, 3, 3, 3]);
     this.innerHTML = `   <div style="margin-top: 5rem" class="ui container">  <div class="projects-personal ui container">
-      <h2 id="personal-projects-title">Personal projects</h2>
+      <h2>${this.t.projects.personal}</h2>
        <div class="ui four column doubling stackable grid container">
           ${columns
             .map(
@@ -47,7 +49,7 @@ export class PersonalProject extends HTMLElement {
 
                     <div class="content">
                       <div class="header">${project.title}</div>
-                      <div class="meta">${project.description}</div>
+                      <div class="meta">${this.getProjectDescription(project)}</div>
                     </div>
 
                     <div class="extra content">
@@ -67,21 +69,8 @@ export class PersonalProject extends HTMLElement {
      </div>`;
   }
 
-  applyTranslations() {
-    const t = this.t;
-    const get = (id) => this.querySelector(`#${id}`);
-    document.title = t.title;
-
-    get("commercial-projects-title").innerText = t.projects.commercial;
-
-    if (t.projectDescriptions && t.projectDescriptions.personal) {
-      Object.keys(t.projectDescriptions.personal).forEach((projectId) => {
-        const element = get(projectId + "-description");
-        if (element) {
-          element.innerText = t.projectDescriptions.personal[projectId];
-        }
-      });
-    }
+  getProjectDescription(project) {
+    return this.t.projectDescriptions?.personal?.[project.id] ?? project.description;
   }
 }
 
