@@ -14,7 +14,7 @@ export const personalProjects = [
 
   {
     title: "Kulki",
-    image: "assets/personal-projects/kulki.PNG",
+    image: "assets/personal-projects/kulki.jpg",
     alt: "Kulki project preview",
     description:
       "A custom version of the Color Lines game, featuring a custom JavaScript implementation of the A* algorithm",
@@ -27,7 +27,7 @@ export const personalProjects = [
 
   {
     title: "Level editor",
-    image: "assets/personal-projects/level-editor.png",
+    image: "assets/personal-projects/level-editor.jpg",
     alt: "Level editor project preview",
     description: "Level Editor for 2D and 3D games",
     links: [
@@ -64,7 +64,7 @@ export const personalProjects = [
 
   {
     title: "Snake",
-    image: "assets/personal-projects/snake.png",
+    image: "assets/personal-projects/snake.jpg",
     alt: "Snake project preview",
     description:
       "Snake game written with JavaScript with Xbox360 gamepad support",
@@ -93,7 +93,7 @@ export const personalProjects = [
 
   {
     title: "Tetris",
-    image: "assets/personal-projects/tetris-dom.png",
+    image: "assets/personal-projects/tetris-dom.jpg",
     alt: "Tetris project preview",
     description: "Tetris game made with JavaScript, tested with Jest",
     links: [
