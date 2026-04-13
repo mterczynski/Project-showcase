@@ -15,6 +15,7 @@ export const commercialProjects = [
         url: "https://www.gamecodehq.com/games/",
       },
     ],
+    companylogo: "assets/commercial-projects/triangle/gamecode.webp",
     tech: ["TS", "PixiJS", "Jest", "Spine animations"],
   },
 
@@ -30,6 +31,7 @@ export const commercialProjects = [
         url: "https://www.gemone.com/en/products-onyx/",
       },
     ],
+    companylogo: "assets/commercial-projects/triangle/softwaremind.webp",
     tech: ["TS", "Angular", "Node.js", "Jest", "Angular Material"],
   },
 
@@ -49,6 +51,7 @@ export const commercialProjects = [
         url: "https://games.netent.com/video-slots/aloha-christmas-edition/",
       },
     ],
+    companylogo: "assets/commercial-projects/triangle/netent.webp",
     tech: ["TS", "PixiJS", "Jest", "Spine animations"],
   },
 
@@ -68,6 +71,7 @@ export const commercialProjects = [
         url: "https://yggdrasilgaming.com/games/trickstar-spins",
       },
     ],
+    companylogo: "assets/commercial-projects/triangle/yggdrasil.webp",
     tech: ["TS", "PixiJS", "Jest", "Spine animations"],
   },
 
@@ -87,6 +91,7 @@ export const commercialProjects = [
         url: "https://games.netent.com/video-slots/super-striker/",
       },
     ],
+    companylogo: "assets/commercial-projects/triangle/netent.webp",
     tech: ["TS", "PixiJS", "Jest", "Spine animations"],
   },
 
@@ -106,6 +111,7 @@ export const commercialProjects = [
         url: "https://yggdrasilgaming.com/games/hackers-haven",
       },
     ],
+    companylogo: "assets/commercial-projects/triangle/yggdrasil.webp",
     tech: ["TS", "PixiJS", "Jest", "Spine animations"],
   },
 
@@ -121,6 +127,7 @@ export const commercialProjects = [
         url: "https://www.gamecodehq.com/games/",
       },
     ],
+    companylogo: "assets/commercial-projects/triangle/gamecode.webp",
     tech: ["TS", "PixiJS", "Jest", "Spine animations"],
   },
 ];

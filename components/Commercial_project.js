@@ -1,5 +1,5 @@
 import { commercialProjects } from "../data/commercialProjectData.js";
-import { chunkArray } from "../utils/Grid-Logic.js";
+import { chunkArray } from "../utils/grid-Logic.js";
 import { t } from "../utils/language.js";
 
 export class CommercialProject extends HTMLElement {
@@ -25,7 +25,7 @@ export class CommercialProject extends HTMLElement {
                     <div class="ui slide masked reveal image">
                       <img
                 class="card-triangle"
-                src="assets/commercial-projects/triangle/gamecode.webp"
+                src="${project.companylogo}"
                 alt="Gamecode"
                 title="Gamecode"
                 loading="lazy"
