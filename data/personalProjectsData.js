@@ -1,5 +1,8 @@
+import { PERSONAL_PROJECT_IDS } from "./projectIds.js";
+
 export const personalProjects = [
   {
+    id: PERSONAL_PROJECT_IDS.PAINT,
     title: "Paint",
     image: "assets/personal-projects/paint.jpg",
     alt: "Paint project preview",
@@ -13,6 +16,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.KULKI,
     title: "Kulki",
     image: "assets/personal-projects/kulki.jpg",
     alt: "Kulki project preview",
@@ -26,6 +30,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.LEVEL_EDITOR,
     title: "Level editor",
     image: "assets/personal-projects/level-editor.jpg",
     alt: "Level editor project preview",
@@ -38,6 +43,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.SUDOKU_SOLVER,
     title: "Sudoku solver",
     image: "assets/personal-projects/sudoku-solver.jpg",
     alt: "Sudoku solver project preview",
@@ -51,6 +57,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.MINE_SWEEPER,
     title: "Mine sweeper",
     image: "assets/personal-projects/mine-sweeper.jpg",
     alt: "Mine Sweeper project preview",
@@ -63,6 +70,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.SNAKE,
     title: "Snake",
     image: "assets/personal-projects/snake.jpg",
     alt: "Snake project preview",
@@ -76,6 +84,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.JOI_SCHEMA_GENERATOR,
     title: "Joi schema generator",
     image: "assets/personal-projects/joi-schema-generator.jpg",
     alt: "Joi schema generator project preview",
@@ -92,6 +101,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.TETRIS,
     title: "Tetris",
     image: "assets/personal-projects/tetris-dom.jpg",
     alt: "Tetris project preview",
@@ -104,6 +114,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.SENSORS,
     title: "Sensors",
     image: "assets/personal-projects/sensors.gif",
     alt: "Sensors project preview",
@@ -117,6 +128,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.SPACE_GOLF_3D,
     title: "Space Golf 3D",
     image: "assets/personal-projects/space-golf-3d.jpg",
     alt: "Space Golf 3D project preview",
@@ -133,6 +145,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.CHESS,
     title: "Chess",
     image: "assets/personal-projects/chess.jpg",
     alt: "Chess project preview",
@@ -145,6 +158,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.CODE_CLICKER,
     title: "Code clicker",
     image: "assets/personal-projects/code-clicker.jpg",
     alt: "Code Clicker project preview",
@@ -157,6 +171,7 @@ export const personalProjects = [
   },
 
   {
+    id: PERSONAL_PROJECT_IDS.LINE_ART_GENERATOR,
     title: "Line art generator",
     image: "assets/personal-projects/pattern-generators.jpg",
     alt: "Line pattern generator project preview",

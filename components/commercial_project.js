@@ -7,10 +7,12 @@ export class CommercialProject extends HTMLElement {
     super();
     this.t = t();
   }
+
   connectedCallback() {
+    document.title = this.t.title;
     const columns = chunkArray(commercialProjects, [2, 2, 2, 1]);
 
-    this.innerHTML = `   <div style="margin-top: 5rem" class="ui container">  <h2 id="commercial-projects-title">Commercial projects</h2>
+    this.innerHTML = `   <div style="margin-top: 5rem" class="ui container">  <h2>${this.t.projects.commercial}</h2>
       <div class="ui four column doubling stackable grid container"> 
         ${columns
           .map(
@@ -50,7 +52,7 @@ export class CommercialProject extends HTMLElement {
 
                     <div class="content">
                       <div class="header">${project.title}</div>
-                      <div class="meta">${project.description}</div>
+                      <div class="meta">${this.getProjectDescription(project)}</div>
                     </div>
 
                     <div class="extra content">
@@ -68,22 +70,10 @@ export class CommercialProject extends HTMLElement {
         
  
     </div>`;
-    this.applyTranslations();
   }
 
-  applyTranslations() {
-    const t = this.t;
-    const get = (id) => this.querySelector(`#${id}`);
-    document.title = t.title;
-
-    if (t.projectDescriptions && t.projectDescriptions.commercial) {
-      Object.keys(t.projectDescriptions.commercial).forEach((projectId) => {
-        const element = get(projectId + "-description");
-        if (element) {
-          element.innerText = t.projectDescriptions.commercial[projectId];
-        }
-      });
-    }
+  getProjectDescription(project) {
+    return this.t.projectDescriptions?.commercial?.[project.id] ?? project.description;
   }
 }
 
