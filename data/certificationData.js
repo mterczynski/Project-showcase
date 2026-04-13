@@ -1,4 +1,4 @@
-const certificationData = [
+export const certificationData = [
   {
     title: "Cloud Practitioner",
     img: "./assets/certificate/aws_cloud_practicioner.png",
