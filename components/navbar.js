@@ -31,7 +31,8 @@ export class Navbar extends HTMLElement {
             <img
               class="close"
               src="./assets/close_24dp_1791C8_FILL0_wght400_GRAD0_opsz24.svg"
-              alt="logo" />
+              style="pointer-events: auto"
+              alt="Close menu" />
           </div>
         </div>
         <ul>
