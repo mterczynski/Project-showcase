@@ -11,28 +11,26 @@ export class CommercialProject extends HTMLElement {
     const columns = chunkArray(commercialProjects, [2, 2, 2, 1]);
 
     this.innerHTML = `   <div style="margin-top: 5rem" class="ui container">  <h2 id="commercial-projects-title">Commercial projects</h2>
-      <div class="ui four column doubling stackable grid container">
-      
-             ${columns
-               .map(
-                 (col) => `
+      <div class="ui four column doubling stackable grid container"> 
+        ${columns
+          .map(
+            (col) => `
               <div class="column">
                 ${col
                   .map(
                     (project) => `
                   <div class="ui card">
-                    
                     <div class="ui slide masked reveal image">
                       <img
-                class="card-triangle"
-                src="${project.companylogo}"
-                alt="${project.companyName}"
-                title="${project.companyName}"
-                loading="lazy"
-                decoding="async"
-                width="80"
-                height="80"
-              />
+                        class="card-triangle"
+                        src="${project.companylogo}"
+                        alt="${project.companyName}"
+                        title="${project.companyName}"
+                        loading="lazy"
+                        decoding="async"
+                        width="80"
+                        height="80"
+                      />
                       <img src="${project.image}" class="visible content" alt="${project.alt}" />
 
                       <div class="hidden content linkButtons">
@@ -64,11 +62,9 @@ export class CommercialProject extends HTMLElement {
                 `,
                   )
                   .join("")}
-              </div>
-            `,
-               )
-               .join("")}
-        </div>
+            </div>
+          `).join("")}
+      </div>
         
  
     </div>`;
