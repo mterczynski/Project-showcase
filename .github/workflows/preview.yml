@@ -12,23 +12,29 @@ jobs:
       contents: write
       pull-requests: write
 
+    env:
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+      PREVIEW_DIR: pr-${{ github.event.pull_request.number }}
+      BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Deploy preview
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
-          destination_dir: pr-${{ github.event.pull_request.number }}
+          destination_dir: ${{ env.PREVIEW_DIR }}
           keep_files: true
 
       - name: Comment PR
         uses: actions/github-script@v7
         with:
           script: |
-            const pr = context.payload.pull_request.number;
-            const url = `https://${context.repo.owner}.github.io/${context.repo.repo}/pr-${pr}/`;
+            const pr = process.env.PR_NUMBER;
+            const url = `${process.env.BASE_URL}/${process.env.PREVIEW_DIR}/`;
 
             github.rest.issues.createComment({
               ...context.repo,

@@ -11,9 +11,14 @@ jobs:
     permissions:
       contents: write
 
+    env:
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+      PREVIEW_DIR: pr-${{ github.event.pull_request.number }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Create empty dir
         run: |
           mkdir empty
@@ -22,7 +27,7 @@ jobs:
       - name: Overwrite preview folder
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./empty
-          destination_dir: pr-${{ github.event.pull_request.number }}
+          destination_dir: ${{ env.PREVIEW_DIR }}
           keep_files: true
