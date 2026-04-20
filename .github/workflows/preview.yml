@@ -24,7 +24,7 @@ jobs:
       - name: Deploy preview
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ GITHUB_TOKEN }}
           publish_dir: .
           destination_dir: ${{ env.PREVIEW_DIR }}
           keep_files: true
