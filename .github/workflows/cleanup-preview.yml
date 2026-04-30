@@ -7,6 +7,11 @@ on:
 jobs:
   cleanup:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.head.repo.full_name == github.repository
+
+    concurrency:
+      group: pr-preview-${{ github.event.pull_request.number }}
+      cancel-in-progress: false
 
     permissions:
       contents: write
@@ -16,18 +21,31 @@ jobs:
       PREVIEW_DIR: pr-${{ github.event.pull_request.number }}
 
     steps:
-      - name: Checkout
+      - name: Checkout gh-pages
+        id: checkout_gh_pages
+        continue-on-error: true
         uses: actions/checkout@v4
-
-      - name: Create empty dir
-        run: |
-          mkdir empty
-          echo "Preview removed" > empty/index.html
-
-      - name: Overwrite preview folder
-        uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ GITHUB_TOKEN }}
-          publish_dir: ./empty
-          destination_dir: ${{ env.PREVIEW_DIR }}
-          keep_files: true
+          ref: gh-pages
+          fetch-depth: 1
+
+      - name: Remove preview folder
+        if: steps.checkout_gh_pages.outcome == 'success'
+        run: |
+          if [ -d "${PREVIEW_DIR}" ]; then
+            rm -rf "${PREVIEW_DIR}"
+          fi
+
+      - name: Commit and push (if changed)
+        if: steps.checkout_gh_pages.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git status --porcelain | grep -q .; then
+            git add -A
+            git commit -m "chore(preview): cleanup pr-${PR_NUMBER}"
+            git push
+          else
+            echo "No changes to push."
+          fi

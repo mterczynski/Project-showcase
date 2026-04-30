@@ -7,6 +7,11 @@ on:
 jobs:
   preview:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.head.repo.full_name == github.repository
+
+    concurrency:
+      group: pr-preview-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
 
     permissions:
       contents: write
@@ -24,20 +29,43 @@ jobs:
       - name: Deploy preview
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: .
           destination_dir: ${{ env.PREVIEW_DIR }}
           keep_files: true
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
       - name: Comment PR
         uses: actions/github-script@v7
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = process.env.PR_NUMBER;
             const url = `${process.env.BASE_URL}/${process.env.PREVIEW_DIR}/`;
 
-            github.rest.issues.createComment({
+            const marker = '<!-- pr-preview-link -->';
+            const body = `${marker}\nPreview: ${url}`;
+
+            const { data: comments } = await github.rest.issues.listComments({
               ...context.repo,
-              issue_number: pr,
-              body: `Preview: ${url}`
+              issue_number: Number(pr),
+              per_page: 100,
             });
+
+            const existing = comments.find(c => (c.user?.type === 'Bot') && (c.body || '').includes(marker));
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                ...context.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: Number(pr),
+                body,
+              });
+            }
