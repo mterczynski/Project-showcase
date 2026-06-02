@@ -18,10 +18,35 @@ jobs:
             const repo = context.repo.repo;
             const owner = context.repo.owner;
             const url = `https://pr.new/github.com/${owner}/${repo}/tree/${branch}`;
+            const marker = '<!-- pr-new-preview -->';
+            const body = `${marker}\n### 👀 Preview\n\n[Open interactive preview in StackBlitz](${url})`;
+
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner,
+              repo,
+              issue_number: context.payload.pull_request.number,
+              per_page: 100
+            });
+
+            const existingComment = comments.find(
+              (comment) =>
+                comment.user?.type === 'Bot' &&
+                comment.body?.includes(marker)
+            );
+
+            if (existingComment) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existingComment.id,
+                body
+              });
+              return;
+            }
 
             await github.rest.issues.createComment({
               owner,
               repo,
               issue_number: context.payload.pull_request.number,
-              body: `### 👀 Preview\n\n${url}`
+              body
             });
