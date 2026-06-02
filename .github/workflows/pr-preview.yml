@@ -1,0 +1,27 @@
+name: PR Preview
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Comment with StackBlitz preview link
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch = context.payload.pull_request.head.ref;
+            const repo = context.repo.repo;
+            const owner = context.repo.owner;
+            const url = `https://pr.new/github.com/${owner}/${repo}/tree/${branch}`;
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: context.payload.pull_request.number,
+              body: `### 👀 Preview\n\n${url}`
+            });
