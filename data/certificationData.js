@@ -31,5 +31,13 @@ export const certificationData = [
     confirmationLink:
       "https://www.credly.com/badges/c5e7e87b-f054-40a4-8b75-7ab135bc5120",
   },
+  {
+    title: "Claude Certified Architect - Foundations",
+    img: "./assets/certificate/ccaf.png",
+    subtitle: "Claude Certified Architect - Foundations",
+    link: "https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification",
+    confirmationLink:
+      "https://www.credly.com/badges/8b28bb47-aaa5-4986-872b-afa51fe70bd0/",
+  },
 ];
 
