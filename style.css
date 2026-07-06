@@ -227,10 +227,8 @@ h1.h2-sized-header {
 .certificate_main {
   position: relative;
 }
-.grid_abt {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: flex-start;
+.certification_section h1.title_category {
+  color: rgb(102, 102, 218);
 }
 .grid_3 {
   grid-column: span 2;
@@ -359,3 +357,4 @@ h1.h2-sized-header {
     align-items: center;
   }
 }
+

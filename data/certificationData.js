@@ -1,43 +1,48 @@
-export const certificationData = [
-  {
-    title: "Cloud Practitioner",
-    img: "./assets/certificate/aws_cloud_practicioner.png",
-    subtitle: "AWS Certified Cloud Practitioner",
-    link: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
-    confirmationLink:
-      "https://www.credly.com/badges/6fd3981e-537c-4449-bf5c-880c67d0e2ee",
-  },
-  {
-    title: "AI Practitioner",
-    img: "./assets/certificate/aws_ai_practicioner.webp",
-    subtitle: "AWS Certified AI Practicioner",
-    link: "https://aws.amazon.com/certification/certified-ai-practitioner/",
-    confirmationLink:
-      "https://www.credly.com/badges/cf49935a-0d25-4092-b2af-2e33038dfb1d",
-  },
-  {
-    title: "Azure Fundamentals",
-    img: "./assets/certificate/microsoft-certified-fundamentals-badge.svg",
-    subtitle: "Microsoft Certified: Azure Fundamentals",
-    link: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals",
-    confirmationLink:
-      "https://learn.microsoft.com/en-us/users/michaterczyski-4376/credentials/d58786b7b0016dbf",
-  },
-  {
-    title: "Generative AI Leader",
-    img: "./assets/certificate/gcp-generative-ai-leader.webp",
-    subtitle: "Google Cloud Certified: Generative AI Leader",
-    link: "https://cloud.google.com/learn/certification/generative-ai-leader",
-    confirmationLink:
-      "https://www.credly.com/badges/c5e7e87b-f054-40a4-8b75-7ab135bc5120",
-  },
-  {
-    title: "Claude Certified Architect - Foundations",
-    img: "./assets/certificate/ccaf.png",
-    subtitle: "Claude Certified Architect - Foundations",
-    link: "https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification",
-    confirmationLink:
-      "https://www.credly.com/badges/8b28bb47-aaa5-4986-872b-afa51fe70bd0/",
-  },
-];
+export const certificationData = {
+  AI: [
+    {
+      title: "AI Practitioner",
+      img: "./assets/certificate/aws_ai_practicioner.webp",
+      subtitle: "AWS Certified AI Practitioner",
+      link: "https://aws.amazon.com/certification/certified-ai-practitioner/",
+      confirmationLink:
+        "https://www.credly.com/badges/cf49935a-0d25-4092-b2af-2e33038dfb1d",
+    },
+    {
+      title: "Generative AI Leader",
+      img: "./assets/certificate/gcp-generative-ai-leader.webp",
+      subtitle: "Google Cloud Certified: Generative AI Leader",
+      link: "https://cloud.google.com/learn/certification/generative-ai-leader",
+      confirmationLink:
+        "https://www.credly.com/badges/c5e7e87b-f054-40a4-8b75-7ab135bc5120",
+    },
+    {
+      title: "Claude Certified Architect - Foundations",
+      img: "./assets/certificate/ccaf.png",
+      subtitle: "Claude Certified Architect - Foundations",
+      link: "https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification",
+      confirmationLink:
+        "https://www.credly.com/badges/8b28bb47-aaa5-4986-872b-afa51fe70bd0/",
+    },
+  ],
+
+  Cloud: [
+    {
+      title: "Cloud Practitioner",
+      img: "./assets/certificate/aws_cloud_practicioner.png",
+      subtitle: "AWS Certified Cloud Practitioner",
+      link: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+      confirmationLink:
+        "https://www.credly.com/badges/6fd3981e-537c-4449-bf5c-880c67d0e2ee",
+    },
+    {
+      title: "Azure Fundamentals",
+      img: "./assets/certificate/microsoft-certified-fundamentals-badge.svg",
+      subtitle: "Microsoft Certified: Azure Fundamentals",
+      link: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals",
+      confirmationLink:
+        "https://learn.microsoft.com/en-us/users/michaterczyski-4376/credentials/d58786b7b0016dbf",
+    },
+  ],
+};
 
