@@ -38,19 +38,38 @@ export class About extends HTMLElement {
     const certificationSection = this.querySelector(".certification_section");
     certificationSection.innerHTML = "";
 
-    this.certificationData.forEach((item) => {
-      const certification_item = document.createElement("div");
-      certification_item.className = "certification_list";
-      certification_item.innerHTML = `
+    Object.entries(this.certificationData).forEach(([category, items]) => {
+      const categoryContainer = document.createElement("div");
+      categoryContainer.className = "category_container";
+
+      const heading = document.createElement("h1");
+      heading.textContent = category;
+      heading.className = "title_category";
+
+      categoryContainer.appendChild(heading);
+
+      items.forEach((item) => {
+        const certification_item = document.createElement("div");
+        certification_item.className = "certification_list";
+
+        certification_item.innerHTML = `
         <a href="${item.link}" target="_blank" rel="noopener noreferrer">
           <img src="${item.img}" alt="${item.subtitle}" title="${item.title}" aria-label="${item.subtitle}" />
         </a>
         <div>
           <h2>${item.title}</h2>
-          <p><a href="${item.confirmationLink}" target="_blank" rel="noopener noreferrer">${item.subtitle}</a></p>
+          <p>
+            <a href="${item.confirmationLink}" target="_blank" rel="noopener noreferrer">
+              ${item.subtitle}
+            </a>
+          </p>
         </div>
       `;
-      certificationSection.appendChild(certification_item);
+
+        categoryContainer.appendChild(certification_item);
+      });
+
+      certificationSection.appendChild(categoryContainer);
     });
   }
 }

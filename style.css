@@ -143,6 +143,11 @@ li {
   margin-bottom: -210px;
   opacity: 1;
 }
+.certification_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
 
 nav {
   display: flex;
@@ -227,10 +232,8 @@ h1.h2-sized-header {
 .certificate_main {
   position: relative;
 }
-.grid_abt {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: flex-start;
+.certification_section h1.title_category {
+  color: rgb(102, 102, 218);
 }
 .grid_3 {
   grid-column: span 2;
@@ -251,6 +254,7 @@ h1.h2-sized-header {
     object-fit: contain;
   }
   .certification_section {
+    /* grid-template-columns: 1fr; */
     .certification_list {
       display: flex;
       background-color: white;
@@ -258,7 +262,7 @@ h1.h2-sized-header {
       gap: 1rem;
       margin-bottom: 1rem;
 
-      padding: 10px 4px;
+      padding: 13px 20px;
       align-items: center;
     }
   }
@@ -276,7 +280,11 @@ h1.h2-sized-header {
     color: gray;
   }
 }
-
+@media (max-width: 768px) {
+  .certification_section {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 560px) {
   .ui.container {
     width: 100% !important;
@@ -290,6 +298,7 @@ h1.h2-sized-header {
     top: -1.2rem;
     gap: 2px;
   }
+
   .certificate_img {
     width: 70px;
     height: 70px;
@@ -359,3 +368,4 @@ h1.h2-sized-header {
     align-items: center;
   }
 }
+
