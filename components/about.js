@@ -39,11 +39,14 @@ export class About extends HTMLElement {
     certificationSection.innerHTML = "";
 
     Object.entries(this.certificationData).forEach(([category, items]) => {
-      // Only add H1 for category
+      const categoryContainer = document.createElement("div");
+      categoryContainer.className = "category_container";
+
       const heading = document.createElement("h1");
       heading.textContent = category;
       heading.className = "title_category";
-      certificationSection.appendChild(heading);
+
+      categoryContainer.appendChild(heading);
 
       items.forEach((item) => {
         const certification_item = document.createElement("div");
@@ -63,8 +66,10 @@ export class About extends HTMLElement {
         </div>
       `;
 
-        certificationSection.appendChild(certification_item);
+        categoryContainer.appendChild(certification_item);
       });
+
+      certificationSection.appendChild(categoryContainer);
     });
   }
 }
