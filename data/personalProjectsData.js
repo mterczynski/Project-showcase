@@ -135,10 +135,6 @@ export const personalProjects = [
     description:
       "A 3D simulation of a golf ball moving through space among planets, featuring custom physics and a dat.gui interface for tweaking the parameters of the simulation",
     links: [
-      {
-        name: "github",
-        url: "https://github.com/mterczynski/space-golf-3d",
-      },
       { name: "open", url: "https://www.mter.pl/space-golf-3d-v2" },
     ],
     tech: ["TS", "Three.js", "Jest", "3D", "physics", "dat.gui"],
