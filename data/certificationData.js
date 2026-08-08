@@ -43,6 +43,14 @@ export const certificationData = {
       confirmationLink:
         "https://learn.microsoft.com/en-us/users/michaterczyski-4376/credentials/d58786b7b0016dbf",
     },
+    {
+      title: "Terraform Associate",
+      img: "./assets/certificate/terraform-badge-mini-associate.svg",
+      subtitle: "HashiCorp Certified: Terraform Associate (004)",
+      link: "https://developer.hashicorp.com/certifications/infrastructure-automation",
+      confirmationLink:
+        "https://developer.hashicorp.com/certifications/infrastructure-automation",
+    },
   ],
 };
 
