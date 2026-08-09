@@ -25,7 +25,6 @@ export const certificationData = {
         "https://www.credly.com/badges/8b28bb47-aaa5-4986-872b-afa51fe70bd0/",
     },
   ],
-
   Cloud: [
     {
       title: "Cloud Practitioner",
@@ -45,11 +44,11 @@ export const certificationData = {
     },
     {
       title: "Terraform Associate",
-      img: "./assets/certificate/terraform-badge-mini-associate.svg",
+      img: "./assets/certificate/tf-associate-big.png",
       subtitle: "HashiCorp Certified: Terraform Associate (004)",
       link: "https://developer.hashicorp.com/certifications/infrastructure-automation",
       confirmationLink:
-        "https://developer.hashicorp.com/certifications/infrastructure-automation",
+        "https://www.credly.com/badges/e3db2831-b81c-46a7-84b0-dbcb48e87883",
     },
   ],
 };
