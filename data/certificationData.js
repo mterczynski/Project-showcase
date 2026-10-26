@@ -18,7 +18,7 @@ export const certificationData = {
     },
     {
       title: "Claude Certified Architect - Foundations",
-      img: "./assets/certificate/ccaf.png",
+      img: "./assets/certificate/ccaf.webp",
       subtitle: "Claude Certified Architect - Foundations",
       link: "https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification",
       confirmationLink:
@@ -26,7 +26,7 @@ export const certificationData = {
     },
     {
       title: "Gemini Enterprise Agent Development",
-      img: "./assets/certificate/gemini_agent_development.png",
+      img: "./assets/certificate/gemini_agent_development.webp",
       subtitle:
         "Certified Partner Specialist: Gemini Enterprise Agent Development",
       link: "https://rsvp.withgoogle.com/events/partner-learning/cps",
@@ -45,7 +45,7 @@ export const certificationData = {
   Cloud: [
     {
       title: "Cloud Practitioner",
-      img: "./assets/certificate/aws_cloud_practicioner.png",
+      img: "./assets/certificate/aws_cloud_practicioner.webp",
       subtitle: "AWS Certified Cloud Practitioner",
       link: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
       confirmationLink:
@@ -61,7 +61,7 @@ export const certificationData = {
     },
     {
       title: "Terraform Associate",
-      img: "./assets/certificate/tf-associate-big.png",
+      img: "./assets/certificate/tf-associate-big.webp",
       subtitle: "HashiCorp Certified: Terraform Associate (004)",
       link: "https://developer.hashicorp.com/certifications/infrastructure-automation",
       confirmationLink:
@@ -69,7 +69,7 @@ export const certificationData = {
     },
     {
       title: "Gemini Enterprise Deployment",
-      img: "./assets/certificate/gemini_deployment_cert.png",
+      img: "./assets/certificate/gemini_deployment_cert.webp",
       subtitle: "Certified Partner Specialist: Gemini Enterprise Deployment",
       link: "https://rsvp.withgoogle.com/events/partner-learning/cps",
       confirmationLink:
