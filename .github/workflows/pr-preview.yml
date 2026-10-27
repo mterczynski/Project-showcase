@@ -6,6 +6,11 @@ on:
 
 jobs:
   comment:
+    # Commenting needs a write-scoped GITHUB_TOKEN, but pull requests opened from forks only get a
+    # read-only one, so this job can only fail there with "Resource not accessible by integration".
+    # The preview link would not work for forks either, since the branch only exists in the fork.
+    # Skip it for forks; it still runs for same-repo pull requests.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
